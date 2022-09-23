@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: Location Intelligence API
-  version: 2022.07.c
+  version: 2022.09.c
   description: Use LI API data to access RMS model insights in a flexible, scalable, and programmable way. The suite of layers includes exposure enhancement, geocoding, hazard, risk scoring, and loss costs to provide information for key decisions in the underwriting workflow, including screening, selection, and pricing.
 externalDocs:
   description: Find out more about RMS
@@ -828,6 +828,57 @@ paths:
           $ref: '#/components/responses/500Response'
   /ca_eq_risk_score/latest:
     $ref: '#/paths/~1ca_eq_risk_score~118.0'
+  /ca_mmi/18.1:
+    post:
+      tags:
+        - Risk lookups
+      summary: Canada Earthquake MMI
+      requestBody:
+        description: Request
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - location
+              properties:
+                location:
+                  type: object
+                  allOf:
+                    - $ref: '#/components/schemas/LocationInput'
+                    - type: object
+                  properties:
+                    address:
+                      type: object
+                      required:
+                        - latitude
+                        - longitude
+                        - countryRmsCode
+                        - rmsGeoModelResolutionCode
+                      example:
+                        $ref: '#/components/examples/CaAddress/value'
+                    characteristics:
+                      type: object
+                      example: {}
+                    coverageValues:
+                      type: object
+                      example: {}
+        required: true
+      responses:
+        '200':
+          description: Everything worked as expected.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MmiOutput'
+        '400':
+          $ref: '#/components/responses/400Response'
+        '401':
+          $ref: '#/components/responses/401Response'
+        '500':
+          $ref: '#/components/responses/500Response'
+  /ca_mmi/latest:
+    $ref: '#/paths/~1ca_mmi~118.1'
   /ca_wf_model_hazard/1.0:
     post:
       tags:
@@ -2275,6 +2326,57 @@ paths:
           $ref: '#/components/responses/500Response'
   /eu_fl_risk_score/latest:
     $ref: '#/paths/~1eu_fl_risk_score~12.0'
+  /eu_mmi/18.0:
+    post:
+      tags:
+        - Risk lookups
+      summary: Europe Earthquake MMI
+      requestBody:
+        description: Request
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - location
+              properties:
+                location:
+                  type: object
+                  allOf:
+                    - $ref: '#/components/schemas/LocationInput'
+                    - type: object
+                  properties:
+                    address:
+                      type: object
+                      required:
+                        - latitude
+                        - longitude
+                        - countryRmsCode
+                        - rmsGeoModelResolutionCode
+                      example:
+                        $ref: '#/components/examples/EuGbAddress/value'
+                    characteristics:
+                      type: object
+                      example: {}
+                    coverageValues:
+                      type: object
+                      example: {}
+        required: true
+      responses:
+        '200':
+          description: Everything worked as expected.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MmiBaseOutput'
+        '400':
+          $ref: '#/components/responses/400Response'
+        '401':
+          $ref: '#/components/responses/401Response'
+        '500':
+          $ref: '#/components/responses/500Response'
+  /eu_mmi/latest:
+    $ref: '#/paths/~1eu_mmi~118.0'
   /eu_ws_loss_cost/18.0:
     post:
       tags:
@@ -3466,7 +3568,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: Global distance to nuclear plants
+      summary: Global Distance to Nuclear Plants
       requestBody:
         description: Request
         content:
@@ -3511,7 +3613,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: Global distance to volcano
+      summary: Global Distance to Volcano
       requestBody:
         description: Request
         content:
@@ -4537,6 +4639,57 @@ paths:
           $ref: '#/components/responses/500Response'
   /kr_ws_risk_score/latest:
     $ref: '#/paths/~1kr_ws_risk_score~118.1'
+  /mx_mmi/18.1:
+    post:
+      tags:
+        - Risk lookups
+      summary: Mexico Earthquake MMI
+      requestBody:
+        description: Request
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - location
+              properties:
+                location:
+                  type: object
+                  allOf:
+                    - $ref: '#/components/schemas/LocationInput'
+                    - type: object
+                  properties:
+                    address:
+                      type: object
+                      required:
+                        - latitude
+                        - longitude
+                        - countryRmsCode
+                        - rmsGeoModelResolutionCode
+                      example:
+                        $ref: '#/components/examples/MxAddress/value'
+                    characteristics:
+                      type: object
+                      example: {}
+                    coverageValues:
+                      type: object
+                      example: {}
+        required: true
+      responses:
+        '200':
+          description: Everything worked as expected.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MmiOutput'
+        '400':
+          $ref: '#/components/responses/400Response'
+        '401':
+          $ref: '#/components/responses/401Response'
+        '500':
+          $ref: '#/components/responses/500Response'
+  /mx_mmi/latest:
+    $ref: '#/paths/~1mx_mmi~118.1'
   /na_eq_hazard/18.0:
     post:
       tags:
@@ -4677,11 +4830,103 @@ paths:
           $ref: '#/components/responses/500Response'
   /nz_eq_hazard/latest:
     $ref: '#/paths/~1nz_eq_hazard~12.0'
+  /nz_fl_depth/1.0:
+    post:
+      tags:
+        - Risk lookups
+      summary: New Zealand Flood Depth
+      requestBody:
+        description: Request
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - location
+              properties:
+                location:
+                  type: object
+                  allOf:
+                    - $ref: '#/components/schemas/LocationInput'
+                    - type: object
+                  properties:
+                    address:
+                      type: object
+                      required:
+                        - latitude
+                        - longitude
+                        - countryRmsCode
+                        - rmsGeoModelResolutionCode
+                      example:
+                        $ref: '#/components/examples/NzAddress/value'
+                    characteristics:
+                      type: object
+                      example: {}
+                    coverageValues:
+                      type: object
+                      example: {}
+                layerOptions:
+                  type: object
+                  properties:
+                    lookup:
+                      type: "string"
+                      enum:
+                        - "floodDepth"
+                        - "wetOrDry"
+                        - "proximity"
+                      description: >
+                        Type of lookup: * `floodDepth` - Lookup flood depths * `wetOrDry` - Lookup if the location is wet or dry * `proximity` - Lookup max depth within proximity
+
+                      default: "floodDepth"
+                      example: "proximity"
+                    defended:
+                      type: boolean
+                      description: "Max depth is defended/undefended (only applies to lookup type `proximity`)"
+                      default: false
+                      example: false
+                    returnPeriod:
+                      type: integer
+                      description: "Return period for max depth calculation (only applies to lookup type `proximity`)"
+                      default: 1000
+                      example: 1000
+                    proximityDistance:
+                      type: "number"
+                      format: "double"
+                      description: "Return max depth found within this distance from the address (only applies to lookup type `proximity` and the maximum distance allowed is 1000 meters)"
+                      example: 100
+                      default: 100
+                    distanceUnit:
+                      type: "string"
+                      enum:
+                        - "feet"
+                        - "meters"
+                      description: "Distance unit"
+                      default: "meters"
+        required: true
+      responses:
+        '200':
+          description: Everything worked as expected.
+          content:
+            application/json:
+              schema:
+                type: object
+                anyOf:
+                  - $ref: '#/components/schemas/FlDepthInlandSurgeOutput'
+                  - $ref: '#/components/schemas/FlDepthBaseOutput'
+                  - $ref: '#/components/schemas/FlDepthInlandProximityOutput'
+        '400':
+          $ref: '#/components/responses/400Response'
+        '401':
+          $ref: '#/components/responses/401Response'
+        '500':
+          $ref: '#/components/responses/500Response'
+  /nz_fl_depth/latest:
+    $ref: '#/paths/~1nz_fl_depth~11.0'
   /nz_mmi/18.0:
     post:
       tags:
         - Risk lookups
-      summary: New Zealand MMI
+      summary: New Zealand Earthquake MMI
       requestBody:
         description: Request
         content:
@@ -5265,7 +5510,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: US Earthquake Faults
+      summary: U.S. Earthquake Faults
       requestBody:
         description: Request
         content:
@@ -5324,7 +5569,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: US distance to fire station
+      summary: U.S. Distance to Fire Station
       requestBody:
         description: Request
         content:
@@ -5369,7 +5614,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: US distance to Inner Coast
+      summary: U.S. Distance to Inner Coast
       requestBody:
         description: Request
         content:
@@ -5415,7 +5660,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: US distance to landfill
+      summary: U.S. Distance to Landfill
       requestBody:
         description: Request
         content:
@@ -6051,7 +6296,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: U.S. MMI
+      summary: U.S. Earthquake MMI
       requestBody:
         description: Request
         content:
@@ -6102,7 +6347,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: US Subsidence
+      summary: U.S. Subsidence
       requestBody:
         description: Request
         content:
@@ -6167,7 +6412,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: US Terrorism Distance To Target
+      summary: U.S. Terrorism Distance to Target
       requestBody:
         description: Request
         content:
@@ -6231,7 +6476,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: US Terrorism Loss Cost
+      summary: U.S. Terrorism Loss Cost
       requestBody:
         description: Request
         content:
@@ -6294,7 +6539,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: US Terrorism Risk Score
+      summary: U.S. Terrorism Risk Score
       requestBody:
         description: Request
         content:
@@ -6569,7 +6814,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: US Wildfire supplemental hazard
+      summary: U.S. Wildfire Supplemental Hazard
       requestBody:
         description: Request
         content:
@@ -6617,7 +6862,7 @@ paths:
     post:
       tags:
         - Risk lookups
-      summary: US Wind Speed
+      summary: U.S. Wind Speed
       requestBody:
         description: Request
         content:
@@ -7026,7 +7271,7 @@ paths:
     post:
       tags:
         - Windstorm hazard lookup
-      summary: US wind pool zones for Alabama, Florida, Georgia, Louisiana, Mississippi, New Jersey, North Carolina, South Carolina, Texas.
+      summary: U.S. Wind Pool Zones for Alabama, Florida, Georgia, Louisiana, Mississippi, New Jersey, North Carolina, South Carolina, Texas.
       requestBody:
         description: Request
         content:
@@ -8267,7 +8512,7 @@ components:
           description: "Business interruption value"
           default: 0
           example: 50000
-    MmiOutput:
+    MmiBaseOutput:
       type: object
       description: "The Modified Mercalli Intensity (MMI) is a subjective scale used to describe the observed local shaking intensity and related effects of an earthquake. The scale ranges from 1 (barely felt) to 12 (total destruction), with slight damage beginning at 6."
       properties:
@@ -8303,11 +8548,18 @@ components:
           format: "double"
           description: "1000-year MMI score"
           example: 8.0
-        mmi1500yr:
-          type: "number"
-          format: "double"
-          description: "1500-year MMI score"
-          example: 8.5
+    MmiOutput:
+      type: object
+      description: "The Modified Mercalli Intensity (MMI) is a subjective scale used to describe the observed local shaking intensity and related effects of an earthquake. The scale ranges from 1 (barely felt) to 12 (total destruction), with slight damage beginning at 6."
+      allOf:
+        - $ref: '#/components/schemas/MmiBaseOutput'
+        - type: object
+          properties:
+            mmi1500yr:
+              type: "number"
+              format: "double"
+              description: "1500-year MMI score"
+              example: 8.5
     EsdbOutput:
       type: object
       description: "results"
@@ -8927,7 +9179,7 @@ components:
           example: "No"
     UsWfRiskScoreOutput:
       type: object
-      description: "US Wild fire risk score output"
+      description: "U.S. Wildfire Risk Score Output"
       properties:
         warnings:
           $ref: '#/components/schemas/WarningOutput'
@@ -10348,6 +10600,14 @@ components:
         admin1Code: "AL"
         latitude: 30.905307
         longitude: -88.043782
+        rmsGeoModelResolutionCode: 1
+    MxAddress:
+      value:
+        countryCode: "MX"
+        countryScheme: "ISO2A"
+        countryRmsCode: "MX"
+        latitude: 31.304932
+        longitude: -115.669525
         rmsGeoModelResolutionCode: 1
   responses:
     400Response:
