@@ -1,2 +1,5 @@
 # rms-developers
-Public Repository for developer portal artifacts
+RMS Developer assets for Risk Modeler API.
+
+* OpenAPI specification
+* Postman Collection
