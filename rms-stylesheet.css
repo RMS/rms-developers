@@ -1,7 +1,12 @@
 /*
  * THEME
+ * API
+ * CHANGELOG
+ * DLs
  * FOOTER
  * ICONS
+ * PROCEDURES
+ * SYNOPSIS
  */
 
 /* THEME */
@@ -9,6 +14,135 @@
 .ThemeContext_line .rm-Header {
 	--Header-border-color:ffffff !important;
 	--Header-border-width: 0px;
+}
+
+/*API */
+
+.field-description ul {
+  list-style: initial;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+}
+
+/* CHANGELOG */
+.ChangelogPost_date2Nj3qJy6ZUmT.DateLine {
+
+  visibility: collapse  !important;
+  padding-bottom: 0px;
+}
+
+.ChangelogIcon_added1pTN1uSXzdyu {
+  background: var(--red) !important;
+}
+
+.ChangelogIcon_improved6EeszHbCOX8L {
+  background: var(--red) !important;
+}
+
+/* DEFINITION LISTS */
+
+dl.bullet {
+}
+
+dl.bullet > dt {
+  float: left;
+  margin-right: 5px;
+  font-weight: 600;
+  font-style: normal !important;
+  display: list-item;   /* This has to be "list-item"   */ 
+  list-style-type: disc;  /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type   */ 
+  list-style-position: inside;
+  margin-top: 0em !important;
+}
+
+
+dl.bullet > dt::after {
+  content: ":  ";
+}
+
+dl.bullet > dd {
+	margin-left: 0px;
+  margin-bottom: 0em !important;
+  padding: 2px 0 4px 4px !important; 
+
+}
+
+/* DESCRIPTION LISTS */
+
+
+dl.status {
+	padding: 0.5em;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.status > dt {
+    font-style: normal !important;
+    flex-basis: 35%;
+    text-align: left;
+    border-top: 1px solid #333;
+  	margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  	padding-top: 15px !important;
+    padding-bottom: 15px;
+
+}
+
+.dd {
+  padding-top: 15px !important;
+}
+
+.status > dd {
+    flex-basis: 65%;
+    flex-grow: 1;
+    border-top: 1px solid #333;
+  	margin-bottom: 0em !important;
+  	margin-top: 0em !important;
+   margin-top: 0em !important;
+	 padding-top: 15px !important;
+   padding-bottom: 15px !important;
+}
+
+
+dl.code-defs {
+	padding: 0.5em;
+}
+  
+.code-defs > div {
+    border-top: 1px solid #dfe2e5;
+  	width:100%;
+  display: flex;
+  }
+  
+.code-defs > div:nth-child(2n) {
+    background-color: #fbfcfd;
+  }
+  
+.code-defs > div > dt {
+    font-style: normal !important;
+  	
+  	width: 25%;
+    text-align: left;
+
+  	margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  	padding-top: 5px !important;
+    padding-bottom: 5px;
+}
+  
+  dl.code-defs > div > dt > code {
+  color: #b40023;
+  }
+
+.code-defs > div > dd {
+  width: 75%;
+
+ 	border-top: 1px solid  	#dfe2e5;
+  margin-bottom: 0em !important;
+  margin-top: 0em !important;
+  margin-top: 0em !important;
+	padding-top: 5px !important;
+  padding-bottom: 5px !important;
 }
 
 
@@ -276,3 +410,57 @@
 .icon-document2 {
     visibility: hidden;
 }
+
+/*
+	PROCEDURES
+*/
+
+ol > li {
+  margin-top: 1em !important;
+}
+
+ol > li > br {
+	content: "A" !important;
+	display: block !important;
+  margin-top: 1em !important;
+}
+/* SYNOPSIS */
+
+.synopsis {
+	overflow-wrap: normal;
+	word-break: normal;
+  background-color: rgb(246, 248, 250);
+	box-sizing: border-box;
+	font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+	font-size: 12.75px;
+	line-height: 18.4833px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	overflow-wrap: normal;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+	position: relative;
+	word-break: normal;
+  line-height: 6px;
+  font-weight: 600;
+  overflow-wrap: normal;
+	overflow-x: auto;
+	overflow-y: auto
+}
+
+.synopsis > .prototype {
+
+}
+.synopsis > p.parameter {
+  margin-left:12px;
+}
+
+dt > code.rdmd-code {
+  font-color:black !important;
+  font-style: normal;
+  font-weight: 600;
+} 
