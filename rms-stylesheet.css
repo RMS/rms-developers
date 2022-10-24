@@ -1,5 +1,6 @@
 /*
  * THEME
+ * ADMONITIONS
  * API
  * BANNER
  * CHANGELOG
@@ -15,6 +16,32 @@
 .ThemeContext_line .rm-Header {
 	--Header-border-color:ffffff !important;
 	--Header-border-width: 0px;
+}
+
+/*ADMONITION*/
+
+.callout[theme=📘] {
+  --emoji: unset;
+  --icon: "\f05a"; /* copied front FontAwesome */
+  --icon-color: #46b8da;
+}
+
+.callout[theme=🚧] {
+  --emoji: unset;
+  --icon: "\f0f3"; /* copied front FontAwesome */
+  --icon-color: #eea236;
+}
+
+.callout[theme=❗️] {
+  --emoji: unset;
+  --icon: "\f06a"; /* copied front FontAwesome */
+  --icon-color: #d43f3a;
+}
+
+.callout[theme=👍] {
+  --emoji: unset;
+  --icon: "\f5ad"; /* copied front FontAwesome */
+  --icon-color: rebeccapurple;
 }
 
 /*API */
