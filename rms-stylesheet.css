@@ -44,6 +44,79 @@
   --icon-color: rebeccapurple;
 }
 
+.callout.callout_okay {
+  --background: #f8e8f8;
+   --title: #6C306E;
+  --border: #6C306E;
+  }
+
+.callout.callout_okay table tr {
+  background-color: #f8e8f8;
+}
+
+.callout.callout_okay table {
+
+border-collapse:collapse;
+}
+
+
+
+.callout.callout_okay .rdmd-table table:only-child {
+margin: 12px !important;
+}
+
+
+
+.callout.callout_okay table tr {
+
+border-bottom: 1px solid black;
+}
+
+.callout.callout_okay table:not(.plain) tr:nth-child(2n) {
+  background-color: #f8e8f8;
+
+}
+
+.callout.callout_okay .markdown-body .rdmd-table table {
+  border: 0px solid red;
+}
+
+.callout.callout_okay .markdown-body .rdmd-table table {
+  border: 0px solid red;
+}
+.callout.callout_okay .markdown-body .rdmd-table table td {
+  border: 0px solid red;
+}
+.callout.callout_okay .markdown-body .rdmd-table table th {
+  border: 0px solid red;
+}
+
+.callout.callout_okay .markdown-body table td, .callout.callout_okay .markdown-body table th {
+	border: 0px !important;
+	border-collapse:collapse;
+}
+
+.callout.callout_okay .rdmd-table table {
+  border: 0px solid black;
+}
+.callout.callout_okay .rdmd-table table td {
+  border: 0px solid black;
+}
+.callout.callout_okay .rdmd-table table th {
+  border: 0px solid black;
+}
+
+.callout_okay .heading-text p {
+color: rebeccapurple;
+}
+
+.fa-solid, .fas {
+  font-weight: 600;
+	font-size: 16px;
+  color: rebeccapurple;
+}
+
+
 /*API */
 
 .field-description ul {
