@@ -122,6 +122,12 @@ color: rebeccapurple;
   --icon-color: rebeccapurple;
 }
 
+.callout.callout_ok, .callout.callout_okay, .callout.callout_success {
+--background:#f8e8f8;
+--title:rebeccapurple;
+--border:rebeccapurple;
+}
+
 
 
 /*API */
