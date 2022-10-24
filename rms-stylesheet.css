@@ -45,9 +45,9 @@
 }
 
 .callout.callout_okay {
-  --background: #f8e8f8;
+  --background: #f8e8f8 !important;
    --title: #6C306E;
-  --border: #6C306E;
+  --border: #6C306E !important;
   }
 
 .callout.callout_okay table tr {
@@ -78,17 +78,17 @@ border-bottom: 1px solid black;
 }
 
 .callout.callout_okay .markdown-body .rdmd-table table {
-  border: 0px solid red;
+  border: 0px solid black;
 }
 
 .callout.callout_okay .markdown-body .rdmd-table table {
-  border: 0px solid red;
+  border: 0px solid black;
 }
 .callout.callout_okay .markdown-body .rdmd-table table td {
-  border: 0px solid red;
+  border: 0px solid black;
 }
 .callout.callout_okay .markdown-body .rdmd-table table th {
-  border: 0px solid red;
+  border: 0px solid black;
 }
 
 .callout.callout_okay .markdown-body table td, .callout.callout_okay .markdown-body table th {
