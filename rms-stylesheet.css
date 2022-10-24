@@ -116,6 +116,13 @@ color: rebeccapurple;
   color: rebeccapurple;
 }
 
+.callout[theme=👍] {
+  --emoji: unset;
+  --icon: "\f5ad"; /* copied front FontAwesome */
+  --icon-color: rebeccapurple;
+}
+
+
 
 /*API */
 
