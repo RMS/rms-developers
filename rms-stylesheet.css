@@ -46,8 +46,8 @@
 
 .callout.callout_okay {
   --background: #f8e8f8 !important;
-   --title: rebeccapurple !important;
-  --border: rebeccapurple !important;
+  --title: rebeccapurple !important;
+  --border: #f8e8f8 !important;
   }
 
 .callout.callout_okay table tr {
@@ -110,6 +110,14 @@ border-bottom: 1px solid black;
 color: rebeccapurple;
 }
 
+.callout.callout_okay h3 p {
+text-transform: uppercase;
+color: var(--color-text-muted);
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-weight-bold);
+}
+
 .fa-solid, .fas {
   font-weight: 600;
 	font-size: 16px;
@@ -128,6 +136,27 @@ color: rebeccapurple;
 --border:rebeccapurple !important;
 }
 
+/* Idemptpotency admonition */
+.callout[theme=📷] {
+  --emoji: unset;
+  --icon: "\f057"; /* copied front FontAwesome */
+  --icon-color: #c50a50;
+}
+
+.callout.callout[theme=📷] {
+  background: var(--background);
+  border-color: var(--background);
+  color: var(--text);
+  padding: 1.33rem;
+}
+
+.callout.callout[theme=📷] h3 p {
+text-transform: uppercase;
+color: var(--color-text-muted);
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-weight-bold);
+}
 
 
 /*API */
