@@ -46,8 +46,8 @@
 
 .callout.callout_okay {
   --background: #f8e8f8 !important;
-   --title: #6C306E;
-  --border: #6C306E !important;
+   --title: rebeccapurple !important;
+  --border: rebeccapurple !important;
   }
 
 .callout.callout_okay table tr {
@@ -124,8 +124,8 @@ color: rebeccapurple;
 
 .callout.callout_ok, .callout.callout_okay, .callout.callout_success {
 --background:#f8e8f8;
---title:rebeccapurple;
---border:rebeccapurple;
+--title:rebeccapurple !important;
+--border:rebeccapurple !important;
 }
 
 
