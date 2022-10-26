@@ -186,7 +186,7 @@ font-weight: var(--font-weight-bold);
 }
 
 
-/* Workflow admonition */
+/* DEPRECATED admonition */
 .callout[theme=🍏] {
   --emoji: unset;
   --icon: "\f057"; /* copied front FontAwesome */
@@ -194,7 +194,7 @@ font-weight: var(--font-weight-bold);
 }
 
 .callout.callout[theme=🍏] {
-  background: #f8e8f8;
+  background: #fdf7f7;
   border-color: var(--background);
   color: var(--text);
   padding: 1.33rem;
@@ -202,7 +202,7 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme=🍏] h3 p {
 text-transform: uppercase;
-color: var(--color-text-muted);
+color: #c50a50;
 font-family: var(--font-family);
 font-size: 12px;
 font-weight: var(--font-weight-bold);
