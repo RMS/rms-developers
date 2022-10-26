@@ -130,6 +130,8 @@ font-weight: var(--font-weight-bold);
   --icon-color: rebeccapurple;
 }
 
+
+
 .callout.callout_ok, .callout.callout_okay, .callout.callout_success {
 --background:#f8e8f8;
 --title:rebeccapurple !important;
@@ -151,6 +153,29 @@ font-weight: var(--font-weight-bold);
 }
 
 .callout.callout[theme=📷] h3 p {
+text-transform: uppercase;
+color: var(--color-text-muted);
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-weight-bold);
+}
+
+
+/* Workflow admonition */
+.callout[theme=🍏] {
+  --emoji: unset;
+  --icon: "\f057"; /* copied front FontAwesome */
+  --icon-color: #c50a50;
+}
+
+.callout.callout[theme=🍏] {
+  background: #f8e8f8;
+  border-color: var(--background);
+  color: var(--text);
+  padding: 1.33rem;
+}
+
+.callout.callout[theme=🍏] h3 p {
 text-transform: uppercase;
 color: var(--color-text-muted);
 font-family: var(--font-family);
