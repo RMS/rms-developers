@@ -212,8 +212,8 @@ font-weight: var(--font-weight-bold);
 /* Recipe admonition */
 .callout[theme=🍎] {
   --emoji: unset;
-  --icon: "\f057"; /* copied front FontAwesome */
-  --icon-color: #c50a50;
+  --icon: "\f002"; /* copied front FontAwesome */
+  --icon-color: #eea236;
 }
 
 .callout.callout[theme=🍎] {
