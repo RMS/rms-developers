@@ -209,6 +209,31 @@ font-weight: var(--font-weight-bold);
 }
 
 
+/* Recipe admonition */
+.callout[theme=🍎] {
+  --emoji: unset;
+  --icon: "\f057"; /* copied front FontAwesome */
+  --icon-color: #c50a50;
+}
+
+.callout.callout[theme=🍎] {
+  --emoji: unset;
+  background: var(--background);
+  border-color: var(--background);
+  color: var(--text);
+  padding: 1.33rem;
+}
+
+.callout.callout[theme=🍎] h3 p {
+text-transform: uppercase;
+color: var(--color-text-muted);
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-weight-bold);
+}
+
+
+
 /*API */
 
 .field-description ul {
