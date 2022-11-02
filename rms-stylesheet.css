@@ -127,7 +127,7 @@ font-weight: var(--font-weight-bold);
 .callout.callout_okay .rdmd-table table td {
   border: 0px solid black;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px; /* REDUCE SIZE OF HEADING */
   color: var(--color-text-muted);
 }
 
@@ -138,8 +138,7 @@ font-weight: var(--font-weight-bold);
   color: var(--color-text-muted);
 }
 
-.callout.callout_okay p {
-  border: 0px solid black;
+.callout.callout_okay > {
 	font-size: 13px; /* Reduce size of text in PERMISSSIONS */
 }
 
@@ -159,7 +158,7 @@ font-weight: var(--font-weight-bold);
 
 .callout[theme=👍] {
   --emoji: unset;
-  --icon: "\f5ad"; /* copied front FontAwesome */
+  --icon: "\fa-fw"; /* copied front FontAwesome */
   --icon-color: rebeccapurple;
 }
 
