@@ -148,6 +148,11 @@ font-weight: var(--font-weight-bold);
 	margin-left: 0 rem;
 }
 
+.callout.callout > * {
+	font-size: 13px; /* Reduce size of text in PERMISSSIONS */
+	margin-left: 0 rem;
+}
+
 
 /* Space between table and text in blockquote */
 .field-description blockquote > :last-child, .markdown-body blockquote > :last-child {
