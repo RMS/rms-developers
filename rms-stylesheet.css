@@ -50,18 +50,19 @@
   --background: #f8e8f8 !important;
   --title: rebeccapurple !important;
   --border: #f8e8f8 !important;
-  background: var(--background);
-  border-color: var(--background);
+  background: var(--background) !important;
+  border-color: var(--background) !important;
   color: var(--text);
  /* padding: 1.33rem; */ 
+  padding-left: 0 !important; 
   }
 
 .callout.callout {
   background: var(--background);
-  border-color: var(--background);
+  border-color: var(--background) !important;
   color: var(--text);
  /* padding: 1.33rem; */
-	padding-left: 10px;
+	padding-left: 10px !important;
 }
 
 
@@ -97,10 +98,6 @@ border-bottom: 1px solid black;
 }
 .callout.callout_okay .markdown-body .rdmd-table table td {
   border: 0px solid black;
-}
-	.callout.callout_okay .rdmd-table table th {
-		border: 0px solid black;
-		font-size: 10px; /* IMPORTANT? */
 }
 
 .callout.callout_okay .markdown-body table td, .callout.callout_okay .markdown-body table th {
@@ -140,7 +137,7 @@ font-weight: var(--font-weight-bold);
 .callout.callout_okay .rdmd-table table th {
   border: 0px solid black;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   color: var(--color-text-muted);
 }
 
