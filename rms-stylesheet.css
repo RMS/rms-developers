@@ -156,12 +156,6 @@ font-weight: var(--font-weight-bold);
   color: rebeccapurple;
 }
 
-.callout[theme=👍] {
-  --emoji: unset;
-  --icon: "\fa-fw"; /* copied front FontAwesome */
-  --icon-color: rebeccapurple;
-}
-
 
 
 .callout.callout_ok, .callout.callout_okay, .callout.callout_success {
