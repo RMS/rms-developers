@@ -138,7 +138,7 @@ font-weight: var(--font-weight-bold);
   color: var(--color-text-muted);
 }
 
-.callout.callout_okay > {
+.callout.callout_okay > * {
 	font-size: 13px; /* Reduce size of text in PERMISSSIONS */
 }
 
