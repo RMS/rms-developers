@@ -50,13 +50,17 @@
   --background: #f8e8f8 !important;
   --title: rebeccapurple !important;
   --border: #f8e8f8 !important;
+  background: var(--background);
+  border-color: var(--background);
+  color: var(--text);
+ /* padding: 1.33rem; */ 
   }
 
 .callout.callout {
   background: var(--background);
   border-color: var(--background);
   color: var(--text);
-  padding: 1.33rem;
+ /* padding: 1.33rem; */ 
 }
 
 
@@ -95,6 +99,7 @@ border-bottom: 1px solid black;
 }
 .callout.callout_okay .markdown-body .rdmd-table table th {
   border: 0px solid black;
+	font-size: 10px;
 }
 
 .callout.callout_okay .markdown-body table td, .callout.callout_okay .markdown-body table th {
@@ -140,6 +145,7 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout_okay > * {
 	font-size: 13px; /* Reduce size of text in PERMISSSIONS */
+	margin-left: 0 rem;
 }
 
 
