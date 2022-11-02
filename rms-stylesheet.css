@@ -60,7 +60,8 @@
   background: var(--background);
   border-color: var(--background);
   color: var(--text);
- /* padding: 1.33rem; */ 
+ /* padding: 1.33rem; */
+	padding-left: 10px;
 }
 
 
@@ -97,9 +98,9 @@ border-bottom: 1px solid black;
 .callout.callout_okay .markdown-body .rdmd-table table td {
   border: 0px solid black;
 }
-.callout.callout_okay .markdown-body .rdmd-table table th {
-  border: 0px solid black;
-	font-size: 10px;
+	.callout.callout_okay .rdmd-table table th {
+		border: 0px solid black;
+		font-size: 10px; /* IMPORTANT? */
 }
 
 .callout.callout_okay .markdown-body table td, .callout.callout_okay .markdown-body table th {
