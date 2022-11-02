@@ -44,6 +44,8 @@
   --icon-color: rebeccapurple;
 }
 
+
+/* PERMISSIONS ADMONONITION */
 .callout.callout_okay {
   --background: #f8e8f8 !important;
   --title: rebeccapurple !important;
@@ -135,6 +137,12 @@ font-weight: var(--font-weight-bold);
   font-size: 12px;
   color: var(--color-text-muted);
 }
+
+.callout.callout_okay p {
+  border: 0px solid black;
+	font-size: 13px; /* Reduce size of text in PERMISSSIONS */
+}
+
 
 /* Space between table and text in blockquote */
 .field-description blockquote > :last-child, .markdown-body blockquote > :last-child {
