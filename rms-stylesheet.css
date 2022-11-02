@@ -40,7 +40,7 @@
 
 .callout[theme=👍] {
   --emoji: unset;
-  --icon: "\fa-fw"; /* copied front FontAwesome */
+  --icon: fa-fw; /* copied front FontAwesome */
   --icon-color: rebeccapurple;
 }
 
