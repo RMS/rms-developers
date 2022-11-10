@@ -226,14 +226,15 @@ font-weight: var(--font-weight-bold);
   --icon-color: rebeccapurple;
 }
 
-
-
 .callout.callout[theme=🍐] {
   background: #f8e8f8 !important;
-  border-color: #f8e8f8;
   color: var(--text);
-  padding: .5rem;
+  padding: .75rem;
 	font-size: 12px;
+/*	border: var(--border-width) solid var(--ParamContainer-border); */
+	border: solid 1px;
+	border-radius: var(--border-radius-lg);
+  border-color: rebeccapurple !important;
 }
 
 .callout.callout[theme=🍐] h3 p {
