@@ -89,18 +89,22 @@ font-weight: var(--font-weight-bold);
 --border:rebeccapurple !important;
 }
 
-/* Idemptpotency admonition */
+/* IDEMPTPOTENCY admonition */
 .callout[theme=📷] {
   --emoji: unset;
-  --icon: "\f057"; /* copied front FontAwesome */
+  --icon: ú-fw; /* copied front FontAwesome */
   --icon-color: #c50a50;
 }
 
 .callout.callout[theme=📷] {
-  background: var(--background);
+	font-size: 12px;
+  background: var(--gray100);
   border-color: var(--background);
-  color: var(--text);
-  padding: 1.33rem;
+  color: var(--gray100);
+  padding: .75rem;
+	border: solid 1px;
+	border-radius: var(--border-radius-lg);
+  border-color: var(--color-border-default);
 }
 
 .callout.callout[theme=📷] h3 p {
@@ -135,7 +139,7 @@ font-weight: var(--font-weight-bold);
 }
 
 
-/* NEW PERMISSION admonition */
+/* PERMISSION admonition */
 .callout[theme=🍐] {
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
@@ -155,7 +159,6 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme=🍐]  > * {
 	font-size: 11px;
-	margin-left: .75rem;
 }
 
 .callout.callout[theme=🍐] h3 p {
@@ -170,6 +173,7 @@ font-weight: var(--font-weight-bold);
 .callout.callout[theme=🍐] table {
 	border-collapse:collapse;
   border: 0px solid black;
+  width: 95%;
 }
 
 .callout.callout[theme=🍐] table:not(.plain) tr:nth-child(2n) {
@@ -208,7 +212,6 @@ color: rebeccapurple;
 
 .callout.callout[theme=🍐]  > * {
 	font-size: 13px; /* Reduce size of text in PERMISSSIONS */
-	margin-left: .75 rem;
 }
 
 
