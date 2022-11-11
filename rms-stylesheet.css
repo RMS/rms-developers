@@ -62,7 +62,7 @@
   border-color: var(--background) !important;
   color: var(--text);
  /* padding: 1.33rem; */
-	padding-left: 10px !important;
+	/* padding-left: 10px !important; */
 }
 
 
@@ -97,9 +97,9 @@ font-weight: var(--font-weight-bold);
 }
 
 .callout.callout[theme=📷] {
-	font-size: 12px;
+	font-size: 14px;
   background: #e3edf2;
-  border-color: #5bc0de;
+  border-color: #5bc0de !important;
   padding: .75rem;
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
