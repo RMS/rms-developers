@@ -22,19 +22,19 @@
 
 .callout[theme=📘] {
   --emoji: unset;
-  --icon: "\f05a"; /* copied front FontAwesome */
+  --icon: ú-fw; /* copied front FontAwesome */
   --icon-color: #46b8da;
 }
 
 .callout[theme=🚧] {
   --emoji: unset;
-  --icon: "\f0f3"; /* copied front FontAwesome */
+  --icon: ú-fw; /* copied front FontAwesome */
   --icon-color: #eea236;
 }
 
 .callout[theme=❗️] {
   --emoji: unset;
-  --icon: "\f06a"; /* copied front FontAwesome */
+  --icon: ú-fw; /* copied front FontAwesome */
   --icon-color: #d43f3a;
 }
 
@@ -44,6 +44,23 @@
   --icon-color: rebeccapurple;
 }
 
+
+/* INFO ADMONITION */
+
+.callout[theme=📘] {
+	font-size: 14px;
+}
+
+/* WARNING ADMONITION */
+
+.callout[theme=👍] blockquote {
+	font-size: 14px;
+}
+
+.callout[theme=👍] h3 {
+	font-size: 14px;
+	text-transform: uppercase;
+}
 
 /* PERMISSIONS ADMONONITION */
 .callout.callout_okay {
