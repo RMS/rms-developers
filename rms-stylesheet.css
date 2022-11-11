@@ -61,8 +61,7 @@
   background: var(--background);
   border-color: var(--background) !important;
   color: var(--text);
- /* padding: 1.33rem; */
-	/* padding-left: 10px !important; */
+	
 }
 
 
@@ -112,6 +111,10 @@ color: #5bc0de;
 font-family: var(--font-family);
 font-size: 12px;
 font-weight: var(--font-weight-bold);
+}
+
+.callout.callout[theme=📷] > * {
+	margin-left: 0rem;
 }
 
 
