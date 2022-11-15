@@ -62,7 +62,6 @@
 	text-transform: uppercase;
 }
 
-/* PERMISSIONS ADMONONITION */
 .callout.callout_okay {
   --background: #f8e8f8 !important;
   --title: rebeccapurple !important;
@@ -158,7 +157,38 @@ font-weight: var(--font-weight-bold);
 }
 
 
-/* PERMISSION admonition */
+/* LICENSING admonition */
+.callout[theme=🍊] {
+  --emoji: unset;
+  --icon: ú-fw; /* copied front FontAwesome */
+  --icon-color: #eea236;
+}
+
+.callout.callout[theme=🍊] {
+  background: #c50a50;
+  border-color: var(--background);
+  color: var(--text);
+  padding: .75rem;
+font-size: 12px;
+	border: solid 1px;
+	border-radius: var(--border-radius-lg);
+  border-color: #eea236 !important;
+}
+
+.callout.callout[theme=🍊] h3 p {
+text-transform: uppercase;
+color: #eea236;
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-weight-bold);
+}
+
+.callout.callout[theme=🍊] > * {
+	font-size: 11px;
+}
+
+
+/* PERMISSIONS admonition */
 .callout[theme=🍐] {
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
