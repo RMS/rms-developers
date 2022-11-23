@@ -182,6 +182,7 @@ font-weight: var(--font-weight-bold);
 }
 
 .callout.callout[theme=🍊] > * {
+	margin-left: 0;
 }
 
 
