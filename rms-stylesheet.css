@@ -168,7 +168,7 @@ font-weight: var(--font-weight-bold);
   background: #fcf8f2;
   color: var(--text);
   padding: .75rem;
-	font-size: 12px;
+	font-size: 14px;
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
   border-color: #eea236 !important;
