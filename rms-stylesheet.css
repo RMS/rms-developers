@@ -137,20 +137,20 @@ font-weight: var(--font-weight-bold);
 
 .callout[theme=🍇] {
   --emoji: unset;
-  --icon: "\f057"; /* copied front FontAwesome */
-  --icon-color: #c50a50;
+  --icon: "\f052"; /* copied front FontAwesome */
+  --icon-color: #46b8da;
 }
 
 .callout.callout[theme=🍇] {
-  background: #fdf7f7;
-  border-color: var(--background);
+  background: #e3edf2;
+  border-color: #e3edf2;
   color: var(--text);
   padding: 1.33rem;
 }
 
 .callout.callout[theme=🍇] h3 p{
 text-transform: uppercase;
-color: #c50a50;
+color: #46b8da;
 font-family: var(--font-family);
 font-size: 12px;
 font-weight: var(--font-weight-bold);
