@@ -133,6 +133,28 @@ font-weight: var(--font-weight-bold);
 	margin-left: 0rem;
 }
 
+/* INFORMATION admonition */
+
+.callout[theme=🍇] {
+  --emoji: unset;
+  --icon: "\f057"; /* copied front FontAwesome */
+  --icon-color: #c50a50;
+}
+
+.callout.callout[theme=🍇] {
+  background: #fdf7f7;
+  border-color: var(--background);
+  color: var(--text);
+  padding: 1.33rem;
+}
+
+.callout.callout[theme=🍇] h3 p{
+text-transform: uppercase;
+color: #c50a50;
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-weight-bold);
+}
 
 /* DEPRECATED admonition */
 .callout[theme=🍏] {
