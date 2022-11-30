@@ -137,7 +137,7 @@ font-weight: var(--font-weight-bold);
 
 .callout[theme=🍇] {
   --emoji: unset;
-  --icon: "\f052"; /* copied front FontAwesome */
+  --icon: "\f059"; /* copied front FontAwesome */
   --icon-color: #46b8da;
 }
 
@@ -146,6 +146,9 @@ font-weight: var(--font-weight-bold);
   border-color: #e3edf2;
   color: var(--text);
   padding: 1.33rem;
+	border: solid 1px #46b8da;
+	border-radius: var(--border-radius-lg);
+  border-color: #46b8da !important;
 }
 
 .callout.callout[theme=🍇] h3 p{
