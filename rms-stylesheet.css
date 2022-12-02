@@ -231,6 +231,7 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme=🍐]  > * {
 	font-size: 11px;
+	margin-left: .75em;
 }
 
 .callout.callout[theme=🍐] h3 p {
