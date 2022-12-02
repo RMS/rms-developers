@@ -222,6 +222,7 @@ font-weight: var(--font-weight-bold);
   background: #f8e8f8 !important;
   color: var(--text);
   padding: .75rem;
+  padding-left: 0;
 	font-size: 12px;
 /*	border: var(--border-width) solid var(--ParamContainer-border); */
 	border: solid 1px;
