@@ -18,7 +18,17 @@
 	--Header-border-width: 0px;
 }
 
-/*ADMONITION*/
+/*ADMONITION
+ * INFO = BLUE
+ * WARNING = RED
+ * IDEMPTPOTENCY = BLUE
+ * PERMISSIONS = PURPLE
+ * INFORMATION = BLUE
+ * DEPRECATED = RED
+ * LICENSING = YELLOW
+ * RECIPE = BLUE
+ *
+ * */
 
 .callout[theme=📘] {
   --emoji: unset;
@@ -104,7 +114,9 @@ font-weight: var(--font-weight-bold);
 --border:rebeccapurple !important;
 }
 
-/* IDEMPTPOTENCY admonition */
+/* BLUE
+ * IDEMPTPOTENCY admonition */
+
 .callout[theme=📷] {
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
@@ -133,7 +145,7 @@ font-weight: var(--font-weight-bold);
 	margin-left: 0rem;
 }
 
-/* INFORMATION admonition */
+/* admonition */
 
 .callout[theme=🍇] {
   --emoji: unset;
@@ -211,7 +223,7 @@ font-weight: var(--font-weight-bold);
 }
 
 
-/* PERMISSIONS admonition */
+/* PURPLE PERMISSIONS admonition */
 .callout[theme=🍐] {
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
@@ -301,24 +313,31 @@ color: rebeccapurple;
 /* RECIPE admonition */
 .callout[theme=🍎] {
   --emoji: unset;
-  --icon: "\f002"; /* copied front FontAwesome */
-  --icon-color: #eea236;
+  --icon: ú-fw; /* copied front FontAwesome */
+  --icon-color: #c50a50;
 }
 
 .callout.callout[theme=🍎] {
   --emoji: unset;
-  background: #fcf8f2;
-  border-color: #fcf8f2;
-  color: var(--text);
-  padding: 1.33rem;
+	font-size: 14px;
+  background: #e3edf2;
+  border-color: #5bc0de !important;
+  padding: .75rem;
+	border: solid 1px;
+	border-radius: var(--border-radius-lg);
+  border-color: var(--color-border-default);
 }
 
-.callout.callout[theme=🍎] h3 p {
-text-transform: uppercase;
-color: #eea236;
-font-family: var(--font-family);
-font-size: 12px;
-font-weight: var(--font-weight-bold);
+.callout.callout[theme=🍎] h3 p{
+	text-transform: uppercase;
+	color: #5bc0de;
+	font-family: var(--font-family);
+	font-size: 12px;
+	font-weight: var(--font-weight-bold);
+}
+
+.callout.callout[theme=🍎] > * {
+	margin-left: 0rem;
 }
 
 
