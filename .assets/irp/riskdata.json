@@ -25,7 +25,10 @@
   ],
   "security": [
     {
-      "RMS_Auth": []
+      "rms_api_key": []
+    },
+    {
+      "rms_bearer_token": []
     }
   ],
   "paths": {
@@ -19723,6 +19726,22 @@
             }
           }
         }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "rms_bearer_token": {
+        "type": "http",
+        "description": "RMS tenant specific bearer token to make authorized requests with temporary life span",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      },
+      "rms_api_key": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "description": "RMS tenant specific api key to make authorized requests",
+        "in": "header"
       }
     }
   }
