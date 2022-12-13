@@ -8948,12 +8948,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/analyses": {
@@ -18434,12 +18429,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/dataServers/{serverId}/databases/{databaseId}/unregister": {
@@ -18490,12 +18480,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/dataServers/{serverId}/databases": {
@@ -18579,12 +18564,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/dataServers/{serverId}/databases/{databaseId}/register": {
@@ -18645,12 +18625,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/dataServers/{serverId}/archives": {
