@@ -32,7 +32,7 @@
     }
   ],
   "paths": {
-    "/jobs/": {
+    "/jobs": {
       "get": {
         "tags": ["Riskdata Jobs"],
         "summary": "Retrieve and filter a list of jobs",
