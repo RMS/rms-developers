@@ -36,7 +36,7 @@
       "get": {
         "tags": ["Riskdata Jobs"],
         "summary": "Retrieve and filter a list of jobs",
-        "operationId": "riskdata-v1",
+        "operationId": "riskdata-v1-get-jobs",
         "parameters": [
           {
             "name": "filter",
