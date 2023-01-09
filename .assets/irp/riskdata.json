@@ -18248,56 +18248,6 @@
         }
       }
     },
-    "/dataServers/{serverId}": {
-      "get": {
-        "tags": ["DataServers"],
-        "summary": "Get DataServer Instance",
-
-        "operationId": "get-dataserver",
-        "parameters": [
-          {
-            "in": "path",
-            "name": "serverId",
-            "schema": {
-              "type": "string"
-            },
-            "required": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "tenant DB instance list is successfully retrieved.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ServerInfo"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request: Please check that you are provided all required values.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden: Access to this resource has been denied.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/dataServers/{serverId}/databases/{databaseId}/unregister": {
       "post": {
         "tags": ["Databases"],
