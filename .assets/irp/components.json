@@ -12,6 +12,14 @@
       }
     },
     "schemas": {
+      "PatchExposure": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        }
+      },
       "PatchOperation": {
         "type": "string",
         "enum": ["update"]
