@@ -172,6 +172,9 @@
       "Archive": {
         "properties": {
           "name": {
+            "type": "string"
+          },
+          "id": {
             "type": "string",
             "nullable": false
           },
