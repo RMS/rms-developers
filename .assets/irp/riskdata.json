@@ -259,7 +259,7 @@
       "post": {
         "tags": ["ProgramSets"],
         "summary": "Create Program Set",
-        "description": "",
+
         "operationId": "createProgramSet",
         "requestBody": {
           "content": {
@@ -309,7 +309,7 @@
       "get": {
         "tags": ["ProgramSets"],
         "summary": "Get ProgramSets",
-        "description": "",
+
         "operationId": "searchProgramSets",
         "parameters": [
           {
@@ -443,7 +443,7 @@
       "get": {
         "tags": ["ProgramSets"],
         "summary": "Get Program Set by Id",
-        "description": "",
+
         "operationId": "GetProgramSets",
         "parameters": [
           {
@@ -556,7 +556,7 @@
       "get": {
         "tags": ["Programs"],
         "summary": "Get Programs",
-        "description": "",
+
         "operationId": "getprograms",
         "parameters": [
           {
@@ -633,13 +633,13 @@
       "get": {
         "tags": ["Programs"],
         "summary": "Get Program by Id",
-        "description": "",
+
         "operationId": "getProgramById",
         "parameters": [
           {
             "name": "programId",
             "in": "path",
-            "description": "",
+
             "required": true,
             "schema": {
               "maxLength": 80,
@@ -741,7 +741,7 @@
       "delete": {
         "tags": ["Programs"],
         "summary": "Delete Program",
-        "description": "",
+
         "operationId": "deleteprogram",
         "parameters": [
           {
@@ -788,7 +788,7 @@
       "get": {
         "tags": ["Program Variations"],
         "summary": "Get Program Variations",
-        "description": "",
+
         "operationId": "getprogramVariations",
         "parameters": [
           {
@@ -874,7 +874,7 @@
       "get": {
         "tags": ["Program Variations"],
         "summary": "Get Program Variation by Id",
-        "description": "",
+
         "operationId": "getProgramVariationById",
         "parameters": [
           {
@@ -937,7 +937,7 @@
       "post": {
         "tags": ["BusinessHierarchysets"],
         "summary": "Create BusinessHierarchy Set",
-        "description": "",
+
         "operationId": "createBusinessHierarchySet",
         "requestBody": {
           "content": {
@@ -987,7 +987,7 @@
       "get": {
         "tags": ["BusinessHierarchysets"],
         "summary": "Get BusinessHierarchysets",
-        "description": "",
+
         "operationId": "searchBusinessHierarchysets",
         "parameters": [
           {
@@ -1120,7 +1120,7 @@
       "get": {
         "tags": ["BusinessHierarchysets"],
         "summary": "Get BusinessHierarchy Set by Id",
-        "description": "",
+
         "operationId": "GetBusinessHierarchysets",
         "parameters": [
           {
@@ -1233,7 +1233,7 @@
       "get": {
         "tags": ["BusinessHierarchies"],
         "summary": "Get BusinessHierarchies",
-        "description": "",
+
         "operationId": "getbusinesshierarchies",
         "parameters": [
           {
@@ -1310,13 +1310,13 @@
       "get": {
         "tags": ["BusinessHierarchies"],
         "summary": "Get BusinessHierarchy by Id",
-        "description": "",
+
         "operationId": "getBusinessHierarchyById",
         "parameters": [
           {
             "name": "businesshierarchyId",
             "in": "path",
-            "description": "",
+
             "required": true,
             "schema": {
               "maxLength": 80,
@@ -1418,7 +1418,7 @@
       "delete": {
         "tags": ["BusinessHierarchies"],
         "summary": "Delete BusinessHierarchy",
-        "description": "",
+
         "operationId": "deletebusinesshierarchy",
         "parameters": [
           {
@@ -1465,7 +1465,7 @@
       "get": {
         "tags": ["BusinessHierarchy Variations"],
         "summary": "Get BusinessHierarchy Variations",
-        "description": "",
+
         "operationId": "getbusinesshierarchyVariations",
         "parameters": [
           {
@@ -1551,7 +1551,7 @@
       "get": {
         "tags": ["BusinessHierarchy Variations"],
         "summary": "Get BusinessHierarchy Variation by Id",
-        "description": "",
+
         "operationId": "getBusinessHierarchyVariationById",
         "parameters": [
           {
@@ -1614,7 +1614,7 @@
       "post": {
         "tags": ["ExposureSets"],
         "summary": "Create Exposure Set",
-        "description": "",
+
         "operationId": "createExposureSet",
         "requestBody": {
           "content": {
@@ -1664,7 +1664,7 @@
       "get": {
         "tags": ["ExposureSets"],
         "summary": "Get ExposureSets",
-        "description": "",
+
         "operationId": "searchExposureSets",
         "parameters": [
           {
@@ -1797,7 +1797,7 @@
       "get": {
         "tags": ["ExposureSets"],
         "summary": "Get Exposure Set by Id",
-        "description": "",
+
         "operationId": "GetExposureSets",
         "parameters": [
           {
@@ -1848,7 +1848,7 @@
       "post": {
         "tags": ["Exposures"],
         "summary": "Create Exposure / EDM",
-        "description": "",
+
         "operationId": "dbOperationsv2",
         "parameters": [
           {
@@ -1922,7 +1922,7 @@
       "get": {
         "tags": ["Exposures"],
         "summary": "Get Exposures / EDMs",
-        "description": "",
+
         "operationId": "searchEdmsV2",
         "parameters": [
           {
@@ -1999,7 +1999,7 @@
       "get": {
         "tags": ["Exposures"],
         "summary": "Get Exposure / EDM by ID",
-        "description": "",
+
         "operationId": "searchEdmsV2ById",
         "parameters": [
           {
@@ -2082,7 +2082,7 @@
       "patch": {
         "tags": ["Exposures"],
         "summary": "Update Exposure",
-        "description": "",
+
         "operationId": "patchEdm_1",
         "parameters": [
           {
@@ -2139,7 +2139,7 @@
       "delete": {
         "tags": ["Exposures"],
         "summary": "Delete Exposure",
-        "description": "",
+
         "operationId": "deleteEdm_1",
         "parameters": [
           {
@@ -2186,7 +2186,7 @@
       "get": {
         "tags": ["ExposureVariations"],
         "summary": "Get Exposure Variations",
-        "description": "",
+
         "operationId": "searchExposureVariations",
         "parameters": [
           {
@@ -2363,7 +2363,7 @@
       "get": {
         "tags": ["Portfolios"],
         "summary": "Get portfolios",
-        "description": "",
+
         "operationId": "searchPortfoliosv2",
         "parameters": [
           {
@@ -2457,7 +2457,7 @@
       "post": {
         "tags": ["Portfolios"],
         "summary": "Create portfolio",
-        "description": "",
+
         "operationId": "createPortfoliov2",
         "parameters": [
           {
@@ -2533,7 +2533,7 @@
       "get": {
         "tags": ["Portfolios"],
         "summary": "Get portfolio",
-        "description": "",
+
         "operationId": "getPortfoliov2",
         "parameters": [
           {
@@ -2615,7 +2615,7 @@
       "put": {
         "tags": ["Portfolios"],
         "summary": "Update portfolio",
-        "description": "",
+
         "operationId": "updatePortfoliov2",
         "parameters": [
           {
@@ -2690,7 +2690,7 @@
       "delete": {
         "tags": ["Portfolios"],
         "summary": "Delete portfolio",
-        "description": "",
+
         "operationId": "deletePortfoliov2",
         "parameters": [
           {
@@ -2781,7 +2781,7 @@
       "get": {
         "tags": ["Portfolios"],
         "summary": "Get metrics by portfolio",
-        "description": "",
+
         "operationId": "getPortfolioMetricsv2",
         "parameters": [
           {
@@ -2846,7 +2846,7 @@
       "put": {
         "tags": ["Portfolios"],
         "summary": "Manage filtered accounts by portfolio",
-        "description": "",
+
         "operationId": "manageFilteredAccountsv2",
         "parameters": [
           {
@@ -2923,7 +2923,7 @@
       "get": {
         "tags": ["Portfolios"],
         "summary": "Get accounts by portfolio",
-        "description": "",
+
         "operationId": "searchPortfolioAccountsv2",
         "parameters": [
           {
@@ -3038,7 +3038,7 @@
       "put": {
         "tags": ["Portfolios"],
         "summary": "Manage accounts by portfolio",
-        "description": "",
+
         "operationId": "managePortfolioAccountsv2",
         "parameters": [
           {
@@ -3115,7 +3115,7 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get accounts",
-        "description": "",
+
         "operationId": "searchAccountsv2",
         "parameters": [
           {
@@ -3226,7 +3226,7 @@
       "post": {
         "tags": ["Accounts"],
         "summary": "Create account",
-        "description": "",
+
         "operationId": "createAccounts",
         "parameters": [
           {
@@ -3302,7 +3302,7 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get account",
-        "description": "",
+
         "operationId": "getAccounts",
         "parameters": [
           {
@@ -3374,7 +3374,7 @@
       "put": {
         "tags": ["Accounts"],
         "summary": "Update account",
-        "description": "",
+
         "operationId": "updateAccounts",
         "parameters": [
           {
@@ -3449,7 +3449,7 @@
       "delete": {
         "tags": ["Accounts"],
         "summary": "Delete account",
-        "description": "",
+
         "operationId": "deleteAccounts",
         "parameters": [
           {
@@ -3526,7 +3526,7 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get validation file by account",
-        "description": "",
+
         "operationId": "downloadValidationAccountFilev2",
         "parameters": [
           {
@@ -3615,7 +3615,7 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get metrics by account",
-        "description": "",
+
         "operationId": "getAccountMetricsv2",
         "parameters": [
           {
@@ -3689,7 +3689,7 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get countries by account",
-        "description": "",
+
         "operationId": "getCountriesByAccounts",
         "parameters": [
           {
@@ -3766,7 +3766,7 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get location level surplus treaties for  account",
-        "description": "",
+
         "operationId": "getLocationSurplusTreatiesv2",
         "parameters": [
           {
@@ -3843,7 +3843,7 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get site names for  account",
-        "description": "",
+
         "operationId": "getSiteNamesv2",
         "parameters": [
           {
@@ -3920,7 +3920,7 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Validate account",
-        "description": "",
+
         "operationId": "validateAccounts",
         "parameters": [
           {
@@ -3997,7 +3997,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Manage location conditions in batch",
-        "description": "",
+
         "operationId": "batchProcessLocationConditions",
         "parameters": [
           {
@@ -4086,7 +4086,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create building attribute",
-        "description": "",
+
         "operationId": "createBuildingAttribute",
         "parameters": [
           {
@@ -4173,7 +4173,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get locations",
-        "description": "",
+
         "operationId": "searchLocations",
         "parameters": [
           {
@@ -4276,7 +4276,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create location",
-        "description": "",
+
         "operationId": "createLocation",
         "parameters": [
           {
@@ -4352,7 +4352,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create BI peril",
-        "description": "",
+
         "operationId": "createLocationBiDetail",
         "parameters": [
           {
@@ -4439,7 +4439,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Creates location condition",
-        "description": "",
+
         "operationId": "createLocationCondition",
         "parameters": [
           {
@@ -4526,7 +4526,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create location coverage",
-        "description": "",
+
         "operationId": "createLocationCoverage",
         "parameters": [
           {
@@ -4593,7 +4593,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create EQ peril",
-        "description": "",
+
         "operationId": "createLocationEqDetail",
         "parameters": [
           {
@@ -4680,7 +4680,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create FL peril",
-        "description": "",
+
         "operationId": "createLocationFlDetail",
         "parameters": [
           {
@@ -4767,7 +4767,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create FR peril",
-        "description": "",
+
         "operationId": "createLocationFrDetail",
         "parameters": [
           {
@@ -4854,7 +4854,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create location reinsurance cession",
-        "description": "",
+
         "operationId": "createLocationReinsuranceCession",
         "parameters": [
           {
@@ -4941,7 +4941,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create TO peril",
-        "description": "",
+
         "operationId": "createLocationToDetail",
         "parameters": [
           {
@@ -5028,7 +5028,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create TR peril",
-        "description": "",
+
         "operationId": "createLocationTrDetail",
         "parameters": [
           {
@@ -5115,7 +5115,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create WC peril",
-        "description": "",
+
         "operationId": "createLocationWcDetail",
         "parameters": [
           {
@@ -5202,7 +5202,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create WS peril",
-        "description": "",
+
         "operationId": "createLocationWsDetail",
         "parameters": [
           {
@@ -5289,7 +5289,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get building attribute",
-        "description": "",
+
         "operationId": "getBuildingAttribute",
         "parameters": [
           {
@@ -5372,7 +5372,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update building attribute",
-        "description": "",
+
         "operationId": "updateBuildingAttribute",
         "parameters": [
           {
@@ -5468,7 +5468,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete building attribute",
-        "description": "",
+
         "operationId": "deleteBuildingAttribute",
         "parameters": [
           {
@@ -5546,7 +5546,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get location",
-        "description": "",
+
         "operationId": "getLocation",
         "parameters": [
           {
@@ -5618,7 +5618,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update location",
-        "description": "",
+
         "operationId": "updateLocation",
         "parameters": [
           {
@@ -5693,7 +5693,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete location",
-        "description": "",
+
         "operationId": "deleteLocation",
         "parameters": [
           {
@@ -5760,7 +5760,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get BI peril by location",
-        "description": "",
+
         "operationId": "getLocationBiDetail",
         "parameters": [
           {
@@ -5843,7 +5843,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update BI peril",
-        "description": "",
+
         "operationId": "updateLocationBiDetail",
         "parameters": [
           {
@@ -5939,7 +5939,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete BI peril",
-        "description": "",
+
         "operationId": "deleteLocationBiDetail",
         "parameters": [
           {
@@ -6017,7 +6017,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get location condition",
-        "description": "",
+
         "operationId": "getLocationConditionById",
         "parameters": [
           {
@@ -6103,7 +6103,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update location condition",
-        "description": "",
+
         "operationId": "updateLocationCondition",
         "parameters": [
           {
@@ -6199,7 +6199,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete location condition",
-        "description": "",
+
         "operationId": "deleteLocationCondition",
         "parameters": [
           {
@@ -6277,7 +6277,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Gets location coverage",
-        "description": "",
+
         "operationId": "getLocationCoverage",
         "parameters": [
           {
@@ -6360,7 +6360,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update coverage",
-        "description": "",
+
         "operationId": "updateLocationCoverage",
         "parameters": [
           {
@@ -6456,7 +6456,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete location coverage",
-        "description": "",
+
         "operationId": "deleteLocationCoverage",
         "parameters": [
           {
@@ -6534,7 +6534,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get EQ peril",
-        "description": "",
+
         "operationId": "getLocationEqDetail",
         "parameters": [
           {
@@ -6617,7 +6617,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update EQ peril",
-        "description": "",
+
         "operationId": "updateLocationEqDetail",
         "parameters": [
           {
@@ -6713,7 +6713,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete EQ peril",
-        "description": "",
+
         "operationId": "deleteLocationEqDetail",
         "parameters": [
           {
@@ -6791,7 +6791,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get FL peril",
-        "description": "",
+
         "operationId": "getLocationFlDetail",
         "parameters": [
           {
@@ -6874,7 +6874,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update FL peril",
-        "description": "",
+
         "operationId": "updateLocationFlDetail",
         "parameters": [
           {
@@ -6963,7 +6963,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete FL peril",
-        "description": "",
+
         "operationId": "deleteLocationFlDetail",
         "parameters": [
           {
@@ -7041,7 +7041,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get location FR peril",
-        "description": "",
+
         "operationId": "getLocationFrDetail",
         "parameters": [
           {
@@ -7124,7 +7124,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update FR peril",
-        "description": "",
+
         "operationId": "updateLocationFrDetail",
         "parameters": [
           {
@@ -7220,7 +7220,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete FR peril",
-        "description": "",
+
         "operationId": "deleteLocationFrDetail",
         "parameters": [
           {
@@ -7298,7 +7298,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get reinsurance cession",
-        "description": "",
+
         "operationId": "getLocationReinsuranceCessionDetail",
         "parameters": [
           {
@@ -7381,7 +7381,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update reinsurance cession",
-        "description": "",
+
         "operationId": "updateLocationReinsuranceCession",
         "parameters": [
           {
@@ -7467,7 +7467,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete reinsurance cession",
-        "description": "",
+
         "operationId": "deleteLocationReinsuranceCession",
         "parameters": [
           {
@@ -7545,7 +7545,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get TO peril",
-        "description": "",
+
         "operationId": "getLocationToDetail",
         "parameters": [
           {
@@ -7628,7 +7628,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update TO peril",
-        "description": "",
+
         "operationId": "updateLocationToDetail",
         "parameters": [
           {
@@ -7724,7 +7724,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete TO peril",
-        "description": "",
+
         "operationId": "deleteLocationToDetail",
         "parameters": [
           {
@@ -7802,7 +7802,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get TR peril",
-        "description": "",
+
         "operationId": "getLocationTrDetail",
         "parameters": [
           {
@@ -7885,7 +7885,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update TR peril",
-        "description": "",
+
         "operationId": "updateLocationTrDetail",
         "parameters": [
           {
@@ -7971,7 +7971,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete TR peril",
-        "description": "",
+
         "operationId": "deleteLocationTrDetail",
         "parameters": [
           {
@@ -8049,7 +8049,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get WC peril",
-        "description": "",
+
         "operationId": "getLocationWcDetail",
         "parameters": [
           {
@@ -8132,7 +8132,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update WC peril",
-        "description": "",
+
         "operationId": "updateLocationWcDetail",
         "parameters": [
           {
@@ -8218,7 +8218,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete WC peril",
-        "description": "",
+
         "operationId": "deleteLocationWcDetail",
         "parameters": [
           {
@@ -8296,7 +8296,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get WS peril",
-        "description": "",
+
         "operationId": "getLocationWsDetail",
         "parameters": [
           {
@@ -8379,7 +8379,7 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update WS peril",
-        "description": "",
+
         "operationId": "updateLocationWsDetail",
         "parameters": [
           {
@@ -8465,7 +8465,7 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete WS peril",
-        "description": "",
+
         "operationId": "deleteLocationWsDetail",
         "parameters": [
           {
@@ -8543,7 +8543,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Geocode address",
-        "description": "",
+
         "operationId": "geoCodeByAddress",
         "parameters": [
           {
@@ -8607,7 +8607,7 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Geocode location",
-        "description": "",
+
         "operationId": "geoCodeByLocationId",
         "parameters": [
           {
@@ -8694,7 +8694,7 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get policy conditions by location",
-        "description": "",
+
         "operationId": "getPolicyConditions",
         "parameters": [
           {
@@ -8771,7 +8771,7 @@
       "post": {
         "tags": ["Exposures"],
         "summary": "Upgrade Exposure / EDM Data Version",
-        "description": "",
+
         "operationId": "post-v2-datasources-upgrade",
         "parameters": [
           {
@@ -8837,7 +8837,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get analyses",
-        "description": "",
+
         "operationId": "getAnalysesResultsv2",
         "parameters": [
           {
@@ -8927,7 +8927,7 @@
       "delete": {
         "tags": ["Analyses"],
         "summary": "Delete analysis results",
-        "description": "",
+
         "operationId": "deleteAnalysesv2",
         "responses": {
           "204": {
@@ -9220,7 +9220,7 @@
       "delete": {
         "tags": ["Analyses"],
         "summary": "Delete PATE treaties",
-        "description": "",
+
         "operationId": "deletePateBatchv2",
         "parameters": [
           {
@@ -9526,7 +9526,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get PATE treaties",
-        "description": "",
+
         "operationId": "getPateListv2",
         "parameters": [
           {
@@ -9595,7 +9595,7 @@
       "delete": {
         "tags": ["Analyses"],
         "summary": "Delete PATE treaties by analysis",
-        "description": "",
+
         "operationId": "deletePateListv2",
         "parameters": [
           {
@@ -9641,7 +9641,7 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Generate summary report",
-        "description": "",
+
         "operationId": "summaryReportMetricsv2",
         "parameters": [
           {
@@ -9707,7 +9707,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get location AAL",
-        "description": "",
+
         "operationId": "getAALMetricsv2",
         "parameters": [
           {
@@ -9799,7 +9799,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get region details",
-        "description": "",
+
         "operationId": "getAnalysisRegionsv2",
         "parameters": [
           {
@@ -9852,7 +9852,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get cedants by analysis",
-        "description": "",
+
         "operationId": "getCedantsByAnalysisv2",
         "parameters": [
           {
@@ -9913,7 +9913,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get EP interpolation results",
-        "description": "",
+
         "operationId": "getEPInterpolateMetricResultsv2",
         "parameters": [
           {
@@ -10033,7 +10033,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get EP metrics",
-        "description": "",
+
         "operationId": "getEPMetricsByAnalysisv2",
         "parameters": [
           {
@@ -10135,7 +10135,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get ELT",
-        "description": "",
+
         "operationId": "getEventLossTableResultsv2",
         "parameters": [
           {
@@ -10253,7 +10253,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get metrics",
-        "description": "",
+
         "operationId": "getMetricsv2",
         "parameters": [
           {
@@ -10404,7 +10404,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get key losses",
-        "description": "",
+
         "operationId": "getNonEpKeyLossv2",
         "parameters": [
           {
@@ -10498,7 +10498,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get PLT",
-        "description": "",
+
         "operationId": "getPeriodLossTableResultsv2",
         "parameters": [
           {
@@ -10601,7 +10601,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get perspectives",
-        "description": "",
+
         "operationId": "getPerspectivesForAnalysisv2",
         "parameters": [
           {
@@ -10662,7 +10662,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get sampled losses",
-        "description": "",
+
         "operationId": "getSampledLossv2",
         "parameters": [
           {
@@ -10774,7 +10774,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get statistics",
-        "description": "",
+
         "operationId": "getStatisticsResultsv2",
         "parameters": [
           {
@@ -10868,7 +10868,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get treaties by analysis",
-        "description": "",
+
         "operationId": "getTreatiesListv2",
         "parameters": [
           {
@@ -10939,7 +10939,7 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get analysis treaty",
-        "description": "",
+
         "operationId": "getTreatyByIdv2",
         "parameters": [
           {
@@ -11001,7 +11001,7 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Convert perspectives",
-        "description": "",
+
         "operationId": "mapPerspectivev2",
         "parameters": [
           {
@@ -11327,7 +11327,7 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Analyze with PATE",
-        "description": "",
+
         "operationId": "processPatev2",
         "parameters": [
           {
@@ -11401,7 +11401,7 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Rerun EP",
-        "description": "",
+
         "operationId": "reRunEpv2",
         "parameters": [
           {
@@ -11717,7 +11717,7 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Analyze climate change",
-        "description": "",
+
         "operationId": "runClimateChangev2",
         "parameters": [
           {
@@ -12043,7 +12043,7 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Simulate PLT analysis",
-        "description": "",
+
         "operationId": "runELTToPLTConversionv2",
         "parameters": [
           {
@@ -12369,7 +12369,7 @@
       "put": {
         "tags": ["Analyses"],
         "summary": "Rename analysis",
-        "description": "",
+
         "operationId": "runRenameAnalysisv2",
         "parameters": [
           {
@@ -12693,7 +12693,7 @@
       "delete": {
         "tags": ["Analyses"],
         "summary": "Delete analysis result",
-        "description": "",
+
         "operationId": "deleteAnalysisv2",
         "parameters": [
           {
@@ -12999,7 +12999,7 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Convert event rates and losses",
-        "description": "",
+
         "operationId": "convertAnalysisEventv2",
         "parameters": [
           {
@@ -13325,7 +13325,7 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get aggregate portfolios",
-        "description": "",
+
         "operationId": "searchAggregatePortfoliosv2",
         "parameters": [
           {
@@ -13419,7 +13419,7 @@
       "post": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Create aggregate portfolio",
-        "description": "",
+
         "operationId": "createAggregatePortfoliov2",
         "parameters": [
           {
@@ -13495,7 +13495,7 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get aggregate portfolio",
-        "description": "",
+
         "operationId": "getAggregatePortfolioByIdv2",
         "parameters": [
           {
@@ -13567,7 +13567,7 @@
       "put": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Update aggregate portfolio",
-        "description": "",
+
         "operationId": "updateAggregatePortfoliov2",
         "parameters": [
           {
@@ -13642,7 +13642,7 @@
       "delete": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Delete aggregate portfolio",
-        "description": "",
+
         "operationId": "deleteAggregatePortfoliov2",
         "parameters": [
           {
@@ -13719,7 +13719,7 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get metrics by aggregate portfolio",
-        "description": "",
+
         "operationId": "getAggregatePortfolioMetricsv2",
         "parameters": [
           {
@@ -13793,7 +13793,7 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get treaties by aggregate portfolio",
-        "description": "",
+
         "operationId": "getAggregatePortfolioTreatiesv2",
         "parameters": [
           {
@@ -13867,7 +13867,7 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get countries by aggregate portfolio",
-        "description": "",
+
         "operationId": "getCountriesByAggregatePortfoliov2",
         "parameters": [
           {
@@ -13941,7 +13941,7 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get aggregate exposures by aggregate",
-        "description": "",
+
         "operationId": "searchAggregateExposuresv2",
         "parameters": [
           {
@@ -14031,7 +14031,7 @@
       "get": {
         "tags": ["Branches"],
         "summary": "Get branches",
-        "description": "",
+
         "operationId": "getBranches",
         "parameters": [
           {
@@ -14126,7 +14126,7 @@
       "post": {
         "tags": ["Branches"],
         "summary": "Create branch",
-        "description": "",
+
         "operationId": "createBranch",
         "parameters": [
           {
@@ -14212,7 +14212,7 @@
       "get": {
         "tags": ["Branches"],
         "summary": "Get branch by ID",
-        "description": "",
+
         "operationId": "getBranchById",
         "parameters": [
           {
@@ -14293,7 +14293,7 @@
       "put": {
         "tags": ["Branches"],
         "summary": "Update branch",
-        "description": "",
+
         "operationId": "updateBranch",
         "parameters": [
           {
@@ -14377,7 +14377,7 @@
       "delete": {
         "tags": ["Branches"],
         "summary": "Delete branch",
-        "description": "",
+
         "operationId": "deleteBranch",
         "parameters": [
           {
@@ -14453,7 +14453,7 @@
       "get": {
         "tags": ["Cedants"],
         "summary": "Get cedants",
-        "description": "",
+
         "operationId": "getCedants",
         "parameters": [
           {
@@ -14548,7 +14548,7 @@
       "post": {
         "tags": ["Cedants"],
         "summary": "Create cedant",
-        "description": "",
+
         "operationId": "createCedant",
         "parameters": [
           {
@@ -14634,7 +14634,7 @@
       "get": {
         "tags": ["Cedants"],
         "summary": "Get cedant",
-        "description": "",
+
         "operationId": "getCedantById",
         "parameters": [
           {
@@ -14716,7 +14716,7 @@
       "put": {
         "tags": ["Cedants"],
         "summary": "Update cedant",
-        "description": "",
+
         "operationId": "updateCedant",
         "parameters": [
           {
@@ -14801,7 +14801,7 @@
       "delete": {
         "tags": ["Cedants"],
         "summary": "Delete cedant",
-        "description": "",
+
         "operationId": "deleteCedant",
         "parameters": [
           {
@@ -14878,7 +14878,7 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policy condition",
-        "description": "",
+
         "operationId": "getPolicyConditionTemplates",
         "parameters": [
           {
@@ -14951,7 +14951,7 @@
       "get": {
         "tags": ["Utilities"],
         "summary": "Get facultataives",
-        "description": "",
+
         "operationId": "getFacultatives",
         "parameters": [
           {
@@ -15046,7 +15046,7 @@
       "post": {
         "tags": ["Utilities"],
         "summary": "Create facultative",
-        "description": "",
+
         "operationId": "createFacultative",
         "parameters": [
           {
@@ -15132,7 +15132,7 @@
       "get": {
         "tags": ["Utilities"],
         "summary": "Get facultative by ID",
-        "description": "",
+
         "operationId": "getFacultativeById",
         "parameters": [
           {
@@ -15214,7 +15214,7 @@
       "put": {
         "tags": ["Utilities"],
         "summary": "Update facultative",
-        "description": "",
+
         "operationId": "updateFacultative",
         "parameters": [
           {
@@ -15299,7 +15299,7 @@
       "delete": {
         "tags": ["Utilities"],
         "summary": "Delete facultative",
-        "description": "",
+
         "operationId": "deleteFacultative",
         "parameters": [
           {
@@ -15376,7 +15376,7 @@
       "post": {
         "tags": ["Utilities"],
         "summary": "Update exposures dry run",
-        "description": "",
+
         "operationId": "dryRun",
         "parameters": [
           {
@@ -15478,7 +15478,7 @@
       "post": {
         "tags": ["Utilities"],
         "summary": "Update exposures",
-        "description": "",
+
         "operationId": "globalEdit",
         "parameters": [
           {
@@ -15677,7 +15677,7 @@
       "post": {
         "tags": ["Line of Business"],
         "summary": "Create line of business",
-        "description": "",
+
         "operationId": "createLineOfBusiness",
         "parameters": [
           {
@@ -15753,7 +15753,7 @@
       "get": {
         "tags": ["Line of Business"],
         "summary": "Get line of business by ID",
-        "description": "",
+
         "operationId": "getLineOfBusinessById",
         "parameters": [
           {
@@ -15835,7 +15835,7 @@
       "put": {
         "tags": ["Line of Business"],
         "summary": "Update line of business",
-        "description": "",
+
         "operationId": "updateLineOfBusiness",
         "parameters": [
           {
@@ -15920,7 +15920,7 @@
       "delete": {
         "tags": ["Line of Business"],
         "summary": "Delete line of business",
-        "description": "",
+
         "operationId": "deleteLineOfBusiness",
         "parameters": [
           {
@@ -15997,7 +15997,7 @@
       "get": {
         "tags": ["Policy Conditions"],
         "summary": "Get policy conditions",
-        "description": "",
+
         "operationId": "getAllPolicyConditions",
         "parameters": [
           {
@@ -16060,7 +16060,7 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Back fill policy condition",
-        "description": "",
+
         "operationId": "backFillPolicyCondition",
         "parameters": [
           {
@@ -16148,7 +16148,7 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Copy policy",
-        "description": "",
+
         "operationId": "copyPolicy",
         "parameters": [
           {
@@ -16224,7 +16224,7 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policies",
-        "description": "",
+
         "operationId": "searchPolicies",
         "parameters": [
           {
@@ -16319,7 +16319,7 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Create policy",
-        "description": "",
+
         "operationId": "createPolicy",
         "parameters": [
           {
@@ -16395,7 +16395,7 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Create policy condition",
-        "description": "",
+
         "operationId": "createPolicyCondition",
         "parameters": [
           {
@@ -16482,7 +16482,7 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Creates policy condition criteria",
-        "description": "",
+
         "operationId": "createPolicyConditionCriteria",
         "parameters": [
           {
@@ -16580,7 +16580,7 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Create policy coverage",
-        "description": "",
+
         "operationId": "createPolicyCoverage",
         "parameters": [
           {
@@ -16667,7 +16667,7 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Create reinsurance cession",
-        "description": "",
+
         "operationId": "createPolicyReinsuranceCession",
         "parameters": [
           {
@@ -16754,7 +16754,7 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policy",
-        "description": "",
+
         "operationId": "getPolicy",
         "parameters": [
           {
@@ -16826,7 +16826,7 @@
       "put": {
         "tags": ["Policies"],
         "summary": "Update policy",
-        "description": "",
+
         "operationId": "updatePolicy",
         "parameters": [
           {
@@ -16901,7 +16901,7 @@
       "delete": {
         "tags": ["Policies"],
         "summary": "Delete policy",
-        "description": "",
+
         "operationId": "deletePolicy",
         "parameters": [
           {
@@ -16968,7 +16968,7 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policy condition",
-        "description": "",
+
         "operationId": "getPolicyCondition",
         "parameters": [
           {
@@ -17051,7 +17051,7 @@
       "put": {
         "tags": ["Policies"],
         "summary": "Update policy condition",
-        "description": "",
+
         "operationId": "updatePolicyCondition",
         "parameters": [
           {
@@ -17147,7 +17147,7 @@
       "delete": {
         "tags": ["Policies"],
         "summary": "Delete policy condition",
-        "description": "",
+
         "operationId": "deletePolicyCondition",
         "parameters": [
           {
@@ -17225,7 +17225,7 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policy condition criteria",
-        "description": "",
+
         "operationId": "getPolicyConditionCriteria",
         "parameters": [
           {
@@ -17319,7 +17319,7 @@
       "put": {
         "tags": ["Policies"],
         "summary": "Update policy condition criteria",
-        "description": "",
+
         "operationId": "updatePolicyConditionCriteria",
         "parameters": [
           {
@@ -17416,7 +17416,7 @@
       "delete": {
         "tags": ["Policies"],
         "summary": "Delete policy condition criteria",
-        "description": "",
+
         "operationId": "deletePolicyConditionCriteria",
         "parameters": [
           {
@@ -17505,7 +17505,7 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policy coverage",
-        "description": "",
+
         "operationId": "getPolicyCoverage",
         "parameters": [
           {
@@ -17588,7 +17588,7 @@
       "put": {
         "tags": ["Policies"],
         "summary": "Update policy coverage",
-        "description": "",
+
         "operationId": "updatePolicyCoverage",
         "parameters": [
           {
@@ -17674,7 +17674,7 @@
       "delete": {
         "tags": ["Policies"],
         "summary": "Delete policy coverage",
-        "description": "",
+
         "operationId": "deletePolicyCoverage",
         "parameters": [
           {
@@ -17752,7 +17752,7 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get reinsurance cession",
-        "description": "",
+
         "operationId": "getPolicyReinsuranceCession",
         "parameters": [
           {
@@ -17835,7 +17835,7 @@
       "put": {
         "tags": ["Policies"],
         "summary": "Update reinsurance cession",
-        "description": "",
+
         "operationId": "updatePolicyReinsuranceCession",
         "parameters": [
           {
@@ -17921,7 +17921,7 @@
       "delete": {
         "tags": ["Policies"],
         "summary": "Delete reinsurance cession",
-        "description": "",
+
         "operationId": "deletePolicyReinsuranceCession",
         "parameters": [
           {
@@ -17999,7 +17999,7 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get location conditions",
-        "description": "",
+
         "operationId": "getLocationConditions",
         "parameters": [
           {
@@ -18087,7 +18087,7 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get surplus treaties",
-        "description": "",
+
         "operationId": "getSurplusTreaties",
         "parameters": [
           {
@@ -18160,12 +18160,12 @@
         }
       }
     },
-    "/dataServers/{serverId}/": {
+    "/dataServers": {
       "get": {
         "tags": ["DataServers"],
-        "summary": "Get SQL Server instances",
-        "description": "",
-        "operationId": "searchDbInstancesv2",
+        "summary": "Search Data Server instances",
+
+        "operationId": "search-dataServers",
         "parameters": [
           {
             "in": "path",
@@ -18248,11 +18248,61 @@
         }
       }
     },
+    "/dataServers/{serverId}": {
+      "get": {
+        "tags": ["DataServers"],
+        "summary": "Get DataServer Instance",
+
+        "operationId": "get-dataserver",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "serverId",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "tenant DB instance list is successfully retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ServerInfo"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource has been denied.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/dataServers/{serverId}/databases/{databaseId}/unregister": {
       "post": {
         "tags": ["Databases"],
         "summary": "Deregister EDM",
-        "description": "",
+
         "operationId": "deregisterDatabasev2",
         "parameters": [
           {
@@ -18303,7 +18353,7 @@
       "get": {
         "tags": ["Databases"],
         "summary": "Get data modules on Data Bridge",
-        "description": "",
+
         "operationId": "getAvailableDatabasesv2",
         "parameters": [
           {
@@ -18387,7 +18437,7 @@
       "post": {
         "tags": ["Databases"],
         "summary": "Register EDM",
-        "description": "",
+
         "operationId": "registerDatabaseV2",
         "parameters": [
           {
@@ -18635,7 +18685,7 @@
       "get": {
         "tags": ["Domains"],
         "summary": "Get entity by domain tablespace",
-        "description": "",
+
         "operationId": "getEntitiesMetaOrValuesv1",
         "parameters": [
           {
@@ -18714,7 +18764,7 @@
       "post": {
         "tags": ["Domains"],
         "summary": "Create currency",
-        "description": "",
+
         "operationId": "createCurrencyv1",
         "parameters": [
           {
@@ -18817,7 +18867,7 @@
       "get": {
         "tags": ["Domains"],
         "summary": "Get domains",
-        "description": "",
+
         "operationId": "getDomainsv1",
         "parameters": [
           {
@@ -18864,7 +18914,7 @@
       "get": {
         "tags": ["Domains"],
         "summary": "Get entities by domain tablespace",
-        "description": "",
+
         "operationId": "getEntitiesv1",
         "parameters": [
           {
@@ -18939,7 +18989,7 @@
       "get": {
         "tags": ["Domains"],
         "summary": "Get attributes domain tablespace entity",
-        "description": "",
+
         "operationId": "getEntityAttributesv1",
         "parameters": [
           {
@@ -19038,7 +19088,7 @@
       "get": {
         "tags": ["Domains"],
         "summary": "Get entity values",
-        "description": "",
+
         "operationId": "getEntityValuesv1",
         "parameters": [
           {
@@ -19177,7 +19227,7 @@
       "get": {
         "tags": ["Domains"],
         "summary": "Get hazards",
-        "description": "",
+
         "operationId": "getHazardsv1",
         "parameters": [
           {
@@ -19319,7 +19369,7 @@
       "get": {
         "tags": ["Domains"],
         "summary": "Get secondary modifiers",
-        "description": "",
+
         "operationId": "getSecondaryModifiersv1",
         "parameters": [
           {
@@ -19461,7 +19511,7 @@
       "get": {
         "tags": ["Domains"],
         "summary": "Get tablespaces",
-        "description": "",
+
         "operationId": "getTablespacesv1",
         "parameters": [
           {
