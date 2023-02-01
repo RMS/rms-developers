@@ -10625,7 +10625,7 @@
           },
           "namespace": {
             "type": "string",
-            "enum": ["IR_PLATFORM", "DATA_BRIDGE"]
+            "enum": ["PLATFORM", "DATA_BRIDGE"]
           },
           "id": {
             "type": "integer",
@@ -10634,6 +10634,15 @@
           "status": {
             "type": "string",
             "enum": ["ACTIVE", "INACTIVE"]
+          },
+          "totalDiskSpaceInMb": {
+            "type": "string"
+          },
+          "availableDiskSpaceInMb": {
+            "type": "string"
+          },
+          "usedDiskSpaceInMb": {
+            "type": "string"
           },
           "host": {
             "type": "string",
@@ -11237,7 +11246,7 @@
           },
           "serverNamespace": {
             "type": "string",
-            "enum": ["IR_PLATFORM", "DATA_BRIDGE"]
+            "enum": ["PLATFROM", "DATA_BRIDGE"]
           },
           "owner": {
             "type": "string"
