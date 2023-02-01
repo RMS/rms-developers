@@ -12,6 +12,38 @@
       }
     },
     "schemas": {
+      "PatchSecurableSetMultiValue": {
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": ["add", "remove"]
+          },
+          "targetProperty": {
+            "description": "property to be updated",
+            "type": "string",
+            "enum": ["groupIds"]
+          },
+          "value": {
+            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PatchMultiValues"
+          }
+        }
+      },
+      "PatchExposureSetSingleValue": {
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": ["update"]
+          },
+          "targetProperty": {
+            "description": "property to be updated",
+            "type": "string",
+            "enum": ["name"]
+          },
+          "value": {
+            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PatchSingleValue"
+          }
+        }
+      },
       "PatchExposure": {
         "type": "object",
         "properties": {
