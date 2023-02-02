@@ -199,7 +199,7 @@
         },
         "responses": {
           "202": {
-            "description": "Accepted",
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
@@ -2123,7 +2123,7 @@
         ],
         "responses": {
           "202": {
-            "description": "Accepted",
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
@@ -2860,7 +2860,7 @@
         },
         "responses": {
           "202": {
-            "description": "Accepted",
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
@@ -3052,7 +3052,7 @@
         },
         "responses": {
           "202": {
-            "description": "Accepted",
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
@@ -8764,7 +8764,7 @@
         },
         "responses": {
           "202": {
-            "description": "Accepted",
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
@@ -16075,7 +16075,7 @@
         ],
         "responses": {
           "202": {
-            "description": "Accepted",
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
@@ -18213,7 +18213,7 @@
         ],
         "responses": {
           "202": {
-            "description": "Accepted",
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
@@ -18358,7 +18358,7 @@
         },
         "responses": {
           "202": {
-            "description": "Accepted",
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
