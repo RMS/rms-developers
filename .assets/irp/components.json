@@ -9466,6 +9466,20 @@
           }
         }
       },
+      "PatchPortfolio": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "number": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
       "PortfolioMetrics": {
         "type": "object",
         "properties": {
