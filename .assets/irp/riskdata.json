@@ -2578,7 +2578,7 @@
           }
         }
       },
-      "put": {
+      "patch": {
         "tags": ["Portfolios"],
         "summary": "Update portfolio",
 
