@@ -2437,15 +2437,6 @@
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
               "type": "string"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -2524,15 +2515,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -2606,22 +2588,13 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Portfolio"
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PatchPortfolio"
               }
             }
           },
@@ -2694,15 +2667,6 @@
                 "PORTFOLIO_ALL_ACCOUNTS",
                 "PORTFOLIO_EXCEPT_ACCOUNTS"
               ]
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -2836,15 +2800,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -3029,15 +2984,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -3206,15 +3152,6 @@
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
               "type": "string"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -3293,15 +3230,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -3364,15 +3292,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -3439,15 +3358,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -3516,15 +3426,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -3606,15 +3507,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -3679,15 +3571,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -3757,15 +3640,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -3833,15 +3707,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -3911,15 +3776,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -3975,15 +3831,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           }
@@ -4077,15 +3924,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -4151,15 +3989,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -4256,15 +4085,6 @@
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
               "type": "string"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -4342,15 +4162,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -4430,15 +4241,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -4517,15 +4319,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -4583,15 +4376,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -4671,15 +4455,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -4757,15 +4532,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -4845,15 +4611,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -4931,15 +4688,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -5019,15 +4767,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -5106,15 +4845,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -5192,15 +4922,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -5291,15 +5012,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -5373,15 +5085,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -5470,15 +5173,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -5536,15 +5230,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -5608,15 +5293,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -5683,15 +5359,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -5761,15 +5428,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -5844,15 +5502,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -5941,15 +5590,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -6018,15 +5658,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -6104,15 +5735,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -6201,15 +5823,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -6278,15 +5891,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -6361,15 +5965,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -6458,15 +6053,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -6535,15 +6121,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -6618,15 +6195,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -6715,15 +6283,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -6792,15 +6351,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -6875,15 +6425,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -6965,15 +6506,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -7042,15 +6574,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -7125,15 +6648,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -7222,15 +6736,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -7299,15 +6804,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -7382,15 +6878,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -7469,15 +6956,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -7546,15 +7024,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -7629,15 +7098,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -7726,15 +7186,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -7803,15 +7254,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -7886,15 +7328,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -7973,15 +7406,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -8050,15 +7474,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -8133,15 +7548,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -8220,15 +7626,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -8297,15 +7694,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -8380,15 +7768,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -8466,15 +7845,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -8598,15 +7968,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -8684,15 +8045,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -13399,15 +12751,6 @@
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
               "type": "string"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -13486,15 +12829,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -13557,15 +12891,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -13632,15 +12957,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -13710,15 +13026,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -13783,15 +13090,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -13858,15 +13156,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -13931,15 +13220,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           },
           {
@@ -14009,15 +13289,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -14104,15 +13375,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           }
@@ -14202,15 +13464,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -14271,15 +13524,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -14359,15 +13603,6 @@
             }
           },
           {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "id",
             "in": "path",
             "description": "ID of the branch.",
@@ -14431,15 +13666,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -14526,15 +13752,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           }
@@ -14625,15 +13842,6 @@
               "minLength": 1,
               "type": "string"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -14694,15 +13902,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -14783,15 +13982,6 @@
             }
           },
           {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "id",
             "in": "path",
             "description": "ID of the cedant.",
@@ -14868,15 +14058,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -14929,15 +14110,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -15024,15 +14196,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           }
@@ -15123,15 +14286,6 @@
               "minLength": 1,
               "type": "string"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -15192,15 +14346,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -15277,15 +14422,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -15385,15 +14521,6 @@
                 "AGGPORTFOLIO"
               ]
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -15487,15 +14614,6 @@
                 "AGGPORTFOLIO"
               ]
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -15560,15 +14678,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -15657,15 +14766,6 @@
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
               "type": "string"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -15744,15 +14844,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -15813,15 +14904,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -15902,15 +14984,6 @@
             }
           },
           {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "id",
             "in": "path",
             "description": "ID number of the location.",
@@ -15975,15 +15048,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           }
@@ -16062,15 +15126,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -16126,15 +15181,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           }
@@ -16202,15 +15248,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
               "type": "string"
             }
           },
@@ -16299,15 +15336,6 @@
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
               "type": "string"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -16385,15 +15413,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -16484,15 +15503,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -16570,15 +15580,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -16658,15 +15659,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "requestBody": {
@@ -16745,15 +15737,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -16816,15 +15799,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -16891,15 +15865,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -16969,15 +15934,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -17052,15 +16008,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -17149,15 +16096,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -17237,15 +16175,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -17331,15 +16260,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -17429,15 +16349,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -17506,15 +16417,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -17589,15 +16491,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -17676,15 +16569,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -17753,15 +16637,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -17836,15 +16711,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -17923,15 +16789,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -18001,15 +16858,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -18077,15 +16925,6 @@
               "minimum": 1,
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
