@@ -2345,14 +2345,6 @@
             }
           },
           {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "filter",
             "in": "query",
             "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
@@ -2871,14 +2863,6 @@
             }
           },
           {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "filter",
             "in": "query",
             "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
@@ -3039,14 +3023,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "schema": {
               "type": "string"
             }
           },
@@ -12655,14 +12631,6 @@
               "maxLength": 80,
               "minLength": 1,
               "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "datasource",
-            "in": "query",
-            "description": "Name of the data source.",
-            "schema": {
               "type": "string"
             }
           },
