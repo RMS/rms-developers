@@ -3059,23 +3059,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "portfoliofilter",
-            "in": "query",
-            "description": "If This search was triggered from portfolio starting at _0_.",
-            "schema": {
-              "type": "boolean"
-            }
-          },
-          {
-            "name": "policyExpirationDays",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 120
-            }
           }
         ],
         "responses": {
