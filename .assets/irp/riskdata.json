@@ -2148,21 +2148,13 @@
         }
       }
     },
-    "/exposureSets/{exposureSetId}/variations": {
+    "/exposureVariations": {
       "get": {
         "tags": ["ExposureVariations"],
         "summary": "Get Exposure Variations",
 
         "operationId": "searchExposureVariations",
         "parameters": [
-          {
-            "name": "exposureSetId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
           {
             "name": "filter",
             "in": "query",
@@ -2205,7 +2197,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureSearchResult"
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureVariation"
+                  }
                 }
               }
             }
@@ -2233,20 +2228,12 @@
         }
       }
     },
-    "/exposureSets/{exposureSetId}/variations/{variationId}": {
+    "/exposureVariations/{variationId}": {
       "get": {
         "tags": ["ExposureVariations"],
         "summary": "Get Exposure Variation by ID",
         "operationId": "getExposureVariationsById",
         "parameters": [
-          {
-            "name": "exposureSetId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
           {
             "name": "variationId",
             "in": "path",
@@ -2297,7 +2284,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Exposure"
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureVariation"
                 }
               }
             }

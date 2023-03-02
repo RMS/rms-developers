@@ -12,6 +12,82 @@
       }
     },
     "schemas": {
+      "Exposurevariation": {
+        "type": "object",
+        "properties": {
+          "exposureUri": {
+            "type": "string",
+            "format": "uri"
+          },
+          "exposuretype": {
+            "type": "string"
+          },
+          "number": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "updatedBy": {
+            "type": "string"
+          },
+          "addressScheme": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "variationId": {
+            "type": "string"
+          },
+          "currencyScheme": {
+            "type": "string"
+          },
+          "perils": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "currencyCode": {
+            "type": "string"
+          },
+          "tiv": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "counts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "accounts": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "policies": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "locations": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          },
+          "createUserId": {
+            "type": "string"
+          },
+          "edmGuid": {
+            "type": "string"
+          },
+          "edmName": {
+            "type": "string"
+          }
+        }
+      },
       "PatchSecurableSetMultiValue": {
         "properties": {
           "operation": {
