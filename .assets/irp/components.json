@@ -12,7 +12,7 @@
       }
     },
     "schemas": {
-      "Exposurevariation": {
+      "ExposureVariation": {
         "type": "object",
         "properties": {
           "exposureUri": {
