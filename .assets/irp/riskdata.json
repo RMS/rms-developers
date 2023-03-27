@@ -487,6 +487,48 @@
             }
           }
         }
+      },
+      "delete": {
+        "tags": ["ProgramSets"],
+        "summary": "Delete Program Set by Id",
+
+        "operationId": "DeleteProgramSetById",
+        "parameters": [
+          {
+            "name": "programSetId",
+            "in": "path",
+            "description": "ID for Program Set to update.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/programSets/{programSetId}/programs": {
@@ -1142,6 +1184,48 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": ["BusinessHierarchysets"],
+        "summary": "Delete BusinessHierarchy Set by Id",
+
+        "operationId": "DeleteBusinessHierarchysetById",
+        "parameters": [
+          {
+            "name": "businessHierarchySetId",
+            "in": "path",
+            "description": "ID for BusinessHierarchy Set to update.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -1848,6 +1932,55 @@
             }
           }
         }
+      },
+      "delete": {
+        "tags": ["ExposureSets"],
+        "summary": "Delete Exposure Set by Id",
+
+        "operationId": "DeleteExposureSetById",
+        "parameters": [
+          {
+            "name": "exposureSetId",
+            "in": "path",
+            "description": "ID for Exposure Set to update.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureSet"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/exposureSets/{exposureSetId}/exposures": {
@@ -2013,7 +2146,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -2059,13 +2193,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -2111,13 +2242,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -2322,13 +2450,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -2408,13 +2533,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -2475,13 +2597,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -2548,13 +2667,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -2614,13 +2730,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -2696,13 +2809,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -2761,13 +2871,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -2829,13 +2936,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -2936,13 +3040,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3004,13 +3105,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3090,13 +3188,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -3157,13 +3252,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3220,13 +3312,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3286,13 +3375,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3354,13 +3440,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3434,13 +3517,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3499,13 +3579,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3567,13 +3644,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3635,13 +3709,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3703,13 +3774,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3771,13 +3839,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -3851,13 +3916,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -3929,13 +3991,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4023,13 +4082,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -4090,13 +4146,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4158,7 +4211,7 @@
         }
       }
     },
-    "/exposures/{exposureId}/locations/{id}/locationcondition": {
+    "/exposures/{exposureId}/locations/{id}/locationconditions": {
       "post": {
         "tags": ["Locations"],
         "summary": "Creates location condition",
@@ -4168,13 +4221,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4246,13 +4296,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4304,13 +4351,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4382,13 +4426,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4460,13 +4501,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4538,13 +4576,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4616,13 +4651,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4694,13 +4726,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4772,13 +4801,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4850,13 +4876,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -4928,13 +4951,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5002,13 +5022,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5089,13 +5106,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5158,13 +5172,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5221,13 +5232,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5287,13 +5295,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5345,13 +5350,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5419,13 +5421,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5506,13 +5505,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5565,7 +5561,7 @@
         }
       }
     },
-    "/exposures/{exposureId}/locations/{id}/locationcondition/{conditionid}": {
+    "/exposures/{exposureId}/locations/{id}/locationconditions/{conditionid}": {
       "get": {
         "tags": ["Locations"],
         "summary": "Get location condition",
@@ -5575,13 +5571,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5652,13 +5645,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5739,13 +5729,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5808,13 +5795,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5882,13 +5866,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -5969,13 +5950,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6038,13 +6016,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6112,13 +6087,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6199,13 +6171,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6268,13 +6237,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6342,13 +6308,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6422,13 +6385,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6491,13 +6451,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6565,13 +6522,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6652,13 +6606,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6721,13 +6672,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6795,13 +6743,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6872,13 +6817,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -6941,13 +6883,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7015,13 +6954,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7102,13 +7038,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7171,13 +7104,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7245,13 +7175,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7322,13 +7249,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7391,13 +7315,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7465,13 +7386,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7542,13 +7460,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7611,13 +7526,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7685,13 +7597,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7762,13 +7671,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7831,13 +7737,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -7895,13 +7798,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -7973,13 +7873,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -8043,10 +7940,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -9210,7 +9105,7 @@
             }
           },
           {
-            "name": "exposureId",
+            "name": "exposureResourceId",
             "in": "query",
             "description": "Exposure ID",
             "schema": {
@@ -9220,7 +9115,7 @@
             }
           },
           {
-            "name": "exposureType",
+            "name": "exposureResourceType",
             "in": "query",
             "description": "Exposure type",
             "schema": {
@@ -9330,7 +9225,7 @@
             }
           },
           {
-            "name": "exposureId",
+            "name": "exposureResourceId",
             "in": "query",
             "description": "Exposure ID",
             "schema": {
@@ -9340,7 +9235,7 @@
             }
           },
           {
-            "name": "exposureType",
+            "name": "exposureResourceType",
             "in": "query",
             "description": "Exposure type",
             "schema": {
@@ -9441,7 +9336,7 @@
             }
           },
           {
-            "name": "exposureId",
+            "name": "exposureResourceId",
             "in": "query",
             "description": "Exposure ID",
             "schema": {
@@ -9451,7 +9346,7 @@
             }
           },
           {
-            "name": "exposureType",
+            "name": "exposureResourceType",
             "in": "query",
             "description": "Exposure type",
             "schema": {
@@ -9701,7 +9596,7 @@
             }
           },
           {
-            "name": "exposureId",
+            "name": "exposureResourceId",
             "in": "query",
             "description": "Exposure ID",
             "schema": {
@@ -9711,7 +9606,7 @@
             }
           },
           {
-            "name": "exposureType",
+            "name": "exposureResourceType",
             "in": "query",
             "description": "Exposure type",
             "schema": {
@@ -9804,7 +9699,7 @@
             }
           },
           {
-            "name": "exposureId",
+            "name": "exposureResourceId",
             "in": "query",
             "description": "Exposure ID",
             "schema": {
@@ -9814,7 +9709,7 @@
             }
           },
           {
-            "name": "exposureType",
+            "name": "exposureResourceType",
             "in": "query",
             "description": "Exposure type",
             "schema": {
@@ -9879,7 +9774,7 @@
             }
           },
           {
-            "name": "exposureType",
+            "name": "exposureResourceType",
             "in": "query",
             "description": "Exposure type",
             "schema": {
@@ -9968,7 +9863,7 @@
             }
           },
           {
-            "name": "exposureId",
+            "name": "exposureResourceId",
             "in": "query",
             "description": "Exposure ID",
             "schema": {
@@ -9978,7 +9873,7 @@
             }
           },
           {
-            "name": "exposureType",
+            "name": "exposureResourceType",
             "in": "query",
             "description": "Exposure type",
             "schema": {
@@ -10071,7 +9966,7 @@
             }
           },
           {
-            "name": "exposureId",
+            "name": "exposureResourceId",
             "in": "query",
             "description": "Exposure ID",
             "schema": {
@@ -10081,7 +9976,7 @@
             }
           },
           {
-            "name": "exposureType",
+            "name": "exposureResourceType",
             "in": "query",
             "description": "Exposure type",
             "schema": {
@@ -12595,13 +12490,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -12681,13 +12573,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -12748,13 +12637,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -12811,13 +12697,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -12877,13 +12760,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -12945,13 +12825,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13010,13 +12887,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13075,13 +12949,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13140,13 +13011,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13221,13 +13089,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13307,13 +13172,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -13384,13 +13246,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13456,13 +13315,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13531,13 +13387,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13598,13 +13451,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13684,13 +13534,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -13761,13 +13608,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13834,13 +13678,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13910,13 +13751,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -13978,13 +13816,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -14042,13 +13877,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -14128,13 +13960,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -14205,13 +14034,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -14278,13 +14104,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -14354,13 +14177,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -14422,17 +14242,14 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
-            "name": "exposureId",
+            "name": "exposureResourceId",
             "in": "query",
             "description": "Exposure ID",
             "required": true,
@@ -14443,9 +14260,9 @@
             }
           },
           {
-            "name": "exposureType",
+            "name": "exposureResourceType",
             "in": "query",
-            "description": "Exposure type: ACCOUNT or PORTFOLIO.",
+            "description": "Exposure Resource type: ACCOUNT or PORTFOLIO.",
             "required": true,
             "schema": {
               "type": "string",
@@ -14515,17 +14332,14 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
-            "name": "exposureId",
+            "name": "exposureResourceId",
             "in": "query",
             "description": "Exposure ID",
             "required": true,
@@ -14536,7 +14350,7 @@
             }
           },
           {
-            "name": "exposureType",
+            "name": "exposureResourceType",
             "in": "query",
             "description": "Exposure type: ACCOUNT or PORTFOLIO.",
             "required": true,
@@ -14610,13 +14424,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -14696,13 +14507,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -14763,13 +14571,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -14836,13 +14641,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -14912,13 +14714,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -14980,13 +14779,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -15034,13 +14830,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -15113,13 +14906,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -15180,13 +14970,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -15266,13 +15053,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -15333,13 +15117,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -15411,13 +15192,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -15500,13 +15278,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -15578,13 +15353,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -15656,13 +15428,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -15719,13 +15488,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -15785,13 +15551,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -15843,13 +15606,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -15917,13 +15677,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16004,13 +15761,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16073,13 +15827,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16158,13 +15909,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16246,13 +15994,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16326,13 +16071,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16400,13 +16142,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16477,13 +16216,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16546,13 +16282,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16620,13 +16353,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16697,13 +16427,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16766,13 +16493,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -16845,13 +16569,10 @@
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
@@ -17343,66 +17064,70 @@
         }
       }
     },
-    "/exposures/{exposureId}/domains/{domainname}/tablespaces/{tablespace}/entities/{entity}": {
+    "/exposures/{exposureId}/steppolicies": {
       "get": {
-        "tags": ["Domains"],
-        "summary": "Get entity by domain tablespace",
-
-        "operationId": "getEntitiesMetaOrValuesv1",
+        "tags": ["Step Policies"],
+        "summary": "Get list of step policies",
+        "description": "Retrieves list of step policies filtered by the specified parameters.",
+        "operationId": "searchStepPolicies",
         "parameters": [
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
-            "name": "domainname",
-            "in": "path",
-            "description": "Name of the domain.",
-            "required": true,
+            "name": "filter",
+            "in": "query",
+            "description": "Filters applied to the query results using condition types as shown. **Relational : (result field name) (relational operator) (value)** eg. id=100 , id!=100 , id>100 | **Boolean : (condition) (boolean operator) (condition)** eg. id=100 AND name=\"xyz\" , id=100 OR type=\"abc\" | **In List : (result field name) (IN / NOT IN) (values list)** eg. id IN (1,2,3) , name NOT IN (\"abc\",\"xyz\") | **Matching : (result field name) (LIKE / NOT LIKE) (pattern)** eg. name LIKE \"abc* \" , type NOT LIKE \"* xyz* \"",
             "schema": {
               "type": "string"
             }
           },
           {
-            "name": "tablespace",
-            "in": "path",
-            "description": "Name of the tablespace.",
-            "required": true,
+            "name": "sort",
+            "in": "query",
+            "description": "Specify comma-delimited field names followed by 'ASC' (to display the results in alphabetical or numerical ascending order) or 'DESC' (to display the results in descending order.)",
             "schema": {
               "type": "string"
             }
           },
           {
-            "name": "entity",
-            "in": "path",
-            "description": "Name of the entity.",
-            "required": true,
+            "name": "limit",
+            "in": "query",
+            "description": "Number of retrieved records to display on the page.",
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "Number of the page displaying the returned records, starting at '0'.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "List of step policies is successfully retrieved.",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/EntityMeta"
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/StepPolicySearchResult"
                 }
               }
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Bad Request: Please check that you are provided all required values.",
             "content": {
               "application/json": {
                 "schema": {
@@ -17412,7 +17137,7 @@
             }
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Forbidden: Access to this resource has been denied.",
             "content": {
               "application/json": {
                 "schema": {
@@ -17421,51 +17146,26 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
       },
       "post": {
-        "tags": ["Domains"],
-        "summary": "Create currency",
-
-        "operationId": "createCurrencyv1",
+        "tags": ["Step Policies"],
+        "summary": "Create a step policy",
+        "description": "Creates a step policy.",
+        "operationId": "createStepPolicy",
         "parameters": [
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "domainname",
-            "in": "path",
-            "description": "Name of the domain.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "tablespace",
-            "in": "path",
-            "description": "Name of the tablespace.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "entity",
-            "in": "path",
-            "description": "Name of the entity.",
-            "required": true,
-            "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -17473,17 +17173,18 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/KeyValueStore"
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/StepPolicy"
               }
             }
-          }
+          },
+          "required": true
         },
         "responses": {
           "201": {
-            "description": "Created. New Currency is created in the data source successfully.",
+            "description": "Step Policy is successfully created.",
             "headers": {
               "Location": {
-                "description": "Location of the Currency resource.",
+                "description": "Location of the new step policy",
                 "style": "simple",
                 "schema": {
                   "type": "string",
@@ -17493,7 +17194,7 @@
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Bad Request: Please check that you are provided all required values.",
             "content": {
               "application/json": {
                 "schema": {
@@ -17503,7 +17204,1875 @@
             }
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Forbidden: Access to this resource has been denied.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/steppolicies/{id}": {
+      "get": {
+        "tags": ["Step Policies"],
+        "summary": "Get information on a specified step policy",
+        "description": "Retrieves information on a specified step policy by its ID",
+        "operationId": "getStepPolicy",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID number of the step policy.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Information on a specified step policy is successfully retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/StepPolicy"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource has been denied.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": ["Step Policies"],
+        "summary": "Update a specified step policy",
+        "description": "Updates a step policy specified by its ID.",
+        "operationId": "updateStepPolicy",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID number of the step policy.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/StepPolicy"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "Step policy successfully updated"
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource has been denied.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": ["Step Policies"],
+        "summary": "Delete a specified step policy",
+        "description": "Deletes a step policy specified by its ID.",
+        "operationId": "deleteStepPolicy",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID number of the step policy.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Step policy successfully deleted"
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource has been denied.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/treaties/lob/batch": {
+      "post": {
+        "tags": ["Treaties"],
+        "summary": "Run batch of creating/deleting treaty lobs",
+        "description": "Runs creating/deleting treaty lobs in a batch.",
+        "operationId": "batchProcessTreatyLobs",
+        "parameters": [
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/BatchRequest"
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Treaty batch executed.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "lastModified": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "date": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "length": {
+                        "type": "integer",
+                        "format": "int32"
+                      },
+                      "location": {
+                        "type": "string",
+                        "format": "uri"
+                      },
+                      "language": {
+                        "type": "object",
+                        "properties": {
+                          "displayName": {
+                            "type": "string"
+                          },
+                          "script": {
+                            "type": "string"
+                          },
+                          "country": {
+                            "type": "string"
+                          },
+                          "variant": {
+                            "type": "string"
+                          },
+                          "extensionKeys": {
+                            "uniqueItems": true,
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "unicodeLocaleAttributes": {
+                            "uniqueItems": true,
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "unicodeLocaleKeys": {
+                            "uniqueItems": true,
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "iso3Language": {
+                            "type": "string"
+                          },
+                          "iso3Country": {
+                            "type": "string"
+                          },
+                          "displayLanguage": {
+                            "type": "string"
+                          },
+                          "displayScript": {
+                            "type": "string"
+                          },
+                          "displayCountry": {
+                            "type": "string"
+                          },
+                          "displayVariant": {
+                            "type": "string"
+                          },
+                          "language": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "cookies": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            },
+                            "version": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "path": {
+                              "type": "string"
+                            },
+                            "domain": {
+                              "type": "string"
+                            },
+                            "comment": {
+                              "type": "string"
+                            },
+                            "maxAge": {
+                              "type": "integer",
+                              "format": "int32"
+                            },
+                            "expiry": {
+                              "type": "string",
+                              "format": "date-time"
+                            },
+                            "secure": {
+                              "type": "boolean"
+                            },
+                            "httpOnly": {
+                              "type": "boolean"
+                            }
+                          }
+                        }
+                      },
+                      "links": {
+                        "uniqueItems": true,
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "uri": {
+                              "type": "string",
+                              "format": "uri"
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "uriBuilder": {
+                              "type": "object"
+                            },
+                            "rel": {
+                              "type": "string"
+                            },
+                            "rels": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "params": {
+                              "type": "object",
+                              "additionalProperties": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "statusInfo": {
+                        "type": "object",
+                        "properties": {
+                          "family": {
+                            "type": "string",
+                            "enum": [
+                              "INFORMATIONAL",
+                              "SUCCESSFUL",
+                              "REDIRECTION",
+                              "CLIENT_ERROR",
+                              "SERVER_ERROR",
+                              "OTHER"
+                            ]
+                          },
+                          "reasonPhrase": {
+                            "type": "string"
+                          },
+                          "statusCode": {
+                            "type": "integer",
+                            "format": "int32"
+                          }
+                        }
+                      },
+                      "mediaType": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "subtype": {
+                            "type": "string"
+                          },
+                          "parameters": {
+                            "type": "object",
+                            "additionalProperties": {
+                              "type": "string"
+                            }
+                          },
+                          "wildcardType": {
+                            "type": "boolean"
+                          },
+                          "wildcardSubtype": {
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "allowedMethods": {
+                        "uniqueItems": true,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "entityTag": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": "string"
+                          },
+                          "weak": {
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "stringHeaders": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "headers": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "array",
+                          "items": {
+                            "type": "object"
+                          }
+                        }
+                      },
+                      "status": {
+                        "type": "integer",
+                        "format": "int32"
+                      },
+                      "metadata": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "array",
+                          "items": {
+                            "type": "object"
+                          }
+                        }
+                      },
+                      "entity": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/treaties/{treatyId}/lossoccurrences": {
+      "get": {
+        "tags": ["Treaties"],
+        "summary": "Get list of treaty loss occurrences by treaty ID",
+        "description": "Retrieves a list of the treaty loss occurrences in a specified data source.",
+        "operationId": "getLossOccurrences",
+        "parameters": [
+          {
+            "name": "treatyId",
+            "in": "path",
+            "description": "Treaty Id.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of treaty loss occurrences retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/LossOccurrence"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "post": {
+        "tags": ["Treaties"],
+        "summary": "Create a treaty loss occurrence",
+        "description": "Returns the URL location of the created treaty loss occurrence resource",
+        "operationId": "createLossOccurrence",
+        "parameters": [
+          {
+            "name": "treatyId",
+            "in": "path",
+            "description": "Treaty Id.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/LossOccurrence"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "treaty loss occurrence created.",
+            "headers": {
+              "Location": {
+                "description": "treaty loss occurrence",
+                "style": "simple",
+                "schema": {
+                  "type": "string",
+                  "format": "URI"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/treaties": {
+      "get": {
+        "tags": ["Treaties"],
+        "summary": "Get list of Treaties with optional filters",
+        "description": "Get list of Treaties with optional filters.",
+        "operationId": "getTreatiesByFilters",
+        "parameters": [
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "description": "Filters applied to the query results using condition types as shown. **Relational : (result field name) (relational operator) (value)** eg. id=100 , id!=100 , id>100 | **Boolean : (condition) (boolean operator) (condition)** eg. id=100 AND name=\"xyz\" , id=100 OR type=\"abc\" | **In List : (result field name) (IN / NOT IN) (values list)** eg. id IN (1,2,3) , name NOT IN (\"abc\",\"xyz\") | **Matching : (result field name) (LIKE / NOT LIKE) (pattern)** eg. name LIKE \"abc* \" , type NOT LIKE \"* xyz* \"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "description": "Specify comma-delimited field names followed by 'ASC' (to display the results in alphabetical or numerical ascending order) or 'DESC' (to display the results in descending order.)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of retrieved records to display on the page.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "Number of the page displaying the returned records, starting at '0'.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of treaties retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/TreatySearchResult"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "post": {
+        "tags": ["Treaties"],
+        "summary": "Create a treaty",
+        "description": "Returns the URL location of the created Treaty resource",
+        "operationId": "createTreaty",
+        "parameters": [
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Treaty"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Treaty created.",
+            "headers": {
+              "Location": {
+                "description": "Treaty",
+                "style": "simple",
+                "schema": {
+                  "type": "string",
+                  "format": "URI"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/treaties/{id}/lob": {
+      "post": {
+        "tags": ["Treaties"],
+        "summary": "Creates a treaty line of business",
+        "description": "Creates a location treaty line of business",
+        "operationId": "createTreatyLob",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID number of the location.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/LineOfBusiness"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Treaty line of business created.",
+            "headers": {
+              "Location": {
+                "description": "location of the new policy condition criteria",
+                "style": "simple",
+                "schema": {
+                  "type": "string",
+                  "format": "URI"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/treaties/{treatyId}/lossoccurrences/{lossOccurrenceId}": {
+      "get": {
+        "tags": ["Treaties"],
+        "summary": "Get a treaty loss occurrence by ID",
+        "description": "Retrieves treaty loss occurrence in a specified data source.",
+        "operationId": "getLossOccurrence",
+        "parameters": [
+          {
+            "name": "treatyId",
+            "in": "path",
+            "description": "Treaty Id.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "lossOccurrenceId",
+            "in": "path",
+            "description": "Treaty loss occurrence Id.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Treaty loss occurrences retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/LossOccurrence"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": ["Treaties"],
+        "summary": "Update a treaty loss occurrence",
+        "description": "Update a treaty loss occurrence",
+        "operationId": "updateLossOccurrence",
+        "parameters": [
+          {
+            "name": "treatyId",
+            "in": "path",
+            "description": "Treaty Id.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "lossOccurrenceId",
+            "in": "path",
+            "description": "Treaty loss occurrence Id.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/LossOccurrence"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "Treaty loss occurrence updated."
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": ["Treaties"],
+        "summary": "Delete a treaty loss occurrence",
+        "operationId": "deleteLossOccurrence",
+        "parameters": [
+          {
+            "name": "treatyId",
+            "in": "path",
+            "description": "Treaty Id.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "lossOccurrenceId",
+            "in": "path",
+            "description": "Treaty loss occurrence Id.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Treaty loss occurrence deleted."
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/treaties/{id}": {
+      "get": {
+        "tags": ["Treaties"],
+        "summary": "Get treaty by Id",
+        "description": "Retrieve a treaty in a specified data source.",
+        "operationId": "getTreaty",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Treaty Id.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Treaty retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Treaty"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": ["Treaties"],
+        "summary": "Update a treaty",
+        "description": "Update a treaty",
+        "operationId": "updateTreaty",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID number of the treaty.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Treaty"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "Treaty updated."
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": ["Treaties"],
+        "summary": "Delete a treaty",
+        "operationId": "deleteTreaty",
+        "parameters": [
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Treaty Id.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Treaty deleted."
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/treaties/{id}/lob/{lobid}": {
+      "get": {
+        "tags": ["Treaties"],
+        "summary": "Gets a treaty line of business",
+        "description": "Gets a treaty line of business",
+        "operationId": "getTreatyLob",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID number of the treaty.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "lobid",
+            "in": "path",
+            "description": "ID number of the lob.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Treaty line of business retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/LineOfBusiness"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": ["Treaties"],
+        "summary": "Deletes a treaty line of business",
+        "description": "Deletes a treaty line of business",
+        "operationId": "deleteTreatyLob",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID number of the treaty.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "lobid",
+            "in": "path",
+            "description": "ID number of the lob.",
+            "required": true,
+            "schema": {
+              "minimum": 1,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Treaty line of business deleted."
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/treaties/count": {
+      "get": {
+        "tags": ["Treaties"],
+        "summary": "Get total treaty count",
+        "description": "Retrieves total treaty count for specified datasource.",
+        "operationId": "getExposureCount_3",
+        "parameters": [
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Treaty count successfully retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/treaties/getbytype": {
+      "get": {
+        "tags": ["Treaties"],
+        "summary": "Get list of treaties",
+        "description": "Retrieves a list of the treaties in a specified data source.",
+        "operationId": "getTreaties",
+        "parameters": [
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Type of treaty.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "exposureResourcetype",
+            "in": "query",
+            "description": "Type of exposure. Specify 'POL' for policy abd 'LOC' for location.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of treaties retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Treaty"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Treaties\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/underwriters": {
+      "get": {
+        "tags": ["UnderwriterV1"],
+        "summary": "Get list of underwriters",
+        "description": "Retrieves a list of the underwriters in a specified data source.",
+        "operationId": "getUnderwriters",
+        "parameters": [
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "filter",
+            "in": "query",
+            "description": "Filters applied to the query results using condition types as shown. **Relational : (result field name) (relational operator) (value)** eg. id=100 , id!=100 , id>100 | **Boolean : (condition) (boolean operator) (condition)** eg. id=100 AND name=\"xyz\" , id=100 OR type=\"abc\" | **In List : (result field name) (IN / NOT IN) (values list)** eg. id IN (1,2,3) , name NOT IN (\"abc\",\"xyz\") | **Matching : (result field name) (LIKE / NOT LIKE) (pattern)** eg. name LIKE \"abc* \" , type NOT LIKE \"* xyz* \"",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "description": "Specify comma-delimited field names followed by 'ASC' (to display the results in alphabetical or numerical ascending order) or 'DESC' (to display the results in descending order.)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of retrieved records to display on the page.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "Number of the page displaying the returned records, starting at '0'.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of underwriters in the data source is successfully retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/UnderwriterSearchResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Contract Tags\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "post": {
+        "tags": ["UnderwriterV1"],
+        "summary": "Create new Underwriter",
+        "description": "Creates new Underwriter in a specified data source.",
+        "operationId": "createUnderwriter",
+        "parameters": [
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/UnderWriter"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Created. New underwriter is created in the data source is successfully.",
+            "headers": {
+              "Location": {
+                "description": "Location of the new Underwriter",
+                "style": "simple",
+                "schema": {
+                  "type": "string",
+                  "format": "URI"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Contract Tags\" action.",
             "content": {
               "application/json": {
                 "schema": {
@@ -17522,110 +19091,64 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
       }
     },
-    "/exposures/{exposureId}/domains": {
+    "/exposures/{exposureId}/underwriters/{id}": {
       "get": {
-        "tags": ["Domains"],
-        "summary": "Get domains",
-
-        "operationId": "getDomainsv1",
+        "tags": ["UnderwriterV1"],
+        "summary": "Get underwriter by id",
+        "description": "Retrieves a underwriter by id in a specified data source.",
+        "operationId": "getUnderwriterById",
         "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of the underwriter.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "Underwriter by Id in the data source is successfully retrieved.",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/DomainReference"
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/exposures/{exposureId}/domains/{domainname}/tablespaces/{tablespace}/entities": {
-      "get": {
-        "tags": ["Domains"],
-        "summary": "Get entities by domain tablespace",
-
-        "operationId": "getEntitiesv1",
-        "parameters": [
-          {
-            "name": "exposureId",
-            "in": "path",
-            "description": "Data source name",
-            "required": true,
-            "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "domainname",
-            "in": "path",
-            "description": "Name of the domain.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "tablespace",
-            "in": "path",
-            "description": "Name of the tablespace.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/DomainReference"
-                  }
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/UnderWriter"
                 }
               }
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Underwriter not found.",
             "content": {
               "application/json": {
                 "schema": {
@@ -17635,7 +19158,7 @@
             }
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Contract Tags\" action.",
             "content": {
               "application/json": {
                 "schema": {
@@ -17644,77 +19167,222 @@
               }
             }
           }
-        }
-      }
-    },
-    "/exposures/{exposureId}/domains/{domainname}/tablespaces/{tablespace}/entities/{entity}/meta": {
-      "get": {
-        "tags": ["Domains"],
-        "summary": "Get attributes domain tablespace entity",
-
-        "operationId": "getEntityAttributesv1",
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": ["UnderwriterV1"],
+        "summary": "Updates existing Underwriter ",
+        "description": "Updates existing Underwriter in a specified data source.",
+        "operationId": "updateUnderwriter",
         "parameters": [
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
-            "name": "domainname",
+            "name": "id",
             "in": "path",
-            "description": "Name of the domain.",
+            "description": "ID of the underwriter.",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/UnderWriter"
+              }
             }
           },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "Underwriter is updated in the data source is successfully."
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Contract Tags\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
           {
-            "name": "tablespace",
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": ["UnderwriterV1"],
+        "summary": "Deletes existing Underwriter ",
+        "description": "Deletes existing Underwriter in a specified data source.",
+        "operationId": "deleteUnderwriter",
+        "parameters": [
+          {
+            "name": "exposureId",
             "in": "path",
-            "description": "Name of the tablespace.",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
-            "name": "entity",
+            "name": "id",
             "in": "path",
-            "description": "Name of the entity.",
+            "description": "ID of the underwriter.",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Underwriter is deleted from the data source is successfully."
+          },
+          "404": {
+            "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Contract Tags\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/producers": {
+      "get": {
+        "tags": ["ProducerV1"],
+        "summary": "Get list of producers",
+        "description": "Retrieves a list of the producers in a specified data source.",
+        "operationId": "getProducers",
+        "parameters": [
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
             }
           },
           {
-            "name": "tag",
+            "name": "filter",
             "in": "query",
-            "description": "Name of the metadata tag.",
+            "description": "Filters applied to the query results using condition types as shown. **Relational : (result field name) (relational operator) (value)** eg. id=100 , id!=100 , id>100 | **Boolean : (condition) (boolean operator) (condition)** eg. id=100 AND name=\"xyz\" , id=100 OR type=\"abc\" | **In List : (result field name) (IN / NOT IN) (values list)** eg. id IN (1,2,3) , name NOT IN (\"abc\",\"xyz\") | **Matching : (result field name) (LIKE / NOT LIKE) (pattern)** eg. name LIKE \"abc* \" , type NOT LIKE \"* xyz* \"",
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "description": "Specify comma-delimited field names followed by 'ASC' (to display the results in alphabetical or numerical ascending order) or 'DESC' (to display the results in descending order.)",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Number of retrieved records to display on the page.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "Number of the page displaying the returned records, starting at '0'.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "List of producers in the data source is successfully retrieved.",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/DomainResult"
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ProducerSearchResult"
                 }
               }
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Bad Request: Please check that you are provided all required values.",
             "content": {
               "application/json": {
                 "schema": {
@@ -17724,11 +19392,135 @@
             }
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Contract Tags\" action.",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "post": {
+        "tags": ["ProducerV1"],
+        "summary": "Create new Producer ",
+        "description": "Creates new Producer in a specified data source.",
+        "operationId": "createProducer",
+        "parameters": [
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Producer"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "New producer is created in the data source is successfully.",
+            "headers": {
+              "Location": {
+                "description": "location of the new Producer ",
+                "style": "simple",
+                "schema": {
+                  "type": "string",
+                  "format": "URI"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request: Please check that you are provided all required values.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Contract Tags\" action.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "409",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      }
+    },
+    "/exposures/{exposureId}/producers/{id}": {
+      "get": {
+        "tags": ["ProducerV1"],
+        "summary": "Get Producer by id",
+        "description": "Retrieves a Producer by id in a specified data source.",
+        "operationId": "getProducerById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of the Producer.",
+            "required": true,
+            "schema": {
+              "maxLength": 2147483647,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          {
+            "name": "exposureId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Producer by Id in the data source is successfully retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Producer"
                 }
               }
             }
@@ -17742,128 +19534,9 @@
                 }
               }
             }
-          }
-        }
-      }
-    },
-    "/exposures/{exposureId}/domains/{domainname}/tablespaces/{tablespace}/entities/{entity}/values": {
-      "get": {
-        "tags": ["Domains"],
-        "summary": "Get entity values",
-
-        "operationId": "getEntityValuesv1",
-        "parameters": [
-          {
-            "name": "exposureId",
-            "in": "path",
-            "description": "Data source name",
-            "required": true,
-            "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "domainname",
-            "in": "path",
-            "description": "Name of the domain.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "tablespace",
-            "in": "path",
-            "description": "Name of the tablespace.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "entity",
-            "in": "path",
-            "description": "Name of the entity.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "fields",
-            "in": "query",
-            "description": "Comma delimited list of fields to be fetched. Defaults to all.",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "tag",
-            "in": "query",
-            "description": "Name of the metadata tag.",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "attributename",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-
-          {
-            "name": "sort",
-            "in": "query",
-            "description": "Specify comma-delimited field names followed by `ASC` (to display the results in alphabetical or numerical ascending order) or `DESC` (to display the results in descending order.)",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of retrieved records to display on the page.",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "offSet",
-            "in": "query",
-            "description": "Number of the page displaying the returned records, starting at _0_.",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "filter",
-            "in": "query",
-            "description": "Optional attribute to filter the values. Defaults to returning all values.",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/EntityResult"
-                }
-              }
-            }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Bad Request: Please check that you are provided all required values.",
             "content": {
               "application/json": {
                 "schema": {
@@ -17873,7 +19546,7 @@
             }
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"View Contract Tags\" action.",
             "content": {
               "application/json": {
                 "schema": {
@@ -17882,130 +19555,66 @@
               }
             }
           }
-        }
-      }
-    },
-    "/exposures/{exposureId}/domains/{domainname}/tablespaces/{tablespace}/entities/{entity}/hazards": {
-      "get": {
-        "tags": ["Domains"],
-        "summary": "Get hazards",
-
-        "operationId": "getHazardsv1",
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": ["ProducerV1"],
+        "summary": "Updates existing Producer ",
+        "description": "Updates existing Producer in a specified data source.",
+        "operationId": "updateProducer",
         "parameters": [
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID number of the location.",
+            "required": true,
+            "schema": {
+              "maxLength": 2147483647,
               "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
               "type": "string"
-            }
-          },
-          {
-            "name": "domainname",
-            "in": "path",
-            "description": "Name of the domain.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "tablespace",
-            "in": "path",
-            "description": "Name of the tablespace.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "entity",
-            "in": "path",
-            "description": "Name of the entity.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "jsonfield",
-            "in": "query",
-            "description": "Name of the field user wants to fetch in the hazards.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "option",
-            "in": "query",
-            "description": "Optional attribute to filter the values. Defaults to returning all values.",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "tag",
-            "in": "query",
-            "description": "Name of the metadata tag.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "filter",
-            "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
-            "schema": {
-              "type": "string"
-            }
-          },
-
-          {
-            "name": "sort",
-            "in": "query",
-            "description": "Specify comma-delimited field names followed by `ASC` (to display the results in alphabetical or numerical ascending order) or `DESC` (to display the results in descending order.)",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of retrieved records to display on the page.",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "offSet",
-            "in": "query",
-            "description": "Number of the page displaying the returned records, starting at _0_.",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
             }
           }
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Producer"
+              }
+            }
+          },
+          "required": true
+        },
         "responses": {
-          "200": {
-            "description": "Success",
+          "204": {
+            "description": "Producer is updated in the data source is successfully."
+          },
+          "404": {
+            "description": "The requested resource was not found.",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/EntityResult"
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
                 }
               }
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Bad Request: Please check that you are provided all required values.",
             "content": {
               "application/json": {
                 "schema": {
@@ -18015,7 +19624,7 @@
             }
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Contract Tags\" action.",
             "content": {
               "application/json": {
                 "schema": {
@@ -18024,130 +19633,56 @@
               }
             }
           }
-        }
-      }
-    },
-    "/exposures/{exposureId}/domains/{domainname}/tablespaces/{tablespace}/entities/{entity}/secondarymodifiers": {
-      "get": {
-        "tags": ["Domains"],
-        "summary": "Get secondary modifiers",
-
-        "operationId": "getSecondaryModifiersv1",
+        },
+        "security": [
+          {
+            "RMS_Auth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": ["ProducerV1"],
+        "summary": "Deletes existing Producer ",
+        "description": "Deletes existing Producer in a specified data source.",
+        "operationId": "deleteProducer",
         "parameters": [
           {
             "name": "exposureId",
             "in": "path",
-            "description": "Data source name",
             "required": true,
             "schema": {
-              "maxLength": 80,
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID number of the location.",
+            "required": true,
+            "schema": {
+              "maxLength": 2147483647,
               "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
               "type": "string"
-            }
-          },
-          {
-            "name": "domainname",
-            "in": "path",
-            "description": "Name of the domain.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "tablespace",
-            "in": "path",
-            "description": "Name of the tablespace.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "entity",
-            "in": "path",
-            "description": "Name of the entity.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "jsonfield",
-            "in": "query",
-            "description": "Name of the field user wants to fetch in the secondary modifiers.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "option",
-            "in": "query",
-            "description": "Optional attribute to filter the values. Defaults to returning all values.",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "tag",
-            "in": "query",
-            "description": "Name of the metadata tag.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "filter",
-            "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
-            "schema": {
-              "type": "string"
-            }
-          },
-
-          {
-            "name": "sort",
-            "in": "query",
-            "description": "Specify comma-delimited field names followed by `ASC` (to display the results in alphabetical or numerical ascending order) or `DESC` (to display the results in descending order.)",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "limit",
-            "in": "query",
-            "description": "Number of retrieved records to display on the page.",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "offSet",
-            "in": "query",
-            "description": "Number of the page displaying the returned records, \\ starting at _0_.",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
             }
           }
         ],
         "responses": {
-          "200": {
-            "description": "Success",
+          "204": {
+            "description": "Producer is deleted from the data source is successfully."
+          },
+          "404": {
+            "description": "The requested resource was not found.",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/SecondaryModifierResult"
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
                 }
               }
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Bad Request: Please check that you are provided all required values.",
             "content": {
               "application/json": {
                 "schema": {
@@ -18157,7 +19692,7 @@
             }
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Forbidden: Access to this resource is denied or not authorized to perform the \"Edit Contract Tags\" action.",
             "content": {
               "application/json": {
                 "schema": {
@@ -18166,73 +19701,12 @@
               }
             }
           }
-        }
-      }
-    },
-    "/exposures/{exposureId}/domains/{domainname}/tablespaces": {
-      "get": {
-        "tags": ["Domains"],
-        "summary": "Get tablespaces",
-
-        "operationId": "getTablespacesv1",
-        "parameters": [
+        },
+        "security": [
           {
-            "name": "exposureId",
-            "in": "path",
-            "description": "Data source name",
-            "required": true,
-            "schema": {
-              "maxLength": 80,
-              "minLength": 1,
-              "pattern": "^\\w((?!--)[\\w\\s-])*\\w$|^\\w$",
-              "type": "string"
-            }
-          },
-          {
-            "name": "domainname",
-            "in": "path",
-            "description": "Name of the domain.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
+            "RMS_Auth": []
           }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/DomainReference"
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
-                }
-              }
-            }
-          }
-        }
+        ]
       }
     }
   },
