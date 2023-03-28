@@ -117,7 +117,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/JobSearchResult"
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Job"
                 }
               }
             }
@@ -175,22 +175,15 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "oneOf": [
-                    {
-                      "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PatchJobOperationStatusValue"
-                    },
-                    {
-                      "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PatchJobOperationJobPriorityValue"
-                    }
-                  ],
-                  "discriminator": {
-                    "propertyName": "targetProperty",
-                    "mapping": {
-                      "status": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PatchJobOperationStatusValue",
-                      "jobpriority": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PatchJobOperationJobPriorityValue"
-                    }
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": ["CANCELED"]
+                  },
+                  "priority": {
+                    "type": "string",
+                    "enum": ["High", "Medium", "Low"]
                   }
                 }
               }
