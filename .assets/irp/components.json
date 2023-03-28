@@ -11472,7 +11472,10 @@
         "required": ["TargetExposureSetUri"],
         "type": "object",
         "properties": {
-          "TargetExposureSetUri": {
+          "TargetExposureSetId": {
+            "type": "string"
+          },
+          "exposureName": {
             "type": "string"
           }
         }

@@ -16678,7 +16678,7 @@
         }
       }
     },
-    "/dataServers/{serverId}/databases/{databaseId}/unregister": {
+    "/dataServers/{serverId}/databases/{databaseName}/unregister": {
       "post": {
         "tags": ["Databases"],
         "summary": "Deregister EDM",
@@ -16686,7 +16686,7 @@
         "operationId": "deregisterDatabasev2",
         "parameters": [
           {
-            "name": "databaseId",
+            "name": "databaseName",
             "in": "path",
             "required": true,
             "schema": {
@@ -16813,7 +16813,7 @@
         }
       }
     },
-    "/dataServers/{serverId}/databases/{databaseId}/register": {
+    "/dataServers/{serverId}/databases/{databaseName}/register": {
       "post": {
         "tags": ["Databases"],
         "summary": "Register EDM",
@@ -16829,7 +16829,7 @@
             }
           },
           {
-            "name": "databaseId",
+            "name": "databaseName",
             "in": "path",
             "required": true,
             "schema": {
