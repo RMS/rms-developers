@@ -12,6 +12,168 @@
       }
     },
     "schemas": {
+      "Task": {
+        "type": "object",
+        "properties": {
+          "taskId": {
+            "type": "string",
+            "format": "int32"
+          },
+          "guid": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "jobId": {
+            "type": "string",
+            "format": "int64"
+          },
+          "status": {
+            "type": "string"
+          },
+          "submittedAt": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "percentComplete": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "priorTaskGuids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "output": {
+            "type": "object",
+            "properties": {
+              "summary": {
+                "type": "string"
+              },
+              "errors": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "log": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      },
+      "JobMessage": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        }
+      },
+      "JobSummary": {
+        "type": "object",
+        "properties": {
+          "jobId": {
+            "type": "string",
+            "format": "int64"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "QUEUED",
+              "RUNNING",
+              "FINISHED",
+              "FAILED",
+              "CANCELLED",
+              "PENDING",
+              "CANCELLING",
+              "CANCEL_REQUESTED"
+            ]
+          },
+          "submittedAt": {
+            "type": "string"
+          },
+          "startedAt": {
+            "type": "string"
+          },
+          "endedAt": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "progress": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "details": {
+            "type": "object",
+            "properties": {
+              "resources": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "uri": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  }
+                }
+              },
+              "summary": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "Job": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/JobSummary"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "tasks": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Task"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "JobSearchResult": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/JobSummary"
+        }
+      },
       "ExposureVariation": {
         "type": "object",
         "properties": {
@@ -358,17 +520,6 @@
           "created",
           "cancelled"
         ]
-      },
-      "JobSearchResult": {
-        "type": "object",
-        "properties": {
-          "jobs": {
-            "type": "array",
-            "items": {
-              "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Job"
-            }
-          }
-        }
       },
       "ProgramSetSearchResult": {
         "type": "array",
@@ -11965,64 +12116,6 @@
           "outputProfileId": {
             "type": "integer",
             "format": "int32"
-          }
-        }
-      },
-      "Job": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "uri": {
-            "type": "string",
-            "format": "uri"
-          },
-          "resourceGroup": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string"
-          },
-          "LastStatusTime": {
-            "type": "string"
-          },
-          "createTime": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "input": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "object"
-            }
-          },
-          "output": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "object"
-            }
-          },
-          "percentComplete": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "continueOnFailure": {
-            "type": "boolean"
-          }
-        }
-      },
-      "JobMessage": {
-        "type": "object",
-        "properties": {
-          "message": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
           }
         }
       },
