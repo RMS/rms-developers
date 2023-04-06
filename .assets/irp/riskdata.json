@@ -251,7 +251,6 @@
       "post": {
         "tags": ["ProgramSets"],
         "summary": "Create Program Set",
-
         "operationId": "createProgramSet",
         "requestBody": {
           "content": {
@@ -301,7 +300,6 @@
       "get": {
         "tags": ["ProgramSets"],
         "summary": "Get ProgramSets",
-
         "operationId": "searchProgramSets",
         "parameters": [
           {
@@ -408,7 +406,7 @@
         },
         "responses": {
           "204": {
-            "description": "Resource updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -435,7 +433,6 @@
       "get": {
         "tags": ["ProgramSets"],
         "summary": "Get Program Set by Id",
-
         "operationId": "GetProgramSets",
         "parameters": [
           {
@@ -484,7 +481,6 @@
       "delete": {
         "tags": ["ProgramSets"],
         "summary": "Delete Program Set by Id",
-
         "operationId": "DeleteProgramSetById",
         "parameters": [
           {
@@ -590,7 +586,6 @@
       "get": {
         "tags": ["Programs"],
         "summary": "Get Programs",
-
         "operationId": "getprograms",
         "parameters": [
           {
@@ -667,13 +662,11 @@
       "get": {
         "tags": ["Programs"],
         "summary": "Get Program by Id",
-
         "operationId": "getProgramById",
         "parameters": [
           {
             "name": "programId",
             "in": "path",
-
             "required": true,
             "schema": {
               "maxLength": 80,
@@ -748,7 +741,7 @@
         },
         "responses": {
           "204": {
-            "description": "Resource is updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -775,7 +768,6 @@
       "delete": {
         "tags": ["Programs"],
         "summary": "Delete Program",
-
         "operationId": "deleteprogram",
         "parameters": [
           {
@@ -793,7 +785,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Resource deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -822,7 +814,6 @@
       "get": {
         "tags": ["Program Variations"],
         "summary": "Get Program Variations",
-
         "operationId": "getprogramVariations",
         "parameters": [
           {
@@ -908,7 +899,6 @@
       "get": {
         "tags": ["Program Variations"],
         "summary": "Get Program Variation by Id",
-
         "operationId": "getProgramVariationById",
         "parameters": [
           {
@@ -971,7 +961,6 @@
       "post": {
         "tags": ["BusinessHierarchysets"],
         "summary": "Create BusinessHierarchy Set",
-
         "operationId": "createBusinessHierarchySet",
         "requestBody": {
           "content": {
@@ -1021,7 +1010,6 @@
       "get": {
         "tags": ["BusinessHierarchysets"],
         "summary": "Get BusinessHierarchysets",
-
         "operationId": "searchBusinessHierarchysets",
         "parameters": [
           {
@@ -1127,7 +1115,7 @@
         },
         "responses": {
           "204": {
-            "description": "Resource updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -1154,7 +1142,6 @@
       "get": {
         "tags": ["BusinessHierarchysets"],
         "summary": "Get BusinessHierarchy Set by Id",
-
         "operationId": "GetBusinessHierarchysets",
         "parameters": [
           {
@@ -1203,7 +1190,6 @@
       "delete": {
         "tags": ["BusinessHierarchysets"],
         "summary": "Delete BusinessHierarchy Set by Id",
-
         "operationId": "DeleteBusinessHierarchysetById",
         "parameters": [
           {
@@ -1309,7 +1295,6 @@
       "get": {
         "tags": ["BusinessHierarchies"],
         "summary": "Get BusinessHierarchies",
-
         "operationId": "getbusinesshierarchies",
         "parameters": [
           {
@@ -1386,13 +1371,11 @@
       "get": {
         "tags": ["BusinessHierarchies"],
         "summary": "Get BusinessHierarchy by Id",
-
         "operationId": "getBusinessHierarchyById",
         "parameters": [
           {
             "name": "businesshierarchyId",
             "in": "path",
-
             "required": true,
             "schema": {
               "maxLength": 80,
@@ -1467,7 +1450,7 @@
         },
         "responses": {
           "204": {
-            "description": "Resource is updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -1494,7 +1477,6 @@
       "delete": {
         "tags": ["BusinessHierarchies"],
         "summary": "Delete BusinessHierarchy",
-
         "operationId": "deletebusinesshierarchy",
         "parameters": [
           {
@@ -1512,7 +1494,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Resource deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -1541,7 +1523,6 @@
       "get": {
         "tags": ["BusinessHierarchy Variations"],
         "summary": "Get BusinessHierarchy Variations",
-
         "operationId": "getbusinesshierarchyVariations",
         "parameters": [
           {
@@ -1627,7 +1608,6 @@
       "get": {
         "tags": ["BusinessHierarchy Variations"],
         "summary": "Get BusinessHierarchy Variation by Id",
-
         "operationId": "getBusinessHierarchyVariationById",
         "parameters": [
           {
@@ -1690,7 +1670,6 @@
       "post": {
         "tags": ["ExposureSets"],
         "summary": "Create Exposure Set",
-
         "operationId": "createExposureSet",
         "requestBody": {
           "content": {
@@ -1740,7 +1719,6 @@
       "get": {
         "tags": ["ExposureSets"],
         "summary": "Get ExposureSets",
-
         "operationId": "searchExposureSets",
         "parameters": [
           {
@@ -1853,7 +1831,7 @@
         },
         "responses": {
           "204": {
-            "description": "Resource updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -1880,7 +1858,6 @@
       "get": {
         "tags": ["ExposureSets"],
         "summary": "Get Exposure Set by Id",
-
         "operationId": "GetExposureSets",
         "parameters": [
           {
@@ -1929,7 +1906,6 @@
       "delete": {
         "tags": ["ExposureSets"],
         "summary": "Delete Exposure Set by Id",
-
         "operationId": "DeleteExposureSetById",
         "parameters": [
           {
@@ -1980,7 +1956,6 @@
       "post": {
         "tags": ["Exposures"],
         "summary": "Create Exposure / EDM",
-
         "operationId": "dbOperationsv2",
         "parameters": [
           {
@@ -2054,7 +2029,6 @@
       "get": {
         "tags": ["Exposures"],
         "summary": "Get Exposures / EDMs",
-
         "operationId": "searchEdmsV2",
         "parameters": [
           {
@@ -2131,7 +2105,6 @@
       "get": {
         "tags": ["Exposures"],
         "summary": "Get Exposure / EDM by ID",
-
         "operationId": "searchEdmsV2ById",
         "parameters": [
           {
@@ -2180,7 +2153,6 @@
       "patch": {
         "tags": ["Exposures"],
         "summary": "Update Exposure",
-
         "operationId": "patchEdm_1",
         "parameters": [
           {
@@ -2203,7 +2175,9 @@
           }
         },
         "responses": {
-          "204": { "description": "Success" },
+          "204": {
+            "description": "Success"
+          },
           "400": {
             "description": "Bad Request",
             "content": {
@@ -2229,7 +2203,6 @@
       "delete": {
         "tags": ["Exposures"],
         "summary": "Delete Exposure",
-
         "operationId": "deleteEdm_1",
         "parameters": [
           {
@@ -2273,7 +2246,6 @@
       "get": {
         "tags": ["ExposureVariations"],
         "summary": "Get Exposure Variations",
-
         "operationId": "searchExposureVariations",
         "parameters": [
           {
@@ -2437,7 +2409,6 @@
       "get": {
         "tags": ["Portfolios"],
         "summary": "Get portfolios",
-
         "operationId": "searchPortfoliosv2",
         "parameters": [
           {
@@ -2520,7 +2491,6 @@
       "post": {
         "tags": ["Portfolios"],
         "summary": "Create portfolio",
-
         "operationId": "createPortfoliov2",
         "parameters": [
           {
@@ -2584,7 +2554,6 @@
       "get": {
         "tags": ["Portfolios"],
         "summary": "Get portfolio",
-
         "operationId": "getPortfoliov2",
         "parameters": [
           {
@@ -2654,7 +2623,6 @@
       "patch": {
         "tags": ["Portfolios"],
         "summary": "Update portfolio",
-
         "operationId": "updatePortfoliov2",
         "parameters": [
           {
@@ -2690,7 +2658,7 @@
         },
         "responses": {
           "204": {
-            "description": "Portfolio successfully updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -2717,7 +2685,6 @@
       "delete": {
         "tags": ["Portfolios"],
         "summary": "Delete portfolio",
-
         "operationId": "deletePortfoliov2",
         "parameters": [
           {
@@ -2796,7 +2763,6 @@
       "get": {
         "tags": ["Portfolios"],
         "summary": "Get metrics by portfolio",
-
         "operationId": "getPortfolioMetricsv2",
         "parameters": [
           {
@@ -2858,7 +2824,6 @@
       "put": {
         "tags": ["Portfolios"],
         "summary": "Manage filtered accounts by portfolio",
-
         "operationId": "manageFilteredAccountsv2",
         "parameters": [
           {
@@ -2923,7 +2888,6 @@
       "get": {
         "tags": ["Portfolios"],
         "summary": "Get accounts by portfolio",
-
         "operationId": "searchPortfolioAccountsv2",
         "parameters": [
           {
@@ -3027,7 +2991,6 @@
       "put": {
         "tags": ["Portfolios"],
         "summary": "Manage accounts by portfolio",
-
         "operationId": "managePortfolioAccountsv2",
         "parameters": [
           {
@@ -3092,7 +3055,6 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get accounts",
-
         "operationId": "searchAccountsv2",
         "parameters": [
           {
@@ -3175,7 +3137,6 @@
       "post": {
         "tags": ["Accounts"],
         "summary": "Create account",
-
         "operationId": "createAccounts",
         "parameters": [
           {
@@ -3239,7 +3200,6 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get account",
-
         "operationId": "getAccounts",
         "parameters": [
           {
@@ -3299,7 +3259,6 @@
       "put": {
         "tags": ["Accounts"],
         "summary": "Update account",
-
         "operationId": "updateAccounts",
         "parameters": [
           {
@@ -3335,7 +3294,7 @@
         },
         "responses": {
           "204": {
-            "description": "Validation updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -3362,7 +3321,6 @@
       "delete": {
         "tags": ["Accounts"],
         "summary": "Delete account",
-
         "operationId": "deleteAccounts",
         "parameters": [
           {
@@ -3427,7 +3385,6 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get validation file by account",
-
         "operationId": "downloadValidationAccountFilev2",
         "parameters": [
           {
@@ -3504,7 +3461,6 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get metrics by account",
-
         "operationId": "getAccountMetricsv2",
         "parameters": [
           {
@@ -3566,7 +3522,6 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get countries by account",
-
         "operationId": "getCountriesByAccounts",
         "parameters": [
           {
@@ -3631,7 +3586,6 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get location level surplus treaties for  account",
-
         "operationId": "getLocationSurplusTreatiesv2",
         "parameters": [
           {
@@ -3696,7 +3650,6 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Get site names for  account",
-
         "operationId": "getSiteNamesv2",
         "parameters": [
           {
@@ -3761,7 +3714,6 @@
       "get": {
         "tags": ["Accounts"],
         "summary": "Validate account",
-
         "operationId": "validateAccounts",
         "parameters": [
           {
@@ -3826,7 +3778,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Manage location conditions in batch",
-
         "operationId": "batchProcessLocationConditions",
         "parameters": [
           {
@@ -3903,7 +3854,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create building attribute",
-
         "operationId": "createBuildingAttribute",
         "parameters": [
           {
@@ -3978,7 +3928,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get locations",
-
         "operationId": "searchLocations",
         "parameters": [
           {
@@ -4069,7 +4018,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create location",
-
         "operationId": "createLocation",
         "parameters": [
           {
@@ -4133,7 +4081,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create BI peril",
-
         "operationId": "createLocationBiDetail",
         "parameters": [
           {
@@ -4208,7 +4155,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Creates location condition",
-
         "operationId": "createLocationCondition",
         "parameters": [
           {
@@ -4283,7 +4229,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create location coverage",
-
         "operationId": "createLocationCoverage",
         "parameters": [
           {
@@ -4338,7 +4283,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create EQ peril",
-
         "operationId": "createLocationEqDetail",
         "parameters": [
           {
@@ -4413,7 +4357,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create FL peril",
-
         "operationId": "createLocationFlDetail",
         "parameters": [
           {
@@ -4488,7 +4431,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create FR peril",
-
         "operationId": "createLocationFrDetail",
         "parameters": [
           {
@@ -4563,7 +4505,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create location reinsurance cession",
-
         "operationId": "createLocationReinsuranceCession",
         "parameters": [
           {
@@ -4638,7 +4579,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create TO peril",
-
         "operationId": "createLocationToDetail",
         "parameters": [
           {
@@ -4713,7 +4653,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create TR peril",
-
         "operationId": "createLocationTrDetail",
         "parameters": [
           {
@@ -4788,7 +4727,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create WC peril",
-
         "operationId": "createLocationWcDetail",
         "parameters": [
           {
@@ -4863,7 +4801,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Create WS peril",
-
         "operationId": "createLocationWsDetail",
         "parameters": [
           {
@@ -4938,7 +4875,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get building attribute",
-
         "operationId": "getBuildingAttribute",
         "parameters": [
           {
@@ -5009,7 +4945,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update building attribute",
-
         "operationId": "updateBuildingAttribute",
         "parameters": [
           {
@@ -5056,7 +4991,7 @@
         },
         "responses": {
           "204": {
-            "description": "Building attribute updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -5093,7 +5028,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete building attribute",
-
         "operationId": "deleteBuildingAttribute",
         "parameters": [
           {
@@ -5130,7 +5064,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Building attribute successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -5159,7 +5093,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get location",
-
         "operationId": "getLocation",
         "parameters": [
           {
@@ -5219,7 +5152,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update location",
-
         "operationId": "updateLocation",
         "parameters": [
           {
@@ -5255,7 +5187,7 @@
         },
         "responses": {
           "204": {
-            "description": "Location updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -5282,7 +5214,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete location",
-
         "operationId": "deleteLocation",
         "parameters": [
           {
@@ -5308,7 +5239,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Location successfully deleted."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -5337,7 +5268,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get BI peril by location",
-
         "operationId": "getLocationBiDetail",
         "parameters": [
           {
@@ -5408,7 +5338,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update BI peril",
-
         "operationId": "updateLocationBiDetail",
         "parameters": [
           {
@@ -5455,7 +5384,7 @@
         },
         "responses": {
           "204": {
-            "description": "Bi detail successfully updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -5492,7 +5421,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete BI peril",
-
         "operationId": "deleteLocationBiDetail",
         "parameters": [
           {
@@ -5529,7 +5457,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Bi detail successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -5558,7 +5486,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get location condition",
-
         "operationId": "getLocationConditionById",
         "parameters": [
           {
@@ -5632,7 +5559,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update location condition",
-
         "operationId": "updateLocationCondition",
         "parameters": [
           {
@@ -5679,7 +5605,7 @@
         },
         "responses": {
           "204": {
-            "description": "Location condition successfully updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -5716,7 +5642,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete location condition",
-
         "operationId": "deleteLocationCondition",
         "parameters": [
           {
@@ -5753,7 +5678,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Location condition successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -5782,7 +5707,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Gets location coverage",
-
         "operationId": "getLocationCoverage",
         "parameters": [
           {
@@ -5853,7 +5777,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update coverage",
-
         "operationId": "updateLocationCoverage",
         "parameters": [
           {
@@ -5900,7 +5823,7 @@
         },
         "responses": {
           "204": {
-            "description": "Coverage successfully updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -5937,7 +5860,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete location coverage",
-
         "operationId": "deleteLocationCoverage",
         "parameters": [
           {
@@ -5974,7 +5896,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Location coverage successfully deleted."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -6003,7 +5925,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get EQ peril",
-
         "operationId": "getLocationEqDetail",
         "parameters": [
           {
@@ -6074,7 +5995,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update EQ peril",
-
         "operationId": "updateLocationEqDetail",
         "parameters": [
           {
@@ -6121,7 +6041,7 @@
         },
         "responses": {
           "204": {
-            "description": "EQ Detail Successfully updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -6158,7 +6078,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete EQ peril",
-
         "operationId": "deleteLocationEqDetail",
         "parameters": [
           {
@@ -6195,7 +6114,7 @@
         ],
         "responses": {
           "204": {
-            "description": "EQ detail successfully deleted."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -6224,7 +6143,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get FL peril",
-
         "operationId": "getLocationFlDetail",
         "parameters": [
           {
@@ -6295,7 +6213,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update FL peril",
-
         "operationId": "updateLocationFlDetail",
         "parameters": [
           {
@@ -6342,7 +6259,7 @@
         },
         "responses": {
           "204": {
-            "description": "FL detail successfully updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -6372,7 +6289,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete FL peril",
-
         "operationId": "deleteLocationFlDetail",
         "parameters": [
           {
@@ -6409,7 +6325,7 @@
         ],
         "responses": {
           "204": {
-            "description": "FL detail successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -6438,7 +6354,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get location FR peril",
-
         "operationId": "getLocationFrDetail",
         "parameters": [
           {
@@ -6509,7 +6424,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update FR peril",
-
         "operationId": "updateLocationFrDetail",
         "parameters": [
           {
@@ -6556,7 +6470,7 @@
         },
         "responses": {
           "204": {
-            "description": "FR detail successfully updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -6593,7 +6507,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete FR peril",
-
         "operationId": "deleteLocationFrDetail",
         "parameters": [
           {
@@ -6630,7 +6543,7 @@
         ],
         "responses": {
           "204": {
-            "description": "FR detail successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -6659,7 +6572,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get reinsurance cession",
-
         "operationId": "getLocationReinsuranceCessionDetail",
         "parameters": [
           {
@@ -6730,7 +6642,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update reinsurance cession",
-
         "operationId": "updateLocationReinsuranceCession",
         "parameters": [
           {
@@ -6777,7 +6688,7 @@
         },
         "responses": {
           "204": {
-            "description": "Location reinsurance cession successfully updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -6804,7 +6715,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete reinsurance cession",
-
         "operationId": "deleteLocationReinsuranceCession",
         "parameters": [
           {
@@ -6841,7 +6751,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Location reinsurance cession successfully deleted."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -6870,7 +6780,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get TO peril",
-
         "operationId": "getLocationToDetail",
         "parameters": [
           {
@@ -6941,7 +6850,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update TO peril",
-
         "operationId": "updateLocationToDetail",
         "parameters": [
           {
@@ -6988,7 +6896,7 @@
         },
         "responses": {
           "204": {
-            "description": "TO detail successfully updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -7025,7 +6933,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete TO peril",
-
         "operationId": "deleteLocationToDetail",
         "parameters": [
           {
@@ -7062,7 +6969,7 @@
         ],
         "responses": {
           "204": {
-            "description": "TO detail successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -7091,7 +6998,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get TR peril",
-
         "operationId": "getLocationTrDetail",
         "parameters": [
           {
@@ -7162,7 +7068,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update TR peril",
-
         "operationId": "updateLocationTrDetail",
         "parameters": [
           {
@@ -7209,7 +7114,7 @@
         },
         "responses": {
           "204": {
-            "description": "Location TR detail successfully updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -7236,7 +7141,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete TR peril",
-
         "operationId": "deleteLocationTrDetail",
         "parameters": [
           {
@@ -7273,7 +7177,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Location TR detail successfully deleted."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -7302,7 +7206,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get WC peril",
-
         "operationId": "getLocationWcDetail",
         "parameters": [
           {
@@ -7373,7 +7276,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update WC peril",
-
         "operationId": "updateLocationWcDetail",
         "parameters": [
           {
@@ -7420,7 +7322,7 @@
         },
         "responses": {
           "204": {
-            "description": "Location WC details successfully updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -7447,7 +7349,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete WC peril",
-
         "operationId": "deleteLocationWcDetail",
         "parameters": [
           {
@@ -7484,7 +7385,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Location WC detail successfully deleted."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -7513,7 +7414,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get WS peril",
-
         "operationId": "getLocationWsDetail",
         "parameters": [
           {
@@ -7584,7 +7484,6 @@
       "put": {
         "tags": ["Locations"],
         "summary": "Update WS peril",
-
         "operationId": "updateLocationWsDetail",
         "parameters": [
           {
@@ -7631,7 +7530,7 @@
         },
         "responses": {
           "204": {
-            "description": "Location WS Detail successfully updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -7658,7 +7557,6 @@
       "delete": {
         "tags": ["Locations"],
         "summary": "Delete WS peril",
-
         "operationId": "deleteLocationWsDetail",
         "parameters": [
           {
@@ -7695,7 +7593,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Location WS Detail successfully deleted."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -7724,7 +7622,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Geocode address",
-
         "operationId": "geoCodeByAddress",
         "parameters": [
           {
@@ -7785,7 +7682,6 @@
       "post": {
         "tags": ["Locations"],
         "summary": "Geocode location",
-
         "operationId": "geoCodeByLocationId",
         "parameters": [
           {
@@ -7860,7 +7756,6 @@
       "get": {
         "tags": ["Locations"],
         "summary": "Get policy conditions by location",
-
         "operationId": "getPolicyConditions",
         "parameters": [
           {
@@ -7925,7 +7820,6 @@
       "post": {
         "tags": ["Exposures"],
         "summary": "Upgrade Exposure / EDM Data Version",
-
         "operationId": "post-v2-datasources-upgrade",
         "parameters": [
           {
@@ -7989,7 +7883,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get analyses",
-
         "operationId": "getAnalysesResultsv2",
         "parameters": [
           {
@@ -8075,275 +7968,28 @@
             }
           }
         }
-      },
-      "delete": {
+      }
+    },
+    "/analyses/bulk-delete": {
+      "post": {
         "tags": ["Analyses"],
-        "summary": "Delete analysis results",
-
+        "summary": "Bulk Delete analysis results",
         "operationId": "deleteAnalysesv2",
-        "responses": {
-          "204": {
-            "description": "A list of Analyses deleted.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "metadata": {
-                      "type": "object",
-                      "additionalProperties": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
-                      }
-                    },
-                    "status": {
-                      "type": "integer",
-                      "format": "int32"
-                    },
-                    "length": {
-                      "type": "integer",
-                      "format": "int32"
-                    },
-                    "location": {
-                      "type": "string",
-                      "format": "uri"
-                    },
-                    "language": {
-                      "type": "object",
-                      "properties": {
-                        "language": {
-                          "type": "string"
-                        },
-                        "script": {
-                          "type": "string"
-                        },
-                        "country": {
-                          "type": "string"
-                        },
-                        "variant": {
-                          "type": "string"
-                        },
-                        "extensionKeys": {
-                          "uniqueItems": true,
-                          "type": "array",
-                          "items": {
-                            "type": "string"
-                          }
-                        },
-                        "unicodeLocaleAttributes": {
-                          "uniqueItems": true,
-                          "type": "array",
-                          "items": {
-                            "type": "string"
-                          }
-                        },
-                        "unicodeLocaleKeys": {
-                          "uniqueItems": true,
-                          "type": "array",
-                          "items": {
-                            "type": "string"
-                          }
-                        },
-                        "iso3Language": {
-                          "type": "string"
-                        },
-                        "iso3Country": {
-                          "type": "string"
-                        },
-                        "displayLanguage": {
-                          "type": "string"
-                        },
-                        "displayScript": {
-                          "type": "string"
-                        },
-                        "displayCountry": {
-                          "type": "string"
-                        },
-                        "displayVariant": {
-                          "type": "string"
-                        },
-                        "displayName": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "statusInfo": {
-                      "type": "object",
-                      "properties": {
-                        "family": {
-                          "type": "string",
-                          "enum": [
-                            "INFORMATIONAL",
-                            "SUCCESSFUL",
-                            "REDIRECTION",
-                            "CLIENT_ERROR",
-                            "SERVER_ERROR",
-                            "OTHER"
-                          ]
-                        },
-                        "statusCode": {
-                          "type": "integer",
-                          "format": "int32"
-                        },
-                        "reasonPhrase": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "mediaType": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string"
-                        },
-                        "subtype": {
-                          "type": "string"
-                        },
-                        "parameters": {
-                          "type": "object",
-                          "additionalProperties": {
-                            "type": "string"
-                          }
-                        },
-                        "wildcardType": {
-                          "type": "boolean"
-                        },
-                        "wildcardSubtype": {
-                          "type": "boolean"
-                        }
-                      }
-                    },
-                    "allowedMethods": {
-                      "uniqueItems": true,
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    },
-                    "cookies": {
-                      "type": "object",
-                      "additionalProperties": {
-                        "type": "object",
-                        "properties": {
-                          "name": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "version": {
-                            "type": "integer",
-                            "format": "int32"
-                          },
-                          "path": {
-                            "type": "string"
-                          },
-                          "domain": {
-                            "type": "string"
-                          },
-                          "comment": {
-                            "type": "string"
-                          },
-                          "maxAge": {
-                            "type": "integer",
-                            "format": "int32"
-                          },
-                          "expiry": {
-                            "type": "string",
-                            "format": "date-time"
-                          },
-                          "secure": {
-                            "type": "boolean"
-                          },
-                          "httpOnly": {
-                            "type": "boolean"
-                          }
-                        }
-                      }
-                    },
-                    "entityTag": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": "string"
-                        },
-                        "weak": {
-                          "type": "boolean"
-                        }
-                      }
-                    },
-                    "stringHeaders": {
-                      "type": "object",
-                      "additionalProperties": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "lastModified": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "date": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "headers": {
-                      "type": "object",
-                      "additionalProperties": {
-                        "type": "array",
-                        "items": {
-                          "type": "object"
-                        }
-                      }
-                    },
-                    "entity": {
-                      "type": "object"
-                    },
-                    "links": {
-                      "uniqueItems": true,
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "type": {
-                            "type": "string"
-                          },
-                          "params": {
-                            "type": "object",
-                            "additionalProperties": {
-                              "type": "string"
-                            }
-                          },
-                          "uri": {
-                            "type": "string",
-                            "format": "uri"
-                          },
-                          "title": {
-                            "type": "string"
-                          },
-                          "uriBuilder": {
-                            "type": "object"
-                          },
-                          "rel": {
-                            "type": "string"
-                          },
-                          "rels": {
-                            "type": "array",
-                            "items": {
-                              "type": "string"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "number"
                 }
               }
             }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -8372,7 +8018,6 @@
       "delete": {
         "tags": ["Analyses"],
         "summary": "Delete PATE treaties",
-
         "operationId": "deletePateBatchv2",
         "parameters": [
           {
@@ -8389,7 +8034,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Deleted. PATE treaties for given analysis deleted.",
+            "description": "Success",
             "content": {
               "application/json": {
                 "schema": {
@@ -8678,7 +8323,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get PATE treaties",
-
         "operationId": "getPateListv2",
         "parameters": [
           {
@@ -8747,7 +8391,6 @@
       "delete": {
         "tags": ["Analyses"],
         "summary": "Delete PATE treaties by analysis",
-
         "operationId": "deletePateListv2",
         "parameters": [
           {
@@ -8764,7 +8407,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Deleted. PATE treaties for analysis deleted."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -8793,7 +8436,6 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Generate summary report",
-
         "operationId": "summaryReportMetricsv2",
         "parameters": [
           {
@@ -8859,7 +8501,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get location AAL",
-
         "operationId": "getAALMetricsv2",
         "parameters": [
           {
@@ -8951,7 +8592,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get region details",
-
         "operationId": "getAnalysisRegionsv2",
         "parameters": [
           {
@@ -9004,7 +8644,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get cedants by analysis",
-
         "operationId": "getCedantsByAnalysisv2",
         "parameters": [
           {
@@ -9065,7 +8704,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get EP interpolation results",
-
         "operationId": "getEPInterpolateMetricResultsv2",
         "parameters": [
           {
@@ -9185,7 +8823,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get EP metrics",
-
         "operationId": "getEPMetricsByAnalysisv2",
         "parameters": [
           {
@@ -9287,7 +8924,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get ELT",
-
         "operationId": "getEventLossTableResultsv2",
         "parameters": [
           {
@@ -9405,7 +9041,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get metrics",
-
         "operationId": "getMetricsv2",
         "parameters": [
           {
@@ -9556,7 +9191,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get key losses",
-
         "operationId": "getNonEpKeyLossv2",
         "parameters": [
           {
@@ -9650,7 +9284,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get PLT",
-
         "operationId": "getPeriodLossTableResultsv2",
         "parameters": [
           {
@@ -9753,7 +9386,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get perspectives",
-
         "operationId": "getPerspectivesForAnalysisv2",
         "parameters": [
           {
@@ -9814,7 +9446,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get sampled losses",
-
         "operationId": "getSampledLossv2",
         "parameters": [
           {
@@ -9926,7 +9557,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get statistics",
-
         "operationId": "getStatisticsResultsv2",
         "parameters": [
           {
@@ -10020,7 +9650,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get treaties by analysis",
-
         "operationId": "getTreatiesListv2",
         "parameters": [
           {
@@ -10091,7 +9720,6 @@
       "get": {
         "tags": ["Analyses"],
         "summary": "Get analysis treaty",
-
         "operationId": "getTreatyByIdv2",
         "parameters": [
           {
@@ -10153,7 +9781,6 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Convert perspectives",
-
         "operationId": "mapPerspectivev2",
         "parameters": [
           {
@@ -10479,7 +10106,6 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Analyze with PATE",
-
         "operationId": "processPatev2",
         "parameters": [
           {
@@ -10553,7 +10179,6 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Rerun EP",
-
         "operationId": "reRunEpv2",
         "parameters": [
           {
@@ -10869,7 +10494,6 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Analyze climate change",
-
         "operationId": "runClimateChangev2",
         "parameters": [
           {
@@ -11195,7 +10819,6 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Simulate PLT analysis",
-
         "operationId": "runELTToPLTConversionv2",
         "parameters": [
           {
@@ -11521,7 +11144,6 @@
       "put": {
         "tags": ["Analyses"],
         "summary": "Rename analysis",
-
         "operationId": "runRenameAnalysisv2",
         "parameters": [
           {
@@ -11845,7 +11467,6 @@
       "delete": {
         "tags": ["Analyses"],
         "summary": "Delete analysis result",
-
         "operationId": "deleteAnalysisv2",
         "parameters": [
           {
@@ -11862,7 +11483,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Analysis deleted successfully",
+            "description": "Success",
             "content": {
               "application/json": {
                 "schema": {
@@ -12151,7 +11772,6 @@
       "post": {
         "tags": ["Analyses"],
         "summary": "Convert event rates and losses",
-
         "operationId": "convertAnalysisEventv2",
         "parameters": [
           {
@@ -12477,7 +12097,6 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get aggregate portfolios",
-
         "operationId": "searchAggregatePortfoliosv2",
         "parameters": [
           {
@@ -12560,7 +12179,6 @@
       "post": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Create aggregate portfolio",
-
         "operationId": "createAggregatePortfoliov2",
         "parameters": [
           {
@@ -12624,7 +12242,6 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get aggregate portfolio",
-
         "operationId": "getAggregatePortfolioByIdv2",
         "parameters": [
           {
@@ -12684,7 +12301,6 @@
       "put": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Update aggregate portfolio",
-
         "operationId": "updateAggregatePortfoliov2",
         "parameters": [
           {
@@ -12720,7 +12336,7 @@
         },
         "responses": {
           "204": {
-            "description": "Aggregate portfolio successfully updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -12747,7 +12363,6 @@
       "delete": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Delete aggregate portfolio",
-
         "operationId": "deleteAggregatePortfoliov2",
         "parameters": [
           {
@@ -12812,7 +12427,6 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get metrics by aggregate portfolio",
-
         "operationId": "getAggregatePortfolioMetricsv2",
         "parameters": [
           {
@@ -12874,7 +12488,6 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get treaties by aggregate portfolio",
-
         "operationId": "getAggregatePortfolioTreatiesv2",
         "parameters": [
           {
@@ -12936,7 +12549,6 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get countries by aggregate portfolio",
-
         "operationId": "getCountriesByAggregatePortfoliov2",
         "parameters": [
           {
@@ -12998,7 +12610,6 @@
       "get": {
         "tags": ["Aggregate Portfolios"],
         "summary": "Get aggregate exposures by aggregate",
-
         "operationId": "searchAggregateExposuresv2",
         "parameters": [
           {
@@ -13076,7 +12687,6 @@
       "get": {
         "tags": ["Branches"],
         "summary": "Get branches",
-
         "operationId": "getBranches",
         "parameters": [
           {
@@ -13159,7 +12769,6 @@
       "post": {
         "tags": ["Branches"],
         "summary": "Create branch",
-
         "operationId": "createBranch",
         "parameters": [
           {
@@ -13233,7 +12842,6 @@
       "get": {
         "tags": ["Branches"],
         "summary": "Get branch by ID",
-
         "operationId": "getBranchById",
         "parameters": [
           {
@@ -13302,7 +12910,6 @@
       "put": {
         "tags": ["Branches"],
         "summary": "Update branch",
-
         "operationId": "updateBranch",
         "parameters": [
           {
@@ -13337,7 +12944,7 @@
         },
         "responses": {
           "204": {
-            "description": "Updated. branch is updated in the data source is successfully."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -13374,7 +12981,6 @@
       "delete": {
         "tags": ["Branches"],
         "summary": "Delete branch",
-
         "operationId": "deleteBranch",
         "parameters": [
           {
@@ -13399,7 +13005,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Branch is deleted from the data source is successfully."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -13438,7 +13044,6 @@
       "get": {
         "tags": ["Cedants"],
         "summary": "Get cedants",
-
         "operationId": "getCedants",
         "parameters": [
           {
@@ -13521,7 +13126,6 @@
       "post": {
         "tags": ["Cedants"],
         "summary": "Create cedant",
-
         "operationId": "createCedant",
         "parameters": [
           {
@@ -13595,7 +13199,6 @@
       "get": {
         "tags": ["Cedants"],
         "summary": "Get cedant",
-
         "operationId": "getCedantById",
         "parameters": [
           {
@@ -13665,7 +13268,6 @@
       "put": {
         "tags": ["Cedants"],
         "summary": "Update cedant",
-
         "operationId": "updateCedant",
         "parameters": [
           {
@@ -13701,7 +13303,7 @@
         },
         "responses": {
           "204": {
-            "description": "Cedant is updated in the data source is successfully."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -13738,7 +13340,6 @@
       "delete": {
         "tags": ["Cedants"],
         "summary": "Delete cedant",
-
         "operationId": "deleteCedant",
         "parameters": [
           {
@@ -13764,7 +13365,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Deleted. cedant is deleted from the data source is successfully."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -13803,7 +13404,6 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policy condition",
-
         "operationId": "getPolicyConditionTemplates",
         "parameters": [
           {
@@ -13864,7 +13464,6 @@
       "get": {
         "tags": ["Utilities"],
         "summary": "Get facultataives",
-
         "operationId": "getFacultatives",
         "parameters": [
           {
@@ -13947,7 +13546,6 @@
       "post": {
         "tags": ["Utilities"],
         "summary": "Create facultative",
-
         "operationId": "createFacultative",
         "parameters": [
           {
@@ -14021,7 +13619,6 @@
       "get": {
         "tags": ["Utilities"],
         "summary": "Get facultative by ID",
-
         "operationId": "getFacultativeById",
         "parameters": [
           {
@@ -14091,7 +13688,6 @@
       "put": {
         "tags": ["Utilities"],
         "summary": "Update facultative",
-
         "operationId": "updateFacultative",
         "parameters": [
           {
@@ -14127,7 +13723,7 @@
         },
         "responses": {
           "204": {
-            "description": "Facultative is updated in the data source is successfully."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -14164,7 +13760,6 @@
       "delete": {
         "tags": ["Utilities"],
         "summary": "Delete facultative",
-
         "operationId": "deleteFacultative",
         "parameters": [
           {
@@ -14190,7 +13785,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Deleted. Facultative is deleted from the data source successfully."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -14229,7 +13824,6 @@
       "post": {
         "tags": ["Utilities"],
         "summary": "Update exposures dry run",
-
         "operationId": "dryRun",
         "parameters": [
           {
@@ -14319,7 +13913,6 @@
       "post": {
         "tags": ["Utilities"],
         "summary": "Update exposures",
-
         "operationId": "globalEdit",
         "parameters": [
           {
@@ -14494,7 +14087,6 @@
       "post": {
         "tags": ["Line of Business"],
         "summary": "Create line of business",
-
         "operationId": "createLineOfBusiness",
         "parameters": [
           {
@@ -14558,7 +14150,6 @@
       "get": {
         "tags": ["Line of Business"],
         "summary": "Get line of business by ID",
-
         "operationId": "getLineOfBusinessById",
         "parameters": [
           {
@@ -14628,7 +14219,6 @@
       "put": {
         "tags": ["Line of Business"],
         "summary": "Update line of business",
-
         "operationId": "updateLineOfBusiness",
         "parameters": [
           {
@@ -14664,7 +14254,7 @@
         },
         "responses": {
           "204": {
-            "description": "LineOfBusiness is updated in the data source is successfully."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -14701,7 +14291,6 @@
       "delete": {
         "tags": ["Line of Business"],
         "summary": "Delete line of business",
-
         "operationId": "deleteLineOfBusiness",
         "parameters": [
           {
@@ -14727,7 +14316,7 @@
         ],
         "responses": {
           "204": {
-            "description": "LineOfBusiness is deleted from the data source is successfully."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -14766,7 +14355,6 @@
       "get": {
         "tags": ["Policy Conditions"],
         "summary": "Get policy conditions",
-
         "operationId": "getAllPolicyConditions",
         "parameters": [
           {
@@ -14817,7 +14405,6 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Back fill policy condition",
-
         "operationId": "backFillPolicyCondition",
         "parameters": [
           {
@@ -14893,7 +14480,6 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Copy policy",
-
         "operationId": "copyPolicy",
         "parameters": [
           {
@@ -14957,7 +14543,6 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policies",
-
         "operationId": "searchPolicies",
         "parameters": [
           {
@@ -15040,7 +14625,6 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Create policy",
-
         "operationId": "createPolicy",
         "parameters": [
           {
@@ -15104,7 +14688,6 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Create policy condition",
-
         "operationId": "createPolicyCondition",
         "parameters": [
           {
@@ -15179,7 +14762,6 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Creates policy condition criteria",
-
         "operationId": "createPolicyConditionCriteria",
         "parameters": [
           {
@@ -15265,7 +14847,6 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Create policy coverage",
-
         "operationId": "createPolicyCoverage",
         "parameters": [
           {
@@ -15340,7 +14921,6 @@
       "post": {
         "tags": ["Policies"],
         "summary": "Create reinsurance cession",
-
         "operationId": "createPolicyReinsuranceCession",
         "parameters": [
           {
@@ -15415,7 +14995,6 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policy",
-
         "operationId": "getPolicy",
         "parameters": [
           {
@@ -15475,7 +15054,6 @@
       "put": {
         "tags": ["Policies"],
         "summary": "Update policy",
-
         "operationId": "updatePolicy",
         "parameters": [
           {
@@ -15511,7 +15089,7 @@
         },
         "responses": {
           "204": {
-            "description": "Policy successfully updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -15538,7 +15116,6 @@
       "delete": {
         "tags": ["Policies"],
         "summary": "Delete policy",
-
         "operationId": "deletePolicy",
         "parameters": [
           {
@@ -15564,7 +15141,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Policy successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -15593,7 +15170,6 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policy condition",
-
         "operationId": "getPolicyCondition",
         "parameters": [
           {
@@ -15664,7 +15240,6 @@
       "put": {
         "tags": ["Policies"],
         "summary": "Update policy condition",
-
         "operationId": "updatePolicyCondition",
         "parameters": [
           {
@@ -15711,7 +15286,7 @@
         },
         "responses": {
           "204": {
-            "description": "Policy condition successfully updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -15748,7 +15323,6 @@
       "delete": {
         "tags": ["Policies"],
         "summary": "Delete policy condition",
-
         "operationId": "deletePolicyCondition",
         "parameters": [
           {
@@ -15785,7 +15359,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Policy condition successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -15814,7 +15388,6 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policy condition criteria",
-
         "operationId": "getPolicyConditionCriteria",
         "parameters": [
           {
@@ -15896,7 +15469,6 @@
       "put": {
         "tags": ["Policies"],
         "summary": "Update policy condition criteria",
-
         "operationId": "updatePolicyConditionCriteria",
         "parameters": [
           {
@@ -15954,7 +15526,7 @@
         },
         "responses": {
           "204": {
-            "description": "Policy condition criteria successfully updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -15981,7 +15553,6 @@
       "delete": {
         "tags": ["Policies"],
         "summary": "Delete policy condition criteria",
-
         "operationId": "deletePolicyConditionCriteria",
         "parameters": [
           {
@@ -16029,7 +15600,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Policy condition criteria successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -16058,7 +15629,6 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get policy coverage",
-
         "operationId": "getPolicyCoverage",
         "parameters": [
           {
@@ -16129,7 +15699,6 @@
       "put": {
         "tags": ["Policies"],
         "summary": "Update policy coverage",
-
         "operationId": "updatePolicyCoverage",
         "parameters": [
           {
@@ -16176,7 +15745,7 @@
         },
         "responses": {
           "204": {
-            "description": "Policy coverage successfully updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -16203,7 +15772,6 @@
       "delete": {
         "tags": ["Policies"],
         "summary": "Delete policy coverage",
-
         "operationId": "deletePolicyCoverage",
         "parameters": [
           {
@@ -16240,7 +15808,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Policy coverage successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -16269,7 +15837,6 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get reinsurance cession",
-
         "operationId": "getPolicyReinsuranceCession",
         "parameters": [
           {
@@ -16340,7 +15907,6 @@
       "put": {
         "tags": ["Policies"],
         "summary": "Update reinsurance cession",
-
         "operationId": "updatePolicyReinsuranceCession",
         "parameters": [
           {
@@ -16387,7 +15953,7 @@
         },
         "responses": {
           "204": {
-            "description": "Reinsurance cession successfully updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -16414,7 +15980,6 @@
       "delete": {
         "tags": ["Policies"],
         "summary": "Delete reinsurance cession",
-
         "operationId": "deletePolicyReinsuranceCession",
         "parameters": [
           {
@@ -16451,7 +16016,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Reinsurance cession successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -16480,7 +16045,6 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get location conditions",
-
         "operationId": "getLocationConditions",
         "parameters": [
           {
@@ -16556,7 +16120,6 @@
       "get": {
         "tags": ["Policies"],
         "summary": "Get surplus treaties",
-
         "operationId": "getSurplusTreaties",
         "parameters": [
           {
@@ -16621,7 +16184,6 @@
       "get": {
         "tags": ["DataServers"],
         "summary": "Search Data Server instances",
-
         "operationId": "search-dataServers",
         "parameters": [
           {
@@ -16682,7 +16244,6 @@
       "post": {
         "tags": ["Databases"],
         "summary": "Deregister EDM",
-
         "operationId": "deregisterDatabasev2",
         "parameters": [
           {
@@ -16733,7 +16294,6 @@
       "get": {
         "tags": ["Databases"],
         "summary": "Get data modules on Data Bridge",
-
         "operationId": "getAvailableDatabasesv2",
         "parameters": [
           {
@@ -16817,7 +16377,6 @@
       "post": {
         "tags": ["Databases"],
         "summary": "Register EDM",
-
         "operationId": "registerDatabaseV2",
         "parameters": [
           {
@@ -16894,7 +16453,6 @@
               "type": "string"
             }
           },
-
           {
             "name": "sort",
             "in": "query",
@@ -16933,7 +16491,9 @@
               }
             }
           },
-          "400": { "description": "Bad Request" },
+          "400": {
+            "description": "Bad Request"
+          },
           "410": {
             "description": "Not found. The entity you are trying to interact with does not exist."
           },
@@ -17001,7 +16561,9 @@
               }
             }
           },
-          "400": { "description": "Bad Request" },
+          "400": {
+            "description": "Bad Request"
+          },
           "410": {
             "description": "Not found. The entity you are trying to interact with does not exist."
           },
@@ -17319,7 +16881,7 @@
         },
         "responses": {
           "204": {
-            "description": "Step policy successfully updated"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request: Please check that you are provided all required values.",
@@ -17377,7 +16939,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Step policy successfully deleted"
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request: Please check that you are provided all required values.",
@@ -18294,7 +17856,7 @@
         },
         "responses": {
           "204": {
-            "description": "Treaty loss occurrence updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request: Please check that you are provided all required values.",
@@ -18362,7 +17924,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Treaty loss occurrence deleted."
+            "description": "Success"
           },
           "404": {
             "description": "The requested resource was not found.",
@@ -18517,7 +18079,7 @@
         },
         "responses": {
           "204": {
-            "description": "Treaty updated."
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request: Please check that you are provided all required values.",
@@ -18574,7 +18136,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Treaty deleted."
+            "description": "Success"
           },
           "404": {
             "description": "The requested resource was not found.",
@@ -18741,7 +18303,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Treaty line of business deleted."
+            "description": "Success"
           },
           "404": {
             "description": "The requested resource was not found.",
@@ -19205,7 +18767,7 @@
         },
         "responses": {
           "204": {
-            "description": "Underwriter is updated in the data source is successfully."
+            "description": "Success"
           },
           "404": {
             "description": "The requested resource was not found.",
@@ -19272,7 +18834,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Underwriter is deleted from the data source is successfully."
+            "description": "Success"
           },
           "404": {
             "description": "The requested resource was not found.",
@@ -19594,7 +19156,7 @@
         },
         "responses": {
           "204": {
-            "description": "Producer is updated in the data source is successfully."
+            "description": "Success"
           },
           "404": {
             "description": "The requested resource was not found.",
@@ -19662,7 +19224,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Producer is deleted from the data source is successfully."
+            "description": "Success"
           },
           "404": {
             "description": "The requested resource was not found.",
