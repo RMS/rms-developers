@@ -4328,6 +4328,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "pateId": {
+            "type": "integer",
+            "format": "int64"
+          },
           "operationType": {
             "type": "string",
             "enum": ["INSERT", "DELETE", "UPDATE", "COPY", "IMPORT"]
