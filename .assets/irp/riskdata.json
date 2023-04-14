@@ -8949,10 +8949,11 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Number of retrieved records to display on the page, maximum is 1000",
+            "description": "Number of retrieved records to display on the page, maximum is 100000",
             "schema": {
               "type": "integer",
-              "format": "int32"
+              "format": "int32",
+              "maximum": 100000
             }
           },
           {
@@ -9309,10 +9310,11 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Number of retrieved records to display on the page, maximum is 1000",
+            "description": "Number of retrieved records to display on the page, maximum is 100000",
             "schema": {
               "type": "integer",
-              "format": "int32"
+              "format": "int32",
+              "maximum": 100000
             }
           },
           {
