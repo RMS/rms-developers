@@ -3736,26 +3736,9 @@
         }
       },
       "LocationAALResult": {
-        "type": "object",
-        "properties": {
-          "totalCount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "offSet": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "limit": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "locationAALs": {
-            "type": "array",
-            "items": {
-              "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/LocationAAL"
-            }
-          }
+        "type": "array",
+        "items": {
+          "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/LocationAAL"
         }
       },
       "AnalysesItem": {
