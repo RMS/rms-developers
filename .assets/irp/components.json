@@ -11480,7 +11480,8 @@
             "type": "string"
           },
           "id": {
-            "type": "string"
+            "type": "int64",
+            "minimum": "1"
           },
           "uri": {
             "type": "string",
