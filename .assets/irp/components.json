@@ -5363,12 +5363,6 @@
           },
           "isValid": {
             "type": "boolean"
-          },
-          "CustomData": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string"
-            }
           }
         }
       },
