@@ -9308,7 +9308,7 @@
             "type": "number",
             "format": "double"
           },
-          "jobpriority": {
+          "priority": {
             "type": "integer",
             "format": "int32"
           },
