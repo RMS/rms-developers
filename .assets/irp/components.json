@@ -5068,56 +5068,44 @@
       "AnalysesItemV2": {
         "type": "object",
         "properties": {
-          "id": {
+          "analysisId": {
             "type": "integer",
             "format": "int32"
           },
           "name": {
             "type": "string"
           },
-          "runDate": {
+          "createdAt": {
             "type": "string"
           },
           "description": {
             "type": "string"
           },
-          "rdmName": {
-            "type": "string"
-          },
-          "sourceUris": {
+          "resourceUris": {
             "type": "array",
             "items": {
               "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/RiskdataResource"
             }
           },
-          "regroup": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "engineVersion": {
-            "type": "string"
-          },
-          "groupType": {
-            "type": "string"
-          },
-          "cedant": {
-            "type": "string"
-          },
-          "lob": {
-            "type": "string"
-          },
-          "jobUri": {
+          "jobId": {
             "type": "integer",
             "format": "int64"
           },
-          "isGroup": {
-            "type": "boolean"
+          "jobGuid": {
+            "type": "string",
+            "format": "uuid"
           },
-          "modelProfile": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          "securableUri": {
+            "type": "string",
+            "format": "uri"
           },
-          "outputProfile": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          "analysisType": {
+            "type": "string",
+            "enum": ["riskAnalysis"]
+          },
+          "analysisSubtype": {
+            "type": "string",
+            "enum": ["riskAnalysis"]
           },
           "engine": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
@@ -5137,26 +5125,14 @@
           "region": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           },
-          "lossAmplification": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-          },
-          "mode": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-          },
-          "insuranceType": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-          },
-          "vulnerabilityCurve": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          "rdmName": {
+            "type": "string"
           },
           "user": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           },
-          "eventRateSchemes": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "framework": {
+            "type": "string"
           },
           "currency": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/AnalysisCurrency"
@@ -5164,16 +5140,63 @@
           "engineSubType": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           },
-          "framework": {
+          "engineVersion": {
             "type": "string"
           },
-          "simulationSetId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "simulationPeriods": {
-            "type": "integer",
-            "format": "int32"
+          "details": {
+            "type": "object",
+            "properties": {
+              "regroup": {
+                "type": "integer",
+                "format": "int32"
+              },
+
+              "groupType": {
+                "type": "string"
+              },
+              "cedant": {
+                "type": "string"
+              },
+              "lob": {
+                "type": "string"
+              },
+
+              "isGroup": {
+                "type": "boolean"
+              },
+              "modelProfile": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+              },
+              "outputProfile": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+              },
+              "lossAmplification": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+              },
+              "mode": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+              },
+              "insuranceType": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+              },
+              "vulnerabilityCurve": {
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+              },
+              "eventRateSchemes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "simulationSetId": {
+                "type": "integer",
+                "format": "int64"
+              },
+              "simulationPeriods": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
           }
         }
       },
