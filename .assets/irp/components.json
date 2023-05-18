@@ -7457,6 +7457,11 @@
           "fireproof": {
             "type": "string"
           },
+          "operationType": {
+            "type": "string",
+            "readOnly": true,
+            "enum": ["INSERT", "UPDATE", "DELETE"]
+          },
           "esdbBuildingName": {
             "type": "string"
           },
@@ -7503,6 +7508,10 @@
       "LocationCoverage": {
         "type": "object",
         "properties": {
+          "limitExtension": {
+            "type": "number",
+            "format": "double"
+          },
           "id": {
             "type": "integer",
             "format": "int32"
@@ -7993,6 +8002,270 @@
           "hdSecMatch": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           },
+          "soilPeriodMatch": {
+            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          },
+          "groundwaterDepthMatch": {
+            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          },
+          "groundSlopeMatch": {
+            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          },
+          "percentInGeography": {
+            "type": "number",
+            "format": "double"
+          },
+          "score1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score2": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score3": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "scoreOverall": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mmi500": {
+            "type": "number",
+            "format": "double"
+          },
+          "mmi1000": {
+            "type": "number",
+            "format": "double"
+          },
+          "mmi1500": {
+            "type": "number",
+            "format": "double"
+          },
+          "faultsName1": {
+            "type": "string"
+          },
+          "faultsDistance1": {
+            "type": "number",
+            "format": "double"
+          },
+          "faultsReturnPeriodM601": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsReturnPeriodM651": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsReturnPeriodM701": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsName2": {
+            "type": "string"
+          },
+          "faultsDistance2": {
+            "type": "number",
+            "format": "double"
+          },
+          "faultsReturnPeriodM602": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsReturnPeriodM652": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsReturnPeriodM702": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsName3": {
+            "type": "string"
+          },
+          "faultsDistance3": {
+            "type": "number",
+            "format": "double"
+          },
+          "faultsReturnPeriodM603": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsReturnPeriodM653": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsReturnPeriodM703": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsName4": {
+            "type": "string"
+          },
+          "faultsDistance4": {
+            "type": "number",
+            "format": "double"
+          },
+          "faultsReturnPeriodM604": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsReturnPeriodM654": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsReturnPeriodM704": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsName5": {
+            "type": "string"
+          },
+          "faultsDistance5": {
+            "type": "number",
+            "format": "double"
+          },
+          "faultsReturnPeriodM605": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsReturnPeriodM655": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsReturnPeriodM705": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "faultsBackgroundRates": {
+            "type": "string"
+          },
+          "mineName1": {
+            "type": "string"
+          },
+          "mineType1": {
+            "type": "string"
+          },
+          "mineStatus1": {
+            "type": "string"
+          },
+          "mineArea1": {
+            "type": "number",
+            "format": "double"
+          },
+          "mineDistance1": {
+            "type": "number",
+            "format": "double"
+          },
+          "mineName2": {
+            "type": "string"
+          },
+          "mineType2": {
+            "type": "string"
+          },
+          "mineStatus2": {
+            "type": "string"
+          },
+          "mineArea2": {
+            "type": "number",
+            "format": "double"
+          },
+          "mineDistance2": {
+            "type": "number",
+            "format": "double"
+          },
+          "mineName3": {
+            "type": "string"
+          },
+          "mineType3": {
+            "type": "string"
+          },
+          "mineStatus3": {
+            "type": "string"
+          },
+          "mineArea3": {
+            "type": "number",
+            "format": "double"
+          },
+          "mineDistance3": {
+            "type": "number",
+            "format": "double"
+          },
+          "mineName4": {
+            "type": "string"
+          },
+          "mineType4": {
+            "type": "string"
+          },
+          "mineStatus4": {
+            "type": "string"
+          },
+          "mineArea4": {
+            "type": "number",
+            "format": "double"
+          },
+          "mineDistance4": {
+            "type": "number",
+            "format": "double"
+          },
+          "mineName5": {
+            "type": "string"
+          },
+          "mineType5": {
+            "type": "string"
+          },
+          "mineStatus5": {
+            "type": "string"
+          },
+          "mineArea5": {
+            "type": "number",
+            "format": "double"
+          },
+          "mineDistance5": {
+            "type": "number",
+            "format": "double"
+          },
+          "sinkHoleArea1": {
+            "type": "number",
+            "format": "double"
+          },
+          "sinkHoleDistance1": {
+            "type": "number",
+            "format": "double"
+          },
+          "sinkHoleArea2": {
+            "type": "number",
+            "format": "double"
+          },
+          "sinkHoleDistance2": {
+            "type": "number",
+            "format": "double"
+          },
+          "sinkHoleArea3": {
+            "type": "number",
+            "format": "double"
+          },
+          "sinkHoleDistance3": {
+            "type": "number",
+            "format": "double"
+          },
+          "sinkHoleArea4": {
+            "type": "number",
+            "format": "double"
+          },
+          "sinkHoleDistance4": {
+            "type": "number",
+            "format": "double"
+          },
+          "sinkHoleArea5": {
+            "type": "number",
+            "format": "double"
+          },
+          "sinkHoleDistance5": {
+            "type": "number",
+            "format": "double"
+          },
           "isValid": {
             "type": "boolean"
           },
@@ -8301,6 +8574,54 @@
           },
           "protectedByLevee": {
             "type": "string"
+          },
+          "score1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score2": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score3": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "scoreOverall": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fl10YRInlandDepthUndef": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fl30YRInlandDepthUndef": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fl50YRInlandDepthUndef": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fl100YRInlandDepthUndef": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fl200YRInlandDepthUndef": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fl250YRInlandDepthUndef": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fl500YRInlandDepthUndef": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fl1000YRInlandDepthUndef": {
+            "type": "integer",
+            "format": "int32"
           }
         }
       },
@@ -8477,6 +8798,265 @@
           },
           "isFranchiseCombinedDeductible": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          },
+          "percentInGeography": {
+            "type": "number",
+            "format": "double"
+          },
+          "score1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "scoreOverall": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "distanceToWuiIntermix": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "distanceToWuiInterface": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "stochasticBurnProb": {
+            "type": "number",
+            "format": "double"
+          },
+          "urbanConFlagRationScore": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "distanceToCalFireVeryHigh": {
+            "type": "number",
+            "format": "double"
+          },
+          "distanceToCalFireHigh": {
+            "type": "number",
+            "format": "double"
+          },
+          "distanceToCalFireMedium": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearLastHistFire250m": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "histFireYearCount250m": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "histFireYearCount2km": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "histFireYearCount5km": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "histFireYearCount10km": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "histFireYearCount20km": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fireStationName1": {
+            "type": "string"
+          },
+          "fireStationLatitude1": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationLongitude1": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationDistance1": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationStreetAddress1": {
+            "type": "string"
+          },
+          "fireStationCityName1": {
+            "type": "string"
+          },
+          "fireStationPostalCode1": {
+            "type": "string"
+          },
+          "fireStationAdmin2name1": {
+            "type": "string"
+          },
+          "fireStationAdmin1code1": {
+            "type": "string"
+          },
+          "fireStationLevel1": {
+            "type": "string"
+          },
+          "fireStationEms1": {
+            "type": "string"
+          },
+          "fireStationType1": {
+            "type": "string"
+          },
+          "fireStationName2": {
+            "type": "string"
+          },
+          "fireStationLatitude2": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationLongitude2": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationDistance2": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationStreetAddress2": {
+            "type": "string"
+          },
+          "fireStationCityName2": {
+            "type": "string"
+          },
+          "fireStationPostalCode2": {
+            "type": "string"
+          },
+          "fireStationAdmin2name2": {
+            "type": "string"
+          },
+          "fireStationAdmin1code2": {
+            "type": "string"
+          },
+          "fireStationLevel2": {
+            "type": "string"
+          },
+          "fireStationEms2": {
+            "type": "string"
+          },
+          "fireStationType2": {
+            "type": "string"
+          },
+          "fireStationName3": {
+            "type": "string"
+          },
+          "fireStationLatitude3": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationLongitude3": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationDistance3": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationStreetaddress3": {
+            "type": "string"
+          },
+          "fireStationCityname3": {
+            "type": "string"
+          },
+          "fireStationPostalcode3": {
+            "type": "string"
+          },
+          "fireStationAdmin2name3": {
+            "type": "string"
+          },
+          "fireStationAdmin1code3": {
+            "type": "string"
+          },
+          "fireStationLevel3": {
+            "type": "string"
+          },
+          "fireStationEms3": {
+            "type": "string"
+          },
+          "fireStationType3": {
+            "type": "string"
+          },
+          "fireStationName4": {
+            "type": "string"
+          },
+          "fireStationLatitude4": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationLongitude4": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationDistance4": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationStreetAddress4": {
+            "type": "string"
+          },
+          "fireStationCityName4": {
+            "type": "string"
+          },
+          "fireStationPostalCode4": {
+            "type": "string"
+          },
+          "fireStationAdmin2name4": {
+            "type": "string"
+          },
+          "fireStationAdmin1code4": {
+            "type": "string"
+          },
+          "fireStationLevel4": {
+            "type": "string"
+          },
+          "fireStationEms4": {
+            "type": "string"
+          },
+          "fireStationType4": {
+            "type": "string"
+          },
+          "fireStationName5": {
+            "type": "string"
+          },
+          "fireStationLatitude5": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationLongitude5": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationDistance5": {
+            "type": "number",
+            "format": "double"
+          },
+          "fireStationStreetAddress5": {
+            "type": "string"
+          },
+          "fireStationCityName5": {
+            "type": "string"
+          },
+          "fireStationPostalcode5": {
+            "type": "string"
+          },
+          "fireStationAdmin2name5": {
+            "type": "string"
+          },
+          "fireStationAdmin1code5": {
+            "type": "string"
+          },
+          "fireStationLevel5": {
+            "type": "string"
+          },
+          "fireStationEms5": {
+            "type": "string"
+          },
+          "fireStationType5": {
+            "type": "string"
           },
           "isValid": {
             "type": "boolean"
@@ -8655,6 +9235,54 @@
           },
           "toSpecieStorage": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          },
+          "dominantSubperilCS": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "percentInGeographyCS": {
+            "type": "number",
+            "format": "double"
+          },
+          "score1CS": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score2CS": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score3CS": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "scoreOverallCS": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dominantSubperilWT": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "percentInGeographyWT": {
+            "type": "number",
+            "format": "double"
+          },
+          "score1WT": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score2WT": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score3WT": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "scoreOverallWT": {
+            "type": "integer",
+            "format": "int32"
           }
         }
       },
@@ -8722,6 +9350,139 @@
           },
           "trSpecieStorage": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          },
+          "score1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "scoreOverall": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "targetsName1": {
+            "type": "string"
+          },
+          "targetsId1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "targetsScore1": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsDistance1": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsCategory1": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsCityName1": {
+            "type": "string"
+          },
+          "targetsAdmin1code1": {
+            "type": "string"
+          },
+          "targetsName2": {
+            "type": "string"
+          },
+          "targetsId2": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "targetsScore2": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsDistance2": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsCategory2": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsCityName2": {
+            "type": "string"
+          },
+          "targetsAdmin1code2": {
+            "type": "string"
+          },
+          "targetsName3": {
+            "type": "string"
+          },
+          "targetsId3": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "targetsScore3": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsDistance3": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsCategory3": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsCityName3": {
+            "type": "string"
+          },
+          "targetsAdmin1code3": {
+            "type": "string"
+          },
+          "targetsName4": {
+            "type": "string"
+          },
+          "targetsId4": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "targetsScore4": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsDistance4": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsCategory4": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsCityName4": {
+            "type": "string"
+          },
+          "targetsAdmin1code4": {
+            "type": "string"
+          },
+          "targetsName5": {
+            "type": "string"
+          },
+          "targetsId5": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "targetsScore5": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsDistance5": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsCategory5": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetsCityName5": {
+            "type": "string"
+          },
+          "targetsAdmin1code5": {
+            "type": "string"
           }
         }
       },
@@ -9015,6 +9776,9 @@
           "depreciationAge": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           },
+          "velocity": {
+            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          },
           "floodIndex": {
             "type": "number",
             "format": "double"
@@ -9118,6 +9882,132 @@
           "perBasement": {
             "type": "number",
             "format": "double"
+          },
+          "percentInGeography": {
+            "type": "number",
+            "format": "double"
+          },
+          "score1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score2": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score3": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "scoreOverall": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "windpoolZone": {
+            "type": "string"
+          },
+          "distanceToInnerCoast": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws1YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws2YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws5YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws10YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws25YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws50YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws100YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws200YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws250YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws500YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws1000YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws10000YrRpWind": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws1YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws2YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws5YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws10YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws25YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws50YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws100YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws200YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws250YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws500YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws1000YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "ws10000YrRpSurgeDef": {
+            "type": "number",
+            "format": "double"
+          },
+          "veloctiy": {
+            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           }
         }
       },
