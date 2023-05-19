@@ -1977,10 +1977,7 @@
                   "name": {
                     "type": "string"
                   },
-                  "serverName": {
-                    "type": "string"
-                  },
-                  "sqlVersion": {
+                  "serverId": {
                     "type": "string"
                   }
                 }
@@ -16703,12 +16700,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "post": {
         "tags": ["Step Policies"],
@@ -16770,12 +16762,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/steppolicies/{id}": {
@@ -16837,12 +16824,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "put": {
         "tags": ["Step Policies"],
@@ -16905,12 +16887,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "delete": {
         "tags": ["Step Policies"],
@@ -16963,12 +16940,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/treaties/lob/batch": {
@@ -17288,12 +17260,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/treaties/{treatyId}/lossoccurrences": {
@@ -17368,12 +17335,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "post": {
         "tags": ["Treaties"],
@@ -17456,12 +17418,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/treaties": {
@@ -17556,12 +17513,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "post": {
         "tags": ["Treaties"],
@@ -17633,12 +17585,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/treaties/{id}/lob": {
@@ -17713,12 +17660,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/treaties/{treatyId}/lossoccurrences/{lossOccurrenceId}": {
@@ -17801,12 +17743,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "put": {
         "tags": ["Treaties"],
@@ -17880,12 +17817,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "delete": {
         "tags": ["Treaties"],
@@ -17958,12 +17890,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/treaties/{id}": {
@@ -18035,12 +17962,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "put": {
         "tags": ["Treaties"],
@@ -18103,12 +18025,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "delete": {
         "tags": ["Treaties"],
@@ -18170,12 +18087,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/treaties/{id}/lob/{lobid}": {
@@ -18258,12 +18170,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "delete": {
         "tags": ["Treaties"],
@@ -18337,12 +18244,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/treaties/count": {
@@ -18394,12 +18296,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/treaties/getbytype": {
@@ -18481,12 +18378,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/underwriters": {
@@ -18571,12 +18463,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "post": {
         "tags": ["UnderwriterV1"],
@@ -18648,12 +18535,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/underwriters/{id}": {
@@ -18724,12 +18606,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "put": {
         "tags": ["UnderwriterV1"],
@@ -18801,12 +18678,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "delete": {
         "tags": ["UnderwriterV1"],
@@ -18868,12 +18740,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/producers": {
@@ -18958,12 +18825,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "post": {
         "tags": ["ProducerV1"],
@@ -19035,12 +18897,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     },
     "/exposures/{exposureId}/producers/{id}": {
@@ -19112,12 +18969,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "put": {
         "tags": ["ProducerV1"],
@@ -19190,12 +19042,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       },
       "delete": {
         "tags": ["ProducerV1"],
@@ -19258,12 +19105,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "RMS_Auth": []
-          }
-        ]
+        }
       }
     }
   },
