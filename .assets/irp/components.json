@@ -11801,10 +11801,6 @@
             "type": "integer",
             "format": "int64"
           },
-          "status": {
-            "type": "string",
-            "enum": ["ACTIVE", "INACTIVE"]
-          },
           "totalDiskSpaceInMb": {
             "type": "string"
           },
