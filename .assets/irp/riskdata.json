@@ -9223,7 +9223,8 @@
           {
             "name": "exposureResourceId",
             "in": "query",
-            "description": "Exposure ID",
+            "description": "Exposure resource ID",
+            "required": true,
             "schema": {
               "minimum": 0,
               "type": "integer",
@@ -9234,6 +9235,7 @@
             "name": "exposureResourceType",
             "in": "query",
             "description": "Exposure type",
+            "required": true,
             "schema": {
               "minimum": 1,
               "type": "integer",
