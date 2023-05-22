@@ -1818,7 +1818,7 @@
                 "items": {
                   "oneOf": [
                     {
-                      "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PatchSecurableSetMultiValue"
+                      "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PatchSecurableSetGroup"
                     },
                     {
                       "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PatchExposureSetSingleValue"
