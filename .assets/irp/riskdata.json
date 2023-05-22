@@ -18329,10 +18329,15 @@
           {
             "name": "exposureResourcetype",
             "in": "query",
-            "description": "Type of exposure. Specify 'POL' for policy abd 'LOC' for location.",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "policy",
+                "account",
+                "portfolio",
+                "location"
+              ]
             }
           }
         ],
