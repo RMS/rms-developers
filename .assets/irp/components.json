@@ -5147,23 +5147,47 @@
           "engineVersion": {
             "type": "string"
           },
-          "perilCode": {
-            "type": "string"
+          "perils": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "perilCode": {
+                  "type": "string"
+                },
+                "perilName": {
+                  "type": "string"
+                }
+              }
+            }
           },
-          "perilName": {
-            "type": "string"
+          "subPerils": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "subPerilId": {
+                  "type": "integer"
+                },
+                "subPerilName": {
+                  "type": "string"
+                }
+              }
+            }
           },
-          "subPerilId": {
-            "type": "integer"
-          },
-          "subPerilName": {
-            "type": "string"
-          },
-          "regionCode": {
-            "type": "string"
-          },
-          "regionName": {
-            "type": "string"
+          "regions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "regionCode": {
+                  "type": "string"
+                },
+                "regionName": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "status": {
             "type": "string"
