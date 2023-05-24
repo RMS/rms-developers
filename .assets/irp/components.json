@@ -5097,11 +5097,8 @@
           "description": {
             "type": "string"
           },
-          "resourceUris": {
-            "type": "array",
-            "items": {
-              "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/RiskdataResource"
-            }
+          "sourceRdmName": {
+            "type": "string"
           },
           "jobId": {
             "type": "integer",
@@ -5111,108 +5108,66 @@
             "type": "string",
             "format": "uuid"
           },
-          "securableUri": {
+          "securableGuid": {
             "type": "string",
             "format": "uri"
           },
-          "analysisType": {
-            "type": "string",
-            "enum": ["riskAnalysis"]
-          },
-          "analysisSubtype": {
-            "type": "string",
-            "enum": ["riskAnalysis"]
-          },
-          "engine": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-          },
-          "status": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-          },
-          "type": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-          },
-          "peril": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-          },
-          "subPeril": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-          },
-          "region": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-          },
-          "rdmName": {
+          "analysisTypeId": {
             "type": "string"
           },
-          "user": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+          "analysisType": {
+            "type": "string"
           },
-          "framework": {
+          "exposureName": {
+            "type": "string"
+          },
+          "exposureResourceTypeId": {
+            "type": "integer"
+          },
+          "exposureResourceId": {
+            "type": "int64"
+          },
+          "engineName": {
+            "type": "string"
+          },
+          "engineId": {
+            "type": "integer"
+          },
+          "engineVersion": {
+            "type": "string"
+          },
+          "perilCode": {
+            "type": "string"
+          },
+          "perilName": {
+            "type": "string"
+          },
+          "subPerilId": {
+            "type": "integer"
+          },
+          "subPerilName": {
+            "type": "string"
+          },
+          "regionCode": {
+            "type": "string"
+          },
+          "regionName": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "statusId": {
+            "type": "integer"
+          },
+          "username": {
             "type": "string"
           },
           "currency": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/AnalysisCurrency"
           },
-          "engineSubType": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-          },
-          "engineVersion": {
+          "framework": {
             "type": "string"
-          },
-          "details": {
-            "type": "object",
-            "properties": {
-              "regroup": {
-                "type": "integer",
-                "format": "int32"
-              },
-
-              "groupType": {
-                "type": "string"
-              },
-              "cedant": {
-                "type": "string"
-              },
-              "lob": {
-                "type": "string"
-              },
-
-              "isGroup": {
-                "type": "boolean"
-              },
-              "modelProfile": {
-                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-              },
-              "outputProfile": {
-                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-              },
-              "lossAmplification": {
-                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-              },
-              "mode": {
-                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-              },
-              "insuranceType": {
-                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-              },
-              "vulnerabilityCurve": {
-                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
-              },
-              "eventRateSchemes": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "simulationSetId": {
-                "type": "integer",
-                "format": "int64"
-              },
-              "simulationPeriods": {
-                "type": "integer",
-                "format": "int32"
-              }
-            }
           }
         }
       },
