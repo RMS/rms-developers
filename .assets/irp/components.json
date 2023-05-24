@@ -5118,16 +5118,24 @@
           "analysisType": {
             "type": "string"
           },
-          "exposureName": {
-            "type": "string"
-          },
-          "resourceTypeId": {
-            "type": "integer"
-          },
-          "resourceIds": {
+          "resources": {
             "type": "array",
             "items": {
-              "type": "integer"
+              "type": "object",
+              "properties": {
+                "resourceId": {
+                  "type": "integer"
+                },
+                "resourceTypeId": {
+                  "type": "integer"
+                },
+                "resourceType": {
+                  "type": "string"
+                },
+                "exposureName": {
+                  "type": "string"
+                }
+              }
             }
           },
           "engineName": {
@@ -5178,19 +5186,19 @@
         "required": ["asOfDate", "code", "scheme", "vintage"],
         "type": "object",
         "properties": {
-          "name": {
+          "currencyName": {
             "type": "string"
           },
-          "code": {
+          "currencyCode": {
             "type": "string"
           },
-          "scheme": {
+          "currencyScheme": {
             "type": "string"
           },
-          "asOfDate": {
+          "currencyAsOfDate": {
             "type": "string"
           },
-          "vintage": {
+          "currencyVintage": {
             "type": "string"
           }
         }
