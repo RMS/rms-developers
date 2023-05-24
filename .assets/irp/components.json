@@ -13104,8 +13104,10 @@
       "ExposureSet": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string"
+          "exposureSetId": {
+            "type": "integer",
+            "format": "int64",
+            "minimum": 1
           },
           "name": {
             "type": "string"
