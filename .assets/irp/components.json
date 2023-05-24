@@ -5121,11 +5121,14 @@
           "exposureName": {
             "type": "string"
           },
-          "exposureResourceTypeId": {
+          "resourceTypeId": {
             "type": "integer"
           },
-          "exposureResourceId": {
-            "type": "int64"
+          "resourceIds": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
           },
           "engineName": {
             "type": "string"
