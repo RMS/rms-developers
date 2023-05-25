@@ -1806,7 +1806,8 @@
             "description": "ID for Exposure Set to update.",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -1866,7 +1867,8 @@
             "description": "ID for Exposure Set to update.",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
