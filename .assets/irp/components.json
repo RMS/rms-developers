@@ -10011,9 +10011,6 @@
           "ws10000YrRpSurgeDef": {
             "type": "number",
             "format": "double"
-          },
-          "veloctiy": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           }
         }
       },
@@ -12428,13 +12425,15 @@
             "type": "string"
           },
           "exposureSetId": {
-            "type": "string"
+            "type": "integer",
+            "format": "int64"
           },
           "serverName": {
             "type": "string"
           },
           "serverId": {
-            "type": "string"
+            "type": "integer",
+            "format": "int64"
           }
         }
       },
