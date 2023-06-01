@@ -5338,6 +5338,10 @@
           "name": {
             "type": "string"
           },
+          "uri": {
+            "type": "string",
+            "style": "uri"
+          },
           "number": {
             "type": "string"
           },
@@ -5719,6 +5723,10 @@
           },
           "accountName": {
             "type": "string"
+          },
+          "uri": {
+            "type": "string",
+            "style": "uri"
           },
           "portfolioId": {
             "type": "string"
