@@ -3153,7 +3153,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Account"
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/NewAccount"
               }
             }
           },
@@ -3286,7 +3286,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Account"
+                "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/NewAccount"
               }
             }
           },

@@ -5344,17 +5344,31 @@
           "status": {
             "type": "string"
           },
-          "cedant": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Cedant"
+          "cedantId": {
+            "type": "number",
+            "format": "int32"
           },
-          "producer": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Producer"
+          "cedantName": {
+            "type": "string"
           },
-          "underwriter": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/UnderWriter"
+          "producerId": {
+            "type": "string"
           },
-          "branch": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/Branch"
+          "producerName": {
+            "type": "string"
+          },
+          "underwriterId": {
+            "type": "string"
+          },
+          "underwriterName": {
+            "type": "string"
+          },
+          "branchId": {
+            "type": "number",
+            "format": "int32"
+          },
+          "branchName": {
+            "type": "string"
           },
           "userId1": {
             "type": "string"
@@ -5384,11 +5398,56 @@
             "type": "string",
             "enum": ["InActive", "Active"]
           },
-          "linkId": {
+          "isValid": {
+            "type": "boolean"
+          }
+        }
+      },
+      "NewAccount": {
+        "required": ["number", "name"],
+        "type": "object",
+        "properties": {
+          "name": {
             "type": "string"
           },
-          "guid": {
+          "number": {
             "type": "string"
+          },
+          "cedantId": {
+            "type": "number",
+            "format": "int32"
+          },
+          "producerId": {
+            "type": "string"
+          },
+          "underwriterId": {
+            "type": "string"
+          },
+          "branchId": {
+            "type": "number",
+            "format": "int32"
+          },
+          "userId1": {
+            "type": "string"
+          },
+          "userId2": {
+            "type": "string"
+          },
+          "userId3": {
+            "type": "string"
+          },
+          "userId4": {
+            "type": "string"
+          },
+          "userText1": {
+            "type": "string"
+          },
+          "userText2": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string",
+            "enum": ["InActive", "Active"]
           },
           "isValid": {
             "type": "boolean"
@@ -5661,24 +5720,38 @@
           "accountName": {
             "type": "string"
           },
-          "cedantName": {
-            "type": "string"
-          },
-          "producerName": {
-            "type": "string"
-          },
           "portfolioId": {
-            "type": "string"
-          },
-          "underwriterName": {
-            "type": "string"
-          },
-          "branchName": {
             "type": "string"
           },
           "numLocations": {
             "type": "integer",
             "format": "int32"
+          },
+          "cedantId": {
+            "type": "number",
+            "format": "int32"
+          },
+          "cedantName": {
+            "type": "string"
+          },
+          "producerId": {
+            "type": "string"
+          },
+          "producerName": {
+            "type": "string"
+          },
+          "underwriterId": {
+            "type": "string"
+          },
+          "underwriterName": {
+            "type": "string"
+          },
+          "branchId": {
+            "type": "number",
+            "format": "int32"
+          },
+          "branchName": {
+            "type": "string"
           },
           "userId1": {
             "type": "string"
