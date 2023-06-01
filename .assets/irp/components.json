@@ -10551,15 +10551,13 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 40
           },
           "number": {
             "type": "string"
           },
           "description": {
-            "type": "string"
-          },
-          "stampDate": {
             "type": "string"
           }
         }
