@@ -5349,30 +5349,36 @@
             "type": "string"
           },
           "cedantId": {
+            "type": "string",
+            "maxLength": 20
+          },
+          "cedantName": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "producerId": {
+            "type": "string",
+            "maxLength": 10
+          },
+          "producerName": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "underwriterId": {
             "type": "number",
             "format": "int32"
           },
-          "cedantName": {
-            "type": "string"
-          },
-          "producerId": {
-            "type": "string"
-          },
-          "producerName": {
-            "type": "string"
-          },
-          "underwriterId": {
-            "type": "string"
-          },
           "underwriterName": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 30
           },
           "branchId": {
             "type": "number",
             "format": "int32"
           },
           "branchName": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 30
           },
           "userId1": {
             "type": "string"
@@ -10636,10 +10642,12 @@
             "maxLength": 40
           },
           "number": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 20
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 255
           }
         }
       },
@@ -10652,17 +10660,20 @@
             "format": "int32"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 40
           },
           "uri": {
             "type": "string",
             "format": "uri"
           },
           "number": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 20
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 255
           },
           "createDate": {
             "type": "string"
@@ -10783,6 +10794,10 @@
           },
           "description": {
             "type": "string"
+          },
+          "uri": {
+            "type": "string",
+            "format": "uri"
           },
           "createDate": {
             "type": "string"
