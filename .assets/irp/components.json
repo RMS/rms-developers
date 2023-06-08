@@ -5794,9 +5794,6 @@
           "ownerName": {
             "type": "string"
           },
-          "updatedBy": {
-            "type": "string"
-          },
           "stampDate": {
             "type": "string"
           },

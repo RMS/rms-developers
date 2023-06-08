@@ -3774,82 +3774,6 @@
         }
       }
     },
-    "/exposures/{exposureId}/locations/locationcondition/batch": {
-      "post": {
-        "tags": ["Locations"],
-        "summary": "Manage location conditions in batch",
-        "operationId": "batchProcessLocationConditions",
-        "parameters": [
-          {
-            "name": "exposureId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/BatchRequest"
-                }
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "201": {
-            "description": "Batch successfully initiated",
-            "headers": {
-              "Location": {
-                "description": "Location of the locationcondition/batch",
-                "style": "simple",
-                "schema": {
-                  "type": "string",
-                  "format": "URI"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
-                }
-              }
-            }
-          },
-          "405": {
-            "description": "Method not allowed",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ErrorMessage"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/exposures/{exposureId}/locations/{id}/buildingattribute": {
       "post": {
         "tags": ["Locations"],
@@ -9110,7 +9034,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/EventLossItem"
+                    "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PeriodLossItem"
                   }
                 }
               }
