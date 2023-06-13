@@ -3559,10 +3559,14 @@
             "format": "double"
           },
           "effectDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "expireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "pcntRetent": {
             "type": "number",
@@ -4261,10 +4265,14 @@
             "format": "double"
           },
           "effectDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "expireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "pcntRetent": {
             "type": "number",
@@ -4578,10 +4586,14 @@
             "format": "double"
           },
           "effectDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "expireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "pcntRetent": {
             "type": "number",
@@ -4985,10 +4997,14 @@
             "format": "double"
           },
           "effectDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "expireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "pcntRetent": {
             "type": "number",
@@ -7232,13 +7248,19 @@
             "format": "int32"
           },
           "geoDateTime": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "createDateTime": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "updateDateTime": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "admin1Code": {
             "type": "string"
@@ -7690,10 +7712,14 @@
             "type": "string"
           },
           "startDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "completionDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "yearSprinkler": {
             "type": "string"
@@ -8391,10 +8417,14 @@
             "type": "string"
           },
           "startDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "completionDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "percentComplete": {
             "type": "number",
@@ -8525,7 +8555,9 @@
             "type": "string"
           },
           "panelDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "buffer": {
             "type": "number",
@@ -8742,10 +8774,14 @@
             "type": "string"
           },
           "startDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "completionDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "percentComplete": {
             "type": "number",
@@ -9403,10 +9439,14 @@
             "type": "string"
           },
           "startDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "completionDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "percentComplete": {
             "type": "number",
@@ -9671,10 +9711,14 @@
             "type": "string"
           },
           "startDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "completionDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "percentComplete": {
             "type": "number",
@@ -10133,10 +10177,14 @@
             "type": "string"
           },
           "expireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "inceptDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "yearBuilt": {
             "type": "string"
@@ -11566,10 +11614,14 @@
             "format": "double"
           },
           "effectDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "expireDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "pcntRetent": {
             "type": "number",
