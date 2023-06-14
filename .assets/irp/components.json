@@ -3680,7 +3680,9 @@
             "type": "string"
           },
           "asOfDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "vintage": {
             "type": "string"
@@ -3772,7 +3774,9 @@
             "type": "string"
           },
           "runDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "description": {
             "type": "string"
@@ -4376,10 +4380,14 @@
             "format": "int32"
           },
           "eventdate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03t13:20:42.010z"
           },
           "lossdate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03t13:20:42.010z"
           },
           "perspvalue": {
             "type": "number",
@@ -5236,7 +5244,9 @@
             "type": "string"
           },
           "currencyAsOfDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "currencyVintage": {
             "type": "string"
@@ -5415,10 +5425,14 @@
             "type": "string"
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "stampDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "state": {
             "type": "string",
@@ -5589,7 +5603,9 @@
             "type": "string"
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           }
         }
       },
@@ -5811,23 +5827,31 @@
             "type": "string"
           },
           "stampDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "jobStatus": {
             "type": "string"
           },
           "jobStartDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "jobEndDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "resultsCount": {
             "type": "integer",
             "format": "int32"
           },
           "policyExpirationDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "policyExpirationStatus": {
             "type": "string"
@@ -5969,7 +5993,9 @@
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "peril": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
@@ -6006,7 +6032,9 @@
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "peril": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
@@ -6043,7 +6071,9 @@
             "type": "string"
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "owner": {
             "type": "string"
@@ -7596,7 +7626,8 @@
             "format": "double"
           },
           "esdbYearBuilt": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^\\d{4}$"
           }
         }
       },
@@ -7709,7 +7740,8 @@
             "format": "double"
           },
           "yearUpgrade": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^\\d{4}$"
           },
           "startDate": {
             "type": "string",
@@ -8414,7 +8446,8 @@
             "format": "double"
           },
           "yearUpgrade": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^\\d{4}$"
           },
           "startDate": {
             "type": "string",
@@ -8771,7 +8804,8 @@
             "format": "double"
           },
           "yearUpgrade": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^\\d{4}$"
           },
           "startDate": {
             "type": "string",
@@ -9213,7 +9247,8 @@
             "format": "double"
           },
           "yearUpgrade": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^\\d{4}$"
           },
           "percentComplete": {
             "type": "number",
@@ -9436,7 +9471,8 @@
             "format": "double"
           },
           "yearUpgrade": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^\\d{4}$"
           },
           "startDate": {
             "type": "string",
@@ -9708,7 +9744,8 @@
             "format": "int32"
           },
           "yearUpgrade": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^\\d{4}$"
           },
           "startDate": {
             "type": "string",
@@ -10187,13 +10224,18 @@
             "example": "2021-03-03T13:20:42.010Z"
           },
           "yearBuilt": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^\\d{4}$"
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "updateDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "buildingClassScheme": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
@@ -10475,10 +10517,14 @@
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           },
           "inceptionDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "expirationDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "currency": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
@@ -10721,10 +10767,14 @@
             "maxLength": 255
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "stampDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           }
         }
       },
@@ -10773,7 +10823,9 @@
             "type": "string"
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "geocodeVersion": {
             "type": "string"
@@ -10845,10 +10897,14 @@
             "format": "uri"
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "stampDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "geocodeVersion": {
             "type": "string"
@@ -10866,10 +10922,14 @@
             "type": "string"
           },
           "jobStartDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "jobEndDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           }
         }
       },
@@ -10928,10 +10988,14 @@
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           },
           "inceptionDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "expirationDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "payoutAmount": {
             "type": "number",
@@ -11208,10 +11272,14 @@
             "type": "string"
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "stampDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "state": {
             "type": "string",
@@ -11405,10 +11473,14 @@
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
           },
           "inceptionDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "expirationDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "currency": {
             "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
@@ -11540,10 +11612,14 @@
             "type": "string"
           },
           "createDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           },
           "stampDate": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "example": "2021-03-03T13:20:42.010Z"
           }
         }
       },
