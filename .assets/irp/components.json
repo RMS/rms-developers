@@ -3580,7 +3580,7 @@
             "type": "number",
             "format": "double"
           },
-          "jobpriority": {
+          "priority": {
             "type": "integer",
             "format": "int32"
           },
@@ -4286,7 +4286,7 @@
             "type": "number",
             "format": "double"
           },
-          "jobpriority": {
+          "priority": {
             "type": "integer",
             "format": "int32"
           },
@@ -4607,7 +4607,7 @@
             "type": "number",
             "format": "double"
           },
-          "jobpriority": {
+          "priority": {
             "type": "integer",
             "format": "int32"
           },
@@ -5018,7 +5018,7 @@
             "type": "number",
             "format": "double"
           },
-          "jobpriority": {
+          "priority": {
             "type": "integer",
             "format": "int32"
           },
@@ -11635,7 +11635,7 @@
             "type": "number",
             "format": "double"
           },
-          "jobpriority": {
+          "priority": {
             "type": "integer",
             "format": "int32"
           },
