@@ -591,7 +591,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -828,7 +828,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -1300,7 +1300,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -1537,7 +1537,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -2034,7 +2034,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -2251,7 +2251,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -2338,7 +2338,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -2423,7 +2423,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -2913,7 +2913,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -3069,7 +3069,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -3866,7 +3866,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -7812,7 +7812,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -7841,22 +7841,6 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "userName",
-            "in": "query",
-            "description": "Name of user that ran the analysis.",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "runDate",
-            "in": "query",
-            "description": "Date that the analysis was run.",
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -8763,7 +8747,7 @@
               "items": {
                 "type": "string",
                 "default": "POLICY",
-                "enum": ["POLICY"]
+                "enum": ["POLICY","ACCOUNT"]
               }
             }
           },
@@ -8821,7 +8805,7 @@
             }
           },
           {
-            "name": "offSet",
+            "name": "offset",
             "in": "query",
             "description": "Number of the page displaying the returned records, starting at _0_.",
             "schema": {
@@ -9095,7 +9079,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/EntityResult"
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/EntityItem"
                 }
               }
             }
@@ -11792,7 +11776,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -12382,7 +12366,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -12739,7 +12723,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -13159,7 +13143,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -13700,7 +13684,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -14238,7 +14222,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -15878,7 +15862,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -15988,7 +15972,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }
@@ -16129,7 +16113,7 @@
           {
             "name": "filter",
             "in": "query",
-            "description": "Filters query results by evaluating the value of expressions. The service supports four types of operators:\n* Comparison: `filter=[attribute][comparison operator][value]` e.g. `id=100`, `id!=100`, `id>100`\n* Logical: `filter=[expression][logical operator][expression]` e.g. `id=100 AND name=\"xyz\"` , `id=100 OR type=\"abc\"`\n* List: `filter=[attribute][list operator][values list]` e.g. `id IN (1,2,3]`, `name NOT IN (\"abc\",\"xyz\")`\n* Matching: `filter=[attribute][comparison operator][pattern]`, e.g. `name LIKE \"abc \"` , `type NOT LIKE \" xyz* \"`\nTo learn more, see [Query Exposure Data](https://developer.rms.com/rms-developers/docs/query-exposure-data).",
+            "description": "Filters query results by evaluating the value of expressions",
             "schema": {
               "type": "string"
             }

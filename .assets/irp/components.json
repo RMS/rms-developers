@@ -5437,9 +5437,6 @@
           "state": {
             "type": "string",
             "enum": ["InActive", "Active"]
-          },
-          "isValid": {
-            "type": "boolean"
           }
         }
       },
@@ -5454,14 +5451,16 @@
             "type": "string"
           },
           "cedantId": {
-            "type": "number",
-            "format": "int32"
+            "type": "string",
+            "maxLength": 20
           },
           "producerId": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 10
           },
           "underwriterId": {
-            "type": "string"
+            "type": "number",
+            "format": "int32"
           },
           "branchId": {
             "type": "number",
@@ -5488,9 +5487,6 @@
           "state": {
             "type": "string",
             "enum": ["InActive", "Active"]
-          },
-          "isValid": {
-            "type": "boolean"
           }
         }
       },
@@ -5773,31 +5769,21 @@
             "type": "integer",
             "format": "int32"
           },
-          "cedantId": {
-            "type": "number",
-            "format": "int32"
-          },
           "cedantName": {
-            "type": "string"
-          },
-          "producerId": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 40
           },
           "producerName": {
-            "type": "string"
-          },
-          "underwriterId": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 40
           },
           "underwriterName": {
-            "type": "string"
-          },
-          "branchId": {
-            "type": "number",
-            "format": "int32"
+            "type": "string",
+            "maxLength": 30
           },
           "branchName": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 30
           },
           "userId1": {
             "type": "string"
