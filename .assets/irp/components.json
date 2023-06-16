@@ -92,6 +92,10 @@
             "type": "string",
             "format": "int64"
           },
+          "priority": {
+            "type": "string",
+            "enum": ["verylow", "low", "medium", "high", "veryhigh"]
+          },
           "userName": {
             "type": "string"
           },
