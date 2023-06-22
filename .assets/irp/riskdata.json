@@ -7940,18 +7940,18 @@
             }
           }
         ],
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "type" : "array",
-                "items" : {
-                  "$ref" : "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PateBatchInput"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PateBatchInput"
                 }
               }
             }
           },
-          "required" : true
+          "required": true
         },
         "responses": {
           "204": {
@@ -8747,7 +8747,7 @@
               "items": {
                 "type": "string",
                 "default": "POLICY",
-                "enum": ["POLICY","ACCOUNT"]
+                "enum": ["POLICY", "ACCOUNT"]
               }
             }
           },
@@ -13536,6 +13536,32 @@
               "schema": {
                 "type": "string"
               }
+            },
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                  "resourceType": {
+                    "type": "string"
+                  },
+                  "editType": {
+                    "type": "string"
+                  },
+                  "editQuery": {
+                    "type": "string"
+                  },
+                  "updates": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "resourceId": {
+                    "type": "string"
+                  }
+                }
+              }
             }
           },
           "required": true
@@ -13624,6 +13650,32 @@
             "text/plain": {
               "schema": {
                 "type": "string"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                  "resourceType": {
+                    "type": "string"
+                  },
+                  "editType": {
+                    "type": "string"
+                  },
+                  "editQuery": {
+                    "type": "string"
+                  },
+                  "updates": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "resourceId": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -17996,12 +18048,7 @@
             "required": true,
             "schema": {
               "type": "string",
-              "enum": [
-                "policy",
-                "account",
-                "portfolio",
-                "location"
-              ]
+              "enum": ["policy", "account", "portfolio", "location"]
             }
           }
         ],

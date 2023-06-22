@@ -7695,7 +7695,15 @@
             "format": "double"
           },
           "isFranchiseDeductible": {
-            "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/ExposureValue"
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
           },
           "isValid": {
             "type": "boolean"
@@ -7960,7 +7968,8 @@
           },
           "fireLossCov": {
             "type": "number",
-            "format": "float"
+            "format": "float",
+            "readOnly": true
           },
           "soilPeriod": {
             "type": "number",
@@ -8151,258 +8160,327 @@
           },
           "percentInGeography": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "score1": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "score2": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "score3": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "scoreOverall": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "mmi500": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mmi1000": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mmi1500": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "faultsName1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "faultsDistance1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "faultsReturnPeriodM601": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsReturnPeriodM651": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsReturnPeriodM701": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsName2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "faultsDistance2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "faultsReturnPeriodM602": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsReturnPeriodM652": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsReturnPeriodM702": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsName3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "faultsDistance3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "faultsReturnPeriodM603": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsReturnPeriodM653": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsReturnPeriodM703": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsName4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "faultsDistance4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "faultsReturnPeriodM604": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsReturnPeriodM654": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsReturnPeriodM704": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsName5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "faultsDistance5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "faultsReturnPeriodM605": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsReturnPeriodM655": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsReturnPeriodM705": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "faultsBackgroundRates": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineName1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineType1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineStatus1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineArea1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mineDistance1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mineName2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineType2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineStatus2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineArea2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mineDistance2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mineName3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineType3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineStatus3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineArea3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mineDistance3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mineName4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineType4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineStatus4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineArea4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mineDistance4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mineName5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineType5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineStatus5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mineArea5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "mineDistance5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "sinkHoleArea1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "sinkHoleDistance1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "sinkHoleArea2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "sinkHoleDistance2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "sinkHoleArea3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "sinkHoleDistance3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "sinkHoleArea4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "sinkHoleDistance4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "sinkHoleArea5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "sinkHoleDistance5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "isValid": {
             "type": "boolean"
@@ -8590,7 +8668,8 @@
             "type": "string"
           },
           "huZones": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "mapSource": {
             "type": "integer",
@@ -8722,51 +8801,63 @@
           },
           "score1": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "score2": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "score3": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "scoreOverall": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "fl10YRInlandDepthUndef": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "fl30YRInlandDepthUndef": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "fl50YRInlandDepthUndef": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "fl100YRInlandDepthUndef": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "fl200YRInlandDepthUndef": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "fl250YRInlandDepthUndef": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "fl500YRInlandDepthUndef": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "fl1000YRInlandDepthUndef": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           }
         }
       },
@@ -9018,195 +9109,254 @@
           },
           "fireStationLatitude1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationLongitude1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationDistance1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationStreetAddress1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationCityName1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationPostalCode1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationAdmin2name1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationAdmin1code1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationLevel1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationEms1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationType1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationName2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationLatitude2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationLongitude2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationDistance2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationStreetAddress2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationCityName2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationPostalCode2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationAdmin2name2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationAdmin1code2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationLevel2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationEms2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationType2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationName3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationLatitude3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationLongitude3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationDistance3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationStreetaddress3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationCityname3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationPostalcode3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationAdmin2name3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationAdmin1code3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationLevel3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationEms3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationType3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationName4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationLatitude4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationLongitude4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationDistance4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationStreetAddress4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationCityName4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationPostalCode4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationAdmin2name4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationAdmin1code4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationLevel4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationEms4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationType4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationName5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationLatitude5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationLongitude5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationDistance5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "fireStationStreetAddress5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationCityName5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationPostalcode5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationAdmin2name5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationAdmin1code5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationLevel5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationEms5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "fireStationType5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "isValid": {
             "type": "boolean"
@@ -9389,51 +9539,63 @@
           },
           "dominantSubperilCS": {
             "type": "integer",
-            "format": "int64"
+            "format": "int64",
+            "readOnly": true
           },
           "percentInGeographyCS": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "score1CS": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "score2CS": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "score3CS": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "scoreOverallCS": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "dominantSubperilWT": {
             "type": "integer",
-            "format": "int64"
+            "format": "int64",
+            "readOnly": true
           },
           "percentInGeographyWT": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "score1WT": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "score2WT": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "score3WT": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "scoreOverallWT": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           }
         }
       },
@@ -9509,136 +9671,173 @@
           },
           "score1": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "scoreOverall": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "targetsName1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsId1": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "targetsScore1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsDistance1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsCategory1": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsCityName1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsAdmin1code1": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsName2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsId2": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "targetsScore2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsDistance2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsCategory2": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsCityName2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsAdmin1code2": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsName3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsId3": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "targetsScore3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsDistance3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsCategory3": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsCityName3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsAdmin1code3": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsName4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsId4": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "targetsScore4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsDistance4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsCategory4": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsCityName4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsAdmin1code4": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsName5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsId5": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "targetsScore5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsDistance5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsCategory5": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "targetsCityName5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "targetsAdmin1code5": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           }
         }
       },
@@ -9986,7 +10185,9 @@
           },
           "biZone": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "minimum": 0,
+            "maximum": 8
           },
           "topologyFeature": {
             "type": "integer",
@@ -10046,126 +10247,157 @@
           },
           "percentInGeography": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "score1": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "score2": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "score3": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "scoreOverall": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "windpoolZone": {
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "distanceToInnerCoast": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws1YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws2YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws5YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws10YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws25YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws50YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws100YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws200YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws250YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws500YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws1000YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws10000YrRpWind": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws1YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws2YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws5YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws10YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws25YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws50YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws100YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws200YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws250YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws500YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws1000YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           },
           "ws10000YrRpSurgeDef": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "readOnly": true
           }
         }
       },
@@ -10595,12 +10827,6 @@
             "type": "array",
             "items": {
               "$ref": "https://raw.githubusercontent.com/RMS/rms-developers/product/drafts/.assets/irp/components.json#/components/schemas/PolicyCondition"
-            }
-          },
-          "CustomData": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string"
             }
           },
           "newCauseOfLoss": {
