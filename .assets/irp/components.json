@@ -9044,102 +9044,85 @@
             "type": "number",
             "format": "double",
             "readOnly": true
-    
           },
           "score1": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "scoreOverall": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "distanceToWuiIntermix": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "distanceToWuiInterface": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "stochasticBurnProb": {
             "type": "number",
             "format": "double",
             "readOnly": true
-    
           },
           "urbanConFlagRationScore": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "distanceToCalFireVeryHigh": {
             "type": "number",
             "format": "double",
             "readOnly": true
-    
           },
           "distanceToCalFireHigh": {
             "type": "number",
             "format": "double",
             "readOnly": true
-    
           },
           "distanceToCalFireMedium": {
             "type": "number",
             "format": "double",
             "readOnly": true
-    
           },
           "yearLastHistFire250m": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "histFireYearCount250m": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "histFireYearCount2km": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "histFireYearCount5km": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "histFireYearCount10km": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "histFireYearCount20km": {
             "type": "integer",
             "format": "int32",
             "readOnly": true
-    
           },
           "fireStationName1": {
             "type": "string",
             "readOnly": true
-    
           },
           "fireStationLatitude1": {
             "type": "number",
