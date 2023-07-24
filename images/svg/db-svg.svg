@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="350px" height="50px" viewBox="0 0 350 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DB-SVG</title>
+    <g id="DB-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Gotham-Book, Gotham" font-size="48" font-weight="normal">
+        <text id="Data-Bridge" fill="#FFFFFF">
+            <tspan x="0" y="39">Data </tspan>
+            <tspan x="126.672" y="39" font-family="Gotham-Bold, Gotham" font-weight="bold">Bridge</tspan>
+        </text>
+    </g>
+</svg>
