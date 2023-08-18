@@ -210,6 +210,13 @@ font-weight: var(--font-weight-bold);
   border-color: #eea236 !important;
 }
 
+
+.callout.callout[theme=🍊] {
+  .callout-heading {
+    color: #eea236 !important;
+    }
+}
+
 .callout.callout[theme=🍊] h3 p {
 text-transform: uppercase;
 color: #eea236;
