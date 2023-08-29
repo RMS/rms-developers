@@ -272,6 +272,11 @@ font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
 }
 
+.callout.callout[theme=🫐] .callout-heading {
+    font-size: 14px;
+    margin-left .75em;
+    text-transform: uppercase;
+}
 
 /* PURPLE PERMISSIONS admonition */
 .callout[theme=🍐] {
