@@ -230,6 +230,39 @@ font-weight: var(--font-weight-bold);
 	margin-left: 0;
 }
 
+/* NEW BLUE admonition*/
+
+.callout[theme=🫐] {
+  --emoji: unset;
+  --icon: ú-fw; /* copied front FontAwesome */
+  --icon-color: #5bc0de;
+}
+
+.callout.callout[theme=🫐] {
+  background: #f8e8f8 !important;
+  color: var(--text);
+  padding: .75rem;
+  padding-left: 0;
+	font-size: 12px;
+/*	border: var(--border-width) solid var(--ParamContainer-border); */
+	border: solid 1px;
+	border-radius: var(--border-radius-lg);
+  border-color: #5bc0de !important;
+}
+
+.callout.callout[theme=🫐] > * {
+	font-size: 11px;
+	margin-left: .75em;
+}
+
+.callout.callout[theme=🫐] h3 p {
+text-transform: uppercase !important;
+color: #5bc0de !important;
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-weight-bold);
+}
+
 
 /* PURPLE PERMISSIONS admonition */
 .callout[theme=🍐] {
@@ -307,6 +340,9 @@ color: rebeccapurple;
 .callout.callout[theme=🍐]  > * {
 	font-size: 13px; /* Reduce size of text in PERMISSSIONS */
 }
+
+
+
 
 
 /* Space between table and text in blockquote */
