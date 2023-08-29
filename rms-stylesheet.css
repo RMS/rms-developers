@@ -57,12 +57,20 @@
 
 /* INFO ADMONITION */
 
-.callout[theme=📘] {
+.callout[theme=📘] .callout.callout .callout-heading
+{
 	font-size: 14px;
+  color: var(--title,--text);
+  font-size: 14px:;
+  font-family: var(--markdown-title-font);
+  font-weight: var(--markdown-title-weight,600);
+  line-height: 1.25;
+  margin-bottom: calc(1.33rem * 0.5);
+  text-transform: uppercase;
 }
 
-/* WARNING ADMONITION */
 
+/* WARNING ADMONITION */
 .callout[theme=👍] blockquote {
 	font-size: 14px;
 }
