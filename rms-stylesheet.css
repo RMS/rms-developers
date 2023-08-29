@@ -261,7 +261,6 @@ font-weight: var(--font-weight-bold);
 	font-size: 14px;
 	margin-left: .75em;
   background: #e3edf2 !important;
-  text-transform: uppercase !important;
 }
 
 .callout.callout[theme=🫐] h3 p {
@@ -275,7 +274,8 @@ font-weight: var(--font-weight-bold);
 .callout.callout[theme=🫐] .callout-heading {
     font-size: 14px;
     margin-left .75em;
-    text-transform: uppercase;
+    color: #5bc0de !important;
+    text-transform: uppercase !important;
 }
 
 /* PURPLE PERMISSIONS admonition */
