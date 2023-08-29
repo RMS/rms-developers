@@ -124,7 +124,7 @@ font-weight: var(--font-weight-bold);
 }
 
 .callout.callout[theme=📷] {
-	font-size: 14px;
+	font-size: 11px;
   background: #e3edf2;
   border-color: #5bc0de !important;
   padding: .75rem;
@@ -135,10 +135,11 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme=📷] h3 p {
 text-transform: uppercase;
-color: #5bc0de;
+color: #5bc0de !important;
 font-family: var(--font-family);
-font-size: 12px;
 font-weight: var(--font-weight-bold);
+font-size: 11px;
+color: var(--color-text-muted);
 }
 
 .callout.callout[theme=📷] > * {
