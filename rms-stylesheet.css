@@ -1,5 +1,4 @@
-/*
- * THEME
+/* THEME
  * ADMONITIONS
  * API
  * BANNER
@@ -247,19 +246,20 @@ font-weight: var(--font-weight-bold);
 }
 
 .callout.callout[theme=🫐] {
-  background: #f8e8f8 !important;
+  background: #e3edf2 !important;
   color: var(--text);
   padding: .75rem;
   padding-left: 0;
-	font-size: 12px;
+	font-size: 14px;
 /*	border: var(--border-width) solid var(--ParamContainer-border); */
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
   border-color: #5bc0de !important;
+  text-transform: uppercase;
 }
 
 .callout.callout[theme=🫐] > * {
-	font-size: 11px;
+	font-size: 12px;
 	margin-left: .75em;
 }
 
