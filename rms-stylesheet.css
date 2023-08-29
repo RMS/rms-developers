@@ -255,20 +255,21 @@ font-weight: var(--font-weight-bold);
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
   border-color: #5bc0de !important;
-  text-transform: uppercase;
 }
 
 .callout.callout[theme=🫐] > * {
-	font-size: 12px;
+	font-size: 14px;
 	margin-left: .75em;
+  background: #e3edf2 !important;
+  text-transform: uppercase !important;
 }
 
 .callout.callout[theme=🫐] h3 p {
-text-transform: uppercase !important;
-color: #5bc0de !important;
-font-family: var(--font-family);
-font-size: 12px;
-font-weight: var(--font-weight-bold);
+  text-transform: uppercase !important;
+  color: #5bc0de !important;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
 }
 
 
