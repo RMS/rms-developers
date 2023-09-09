@@ -1,7 +1,7 @@
 /* OVERRIDES */
 
 div.Header-bottom2eLKOFXMEmh5 {
-  background-color: white !important;
+  background-color: #ffffff !important;
 }
 
 .rm-Header {
@@ -24,7 +24,7 @@ div.Header-bottom2eLKOFXMEmh5 {
 
 /* Remove Gray Background from Local Navigation Button */
 .reference-redesign .Sidebar-link2Dsha-r-GKh2.active {
-  background: unset;
+  background: #ffffff;
   color: var(--Sidebar-link-color);
 }
 
