@@ -1,8 +1,22 @@
 /* OVERRIDES */
 
-.Header-bottom2eLKOFXMEmh5 {
-  background-color: white;
+div.Header-bottom2eLKOFXMEmh5 {
+  background-color: white !important;
 }
+
+.rm-Header {
+  --Header-background: var(--color-primary);
+  --Header-border-color: #ffffff;
+  --Header-border-width: 1px;
+  --Header-button-color: #ffffff;
+  --Header-button-hover: #ffffff;
+  --Header-button-active: #ffffff;
+  --Header-button-focus: #ffffff;
+  --Header-jumpTo-background: var(--color-primary-inverse);
+  --Header-jumpTo-color: var(--color-primary);
+  --Header-logo-height: 48px;
+}
+
 
 /* THEME
  * ADMONITIONS
