@@ -17,6 +17,17 @@ div.Header-bottom2eLKOFXMEmh5 {
   --Header-logo-height: 48px;
 }
 
+/* Ensure Global Navigation Button Text Remains Black */
+ .rm-Header-bottom-link.Button:hover {
+   color: #384248;
+}
+
+/* Remove Gray Background from Local Navigation Button */
+.reference-redesign .Sidebar-link2Dsha-r-GKh2.active {
+  background: unset;
+  color: var(--Sidebar-link-color);
+}
+
 
 /* THEME
  * ADMONITIONS
