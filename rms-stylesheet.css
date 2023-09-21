@@ -91,7 +91,12 @@ div.Header-bottom2eLKOFXMEmh5 {
 }
 
 
-/* INFO ADMONITION */
+/* 
+*
+* DEPRECATED INFO ADMONITION 
+*
+*
+* */
 
 .callout[theme=📘] .callout.callout .callout-heading
 {
@@ -106,7 +111,12 @@ div.Header-bottom2eLKOFXMEmh5 {
 }
 
 
-/* WARNING ADMONITION */
+/* 
+*
+* DEPRECATED WARNING ADMONITION 
+*
+* */
+
 .callout[theme=👍] blockquote {
 	font-size: 14px;
 }
@@ -158,47 +168,53 @@ font-weight: var(--font-weight-bold);
 --border:rebeccapurple !important;
 }
 
-/* BLUE
- * IDEMPTPOTENCY admonition */
+/* 
+*
+* BLUE NOTE ADMONITION
+*
+* */
 
-.callout[theme=📷] {
+.callout[theme="📷"] {
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
   --icon-color: #c50a50;
 }
 
-.callout.callout[theme=📷] {
-	font-size: 11px;
+.callout.callout[theme="📷"] {
   background: #e3edf2;
-  border-color: #5bc0de !important;
-  padding: .75rem;
+  color: var(--text);
+	font-size: 14px;
+  /* padding: .75rem; */
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
-  border-color: var(--color-border-default);
+  border-color: #5bc0de !important;
 }
 
-.callout.callout[theme=📷] h3 p {
-text-transform: uppercase;
-color: #5bc0de !important;
-font-family: var(--font-family);
-font-size: 12px;
-font-weight: var(--font-weight-bold);
-}
-
-
-.callout.callout[theme=🍐] h3 p {
-text-transform: uppercase;
-color: rebeccapurple !important;
-font-family: var(--font-family);
-font-size: 12px;
-font-weight: var(--font-weight-bold);
-}
-
-.callout.callout[theme=📷] > * {
+.callout.callout[theme="📷"] > * {
+	font-size: 11px;
 	margin-left: 0rem;
 }
 
-/* admonition */
+.callout.callout[theme="📷"] {
+  .callout-heading {
+    color: #eea236 !important;
+    text-transform: uppercase !important;
+    font-size: 14px !important;
+    margin: 0 !important;
+  }
+}
+
+.callout.callout[theme="📷"] {
+  p {
+    font-size: 13px;
+  }
+}
+
+
+/* 
+* ADMONITION
+*
+* */
 
 .callout[theme=🍇] {
   --emoji: unset;
@@ -270,7 +286,7 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme=🍊] > * {
 	font-size: 11px;
-	margin-left: 0;
+	margin-left: 0rem;
 }
 
 .callout.callout[theme="🍊"] {
