@@ -269,6 +269,7 @@ font-weight: var(--font-weight-bold);
 }
 
 .callout.callout[theme=🍊] > * {
+	font-size: 11px;
 	margin-left: 0;
 }
 
@@ -348,9 +349,9 @@ font-weight: var(--font-weight-bold);
 .callout.callout[theme=🍐] {
   background: #f8e8f8 !important;
   color: var(--text);
-  padding: 1.33rem;
+  /* padding: 1.33rem; JUST REMOVED */
   /* padding-left: 0; */
-	font-size: 12px;
+	font-size: 14px;
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
   border-color: rebeccapurple !important;
@@ -358,17 +359,31 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme=🍐]  > * {
 	font-size: 11px;
-	margin-left: .75em;
+	margin-left: 0px !important;
 }
+
+/*
+.callout.callout[theme=🍐]  > * {
+	font-size: 13px; /* Reduce size of text in PERMISSSIONS */
+
+*/
 
 .callout.callout[theme="🍐"] {
   .callout-heading {
     color: rebeccapurple;
     text-transform: uppercase !important;
     font-size: 14px !important;
-    margin: 0 !important;
+    margin: 0 !important; 
   }
 }
+
+.callout.callout[theme="🍐"] {
+  p {
+    color: rebeccapurple;
+    text-transform: uppercase !important;
+  }
+}
+
 
 /*
 .callout.callout[theme=🍐] h3 p {
@@ -419,11 +434,6 @@ color: rebeccapurple;
   font-size: 11px; /* REDUCE SIZE OF HEADING */
   color: var(--color-text-muted);
 }
-
-.callout.callout[theme=🍐]  > * {
-	font-size: 13px; /* Reduce size of text in PERMISSSIONS */
-}
-
 
 
 
