@@ -184,14 +184,13 @@ font-weight: var(--font-weight-bold);
   background: #e3edf2;
   color: var(--text);
 	font-size: 14px;
-  /* padding: .75rem; */
+  padding: .75rem; 
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
   border-color: #5bc0de !important;
 }
 
 .callout.callout[theme="📷"] > * {
-	font-size: 11px;
 	margin-left: 0rem;
 }
 
