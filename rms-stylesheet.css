@@ -282,6 +282,13 @@ font-weight: var(--font-weight-bold);
   }
 }
 
+.callout.callout[theme="🍊"] {
+  p {
+    font-size: 13px;
+  }
+}
+
+
 /*
 .callout.callout[theme=🍊] h3 p {
 text-transform: uppercase;
@@ -367,13 +374,13 @@ font-weight: var(--font-weight-bold);
     text-transform: uppercase !important;
     font-size: 14px !important;
     margin: 0 !important; 
+    padding-bottom: 10px;
   }
 }
 
 .callout.callout[theme="🍐"] {
   p {
-    color: rebeccapurple;
-    text-transform: uppercase !important;
+    font-size: 13px;
   }
 }
 
