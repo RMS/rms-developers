@@ -249,7 +249,7 @@ font-weight: var(--font-weight-bold);
 
 /* 
 *
-* WARNING ADMONITION 
+* YELLOW WARNING ADMONITION 
 *
 * */
 
@@ -332,7 +332,13 @@ font-weight: var(--font-weight-bold);
     text-transform: uppercase !important;
 }
 
-/* PURPLE PERMISSIONS admonition */
+/* 
+*
+* PURPLE PERMISSIONS ADMONITION
+*
+*
+* */
+
 .callout[theme=🍐] {
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
@@ -342,10 +348,9 @@ font-weight: var(--font-weight-bold);
 .callout.callout[theme=🍐] {
   background: #f8e8f8 !important;
   color: var(--text);
-  padding: .75rem;
-  padding-left: 0;
+  padding: 1.33rem;
+  /* padding-left: 0; */
 	font-size: 12px;
-/*	border: var(--border-width) solid var(--ParamContainer-border); */
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
   border-color: rebeccapurple !important;
