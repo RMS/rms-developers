@@ -349,8 +349,6 @@ font-weight: var(--font-weight-bold);
 .callout.callout[theme=🍐] {
   background: #f8e8f8 !important;
   color: var(--text);
-  /* padding: 1.33rem; JUST REMOVED */
-  /* padding-left: 0; */
 	font-size: 14px;
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
@@ -359,14 +357,9 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme=🍐]  > * {
 	font-size: 11px;
-	margin-left: 0px !important;
+	margin-left: 0rem !important;
 }
 
-/*
-.callout.callout[theme=🍐]  > * {
-	font-size: 13px; /* Reduce size of text in PERMISSSIONS */
-
-*/
 
 .callout.callout[theme="🍐"] {
   .callout-heading {
