@@ -196,7 +196,7 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme="📷"] {
   .callout-heading {
-    color: #eea236 !important;
+    color: #5bc0de !important;
     text-transform: uppercase !important;
     font-size: 14px !important;
     margin: 0 !important;
