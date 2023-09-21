@@ -181,9 +181,17 @@ font-weight: var(--font-weight-bold);
 text-transform: uppercase;
 color: #5bc0de !important;
 font-family: var(--font-family);
+font-size: 12px;
 font-weight: var(--font-weight-bold);
-font-size: 11px;
-color: var(--color-text-muted);
+}
+
+
+.callout.callout[theme=🍐] h3 p {
+text-transform: uppercase;
+color: rebeccapurple !important;
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-weight-bold);
 }
 
 .callout.callout[theme=📷] > * {
@@ -239,7 +247,12 @@ font-weight: var(--font-weight-bold);
 }
 
 
-/* LICENSING admonition */
+/* 
+*
+* WARNING ADMONITION 
+*
+* */
+
 .callout[theme=🍊] {
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
@@ -255,13 +268,20 @@ font-weight: var(--font-weight-bold);
   border-color: #eea236 !important;
 }
 
-
-.callout.callout[theme=🍊] {
-  .callout-heading {
-    color: #eea236 !important;
-    }
+.callout.callout[theme=🍊] > * {
+	margin-left: 0;
 }
 
+.callout.callout[theme="🍊"] {
+  .callout-heading {
+    color: #eea236 !important;
+    text-transform: uppercase !important;
+    font-size: 14px !important;
+    margin: 0 !important;
+  }
+}
+
+/*
 .callout.callout[theme=🍊] h3 p {
 text-transform: uppercase;
 color: #eea236;
@@ -269,10 +289,7 @@ font-family: var(--font-family);
 font-size: 12px;
 font-weight: var(--font-weight-bold);
 }
-
-.callout.callout[theme=🍊] > * {
-	margin-left: 0;
-}
+*/
 
 /* NEW BLUE admonition*/
 
@@ -339,6 +356,16 @@ font-weight: var(--font-weight-bold);
 	margin-left: .75em;
 }
 
+.callout.callout[theme="🍐"] {
+  .callout-heading {
+    color: rebeccapurple;
+    text-transform: uppercase !important;
+    font-size: 14px !important;
+    margin: 0 !important;
+  }
+}
+
+/*
 .callout.callout[theme=🍐] h3 p {
 text-transform: uppercase;
 color: rebeccapurple;
@@ -346,7 +373,7 @@ font-family: var(--font-family);
 font-size: 12px;
 font-weight: var(--font-weight-bold);
 }
-
+*/
 
 .callout.callout[theme=🍐] table {
 	border-collapse:collapse;
@@ -423,7 +450,7 @@ color: rebeccapurple;
   border-color: var(--color-border-default);
 }
 
-.callout.callout[theme=🍎] h3 p{
+.callout.callout[theme=🍎] h3 p {
 	text-transform: uppercase;
 	color: #5bc0de;
 	font-family: var(--font-family);
