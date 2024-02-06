@@ -267,14 +267,16 @@ font-weight: var(--font-weight-bold);
 *
 * YELLOW WARNING ADMONITION 
 *
+*/
 
-.callout[theme=🍊] {
+.callout[theme=🍌] {
   --emoji: unset;
   --icon: ú-fw; 
   --icon-color: #eea236;
 }
 
-.callout.callout[theme=🍊] {
+.callout.callout[theme=🍌] {
+  --emoji: unset;
   background: #fcf8f2;
   color: var(--text);
 	font-size: 14px;
@@ -283,12 +285,12 @@ font-weight: var(--font-weight-bold);
   border-color: #eea236 !important;
 }
 
-.callout.callout[theme=🍊] > * {
+.callout.callout[theme==🍌] > * {
 	font-size: 11px;
 	margin-left: 0rem;
 }
 
-.callout.callout[theme="🍊"] {
+.callout.callout[theme="🍌"] {
   .callout-heading {
     color: #eea236 !important;
     text-transform: uppercase !important;
@@ -297,13 +299,13 @@ font-weight: var(--font-weight-bold);
   }
 }
 
-.callout.callout[theme="🍊"] {
+.callout.callout[theme="🍌"] {
   p {
     font-size: 13px;
   }
 }
 
-.callout.callout[theme=🍊] h3 p {
+.callout.callout[theme=🍌] h3 p {
 text-transform: uppercase;
 color: #eea236;
 font-family: var(--font-family);
@@ -470,7 +472,7 @@ color: rebeccapurple;
   --emoji: unset;
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
-  --icon-color: #FF6B37;
+  --icon-color: #ff6b37;
 }
 
 .callout.callout[theme=🍊] {
@@ -479,7 +481,7 @@ color: rebeccapurple;
 	font-size: 14px;
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
-  border-color: #FF6B37 !important;
+  border-color: #ff6b37 !important;
 }
 
 .callout.callout[theme=🍊]  > * {
@@ -490,7 +492,7 @@ color: rebeccapurple;
 
 .callout.callout[theme="🍊"] {
   .callout-heading {
-    color: #FF6B37;
+    color: #ff6b37;
     text-transform: uppercase !important;
     font-size: 14px !important;
     margin: 0 !important; 
@@ -545,7 +547,7 @@ font-weight: var(--font-weight-bold);
 
 
 .callout.callout[theme=🍊]  .heading-text p {
-color: #FF6B37;
+color: #ff6b37;
 }
 
 .callout.callout[theme=🍊] .rdmd-table table td {
