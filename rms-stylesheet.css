@@ -457,7 +457,7 @@ color: rebeccapurple;
 /* Space between table and text in blockquote */
 .field-description blockquote > :last-child, .markdown-body blockquote > :last-child {
   margin-bottom: 0;
-  padding-top: 12px;
+ /* padding-top: 12px; */
 }
 
 
@@ -485,7 +485,6 @@ color: rebeccapurple;
 }
 
 .callout.callout[theme=🍊]  > * {
-	font-size: 11px;
 	margin-left: 0rem !important;
 }
 
