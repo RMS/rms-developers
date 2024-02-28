@@ -80,6 +80,7 @@ div.Header-bottom2eLKOFXMEmh5 {
  * LICENSING = YELLOW
  * RECIPE = BLUE
  * POSTMAN = ORANGE
+ * CHANGELOG = WHITE 
  *
  * */
 
@@ -106,6 +107,7 @@ div.Header-bottom2eLKOFXMEmh5 {
   --icon: ú-fw; /* copied front FontAwesome */
   --icon-color: rebeccapurple;
 }
+
 
 
 /* 
@@ -571,6 +573,93 @@ color: #ff6b37;
   font-size: 11px; /* REDUCE SIZE OF HEADING */
   color: var(--color-text-muted);
 }
+
+/* 
+*
+* WHITE CHANGELOG ADMONITION
+*
+*
+* */
+
+.callout[theme=🥥] {
+  --emoji: unset;
+  --emoji: unset;
+  --icon: ú-fw; /* copied front FontAwesome */
+  --icon-color: #fff;
+}
+
+.callout.callout[theme=🥥] {
+  background: #fff !important;
+  color: var(--text);
+	font-size: 14px;
+	border: solid 1px;
+	border-radius: var(--border-radius-lg);
+  border-color: #fff !important;
+}
+
+.callout.callout[theme=🥥]  > * {
+	margin-left: 0rem !important;
+}
+
+
+.callout.callout[theme="🥥"] {
+  .callout-heading {
+    color: #fff;
+   /* text-transform: uppercase !important;*/
+    font-size: 14px !important;
+    margin: 0 !important; 
+    padding-bottom: 10px;
+  }
+}
+
+.callout.callout[theme="🥥"] {
+  p {
+    font-size: 13px;
+  }
+}
+
+
+
+.callout.callout[theme=🥥] table {
+	border-collapse:collapse;
+  border: 0px solid black;
+  width: 95%;
+}
+
+.callout.callout[theme=🥥] table:not(.plain) tr:nth-child(2n) {
+  background-color: #fff;
+
+}
+
+.callout.callout[theme=🥥] .rdmd-table table th {
+  border: 0px solid black;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.callout.callout[theme=🥥] table tr {
+  background-color: #fcf8f2;
+	border-bottom: 1px solid black;
+}
+
+.callout.callout[theme=🥥] table td, table th {
+	border: 0px solid black !important;
+	border-collapse:collapse;
+}
+
+
+.callout.callout[theme=🥥]  .heading-text p {
+color: #fff;
+}
+
+.callout.callout[theme=🥥] .rdmd-table table td {
+  border: 0px solid black;
+  text-transform: uppercase;
+  font-size: 11px; /* REDUCE SIZE OF HEADING */
+  color: var(--color-text-muted);
+}
+
 
 
 
