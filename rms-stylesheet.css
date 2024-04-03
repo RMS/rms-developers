@@ -591,10 +591,15 @@ color: #ff6b37;
 .callout.callout[theme=🥥] {
   background: #E5E4E2 !important;
   color: var(--text);
-	font-size: 16px;
+	font-size: 15px !important;
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
   border-color: #fff !important;
+  background: #e5e4e2 !important;
+  markdown-body {
+    strong: font-weight: 700;
+    color: #b40023 !important;
+  }
 }
 
 .callout.callout[theme=🥥]  > * {
@@ -604,7 +609,7 @@ color: #ff6b37;
 
 .callout.callout[theme="🥥"] {
   .callout-heading {
-    color: #fff;
+   /* color: #fff; */
    /* text-transform: uppercase !important;*/
     font-size: 14px !important;
     margin: 0 !important; 
@@ -614,7 +619,7 @@ color: #ff6b37;
 
 .callout.callout[theme="🥥"] {
   p {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
