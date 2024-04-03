@@ -608,6 +608,7 @@ color: #ff6b37;
 
 .callout.callout[theme=🥥]  > * {
 	margin-left: 0rem !important;
+  margin-top: 40px !important;
 }
 
 
