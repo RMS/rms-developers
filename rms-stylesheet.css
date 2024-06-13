@@ -715,12 +715,21 @@ color: #fff;
 
 /* BANNER */
 
-
-/* DEFINITION LISTS */
-
-dl.bullet {
+.col-three-grid .row-wrap .col-wrap h6 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #0A1264;
+    font-family: GT America, Inter, sans-serif;
+    margin: 0 0 12px;
 }
 
+
+/* DEFINITION LISTS */
+/*
+dl.bullet {
+}
+*/
 dl.bullet > dt {
   float: left;
   margin-right: 5px;
@@ -849,7 +858,7 @@ dl.code-defs {
   content: '';
   position: absolute;
   height: 8px;
-  background: linear-gradient(90deg, #09869F -2.75%, #024D6B 99.58%);
+  background: linear-gradient(90deg, #09869F -2.75%, #0a1264 99.58%);
   width: 100%;
   bottom: 0;
 }
@@ -1129,15 +1138,17 @@ ol > li > br {
 	overflow-y: auto
 }
 
+/*
 .synopsis > .prototype {
 
 }
+*/
 .synopsis > p.parameter {
   margin-left:12px;
 }
 
 dt > code.rdmd-code {
-  font-color:black !important;
+  color: black !important;
   font-style: normal;
   font-weight: 600;
 } 
