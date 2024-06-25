@@ -1089,6 +1089,11 @@ dl.code-defs {
     background-color: #0A1264;
 }
 
+.footer-image img {
+    max-width: 50%;
+}
+
+
 /* ICONS */
 .icon-landing-page-2 {
   visibility: hidden;
