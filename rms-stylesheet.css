@@ -279,28 +279,38 @@ font-size: 12px;
 font-weight: var(--font-weight-bold);
 }
 
-/* DEPRECATED admonition */
-.callout[theme=🍏] {
+
+
+/* 
+ * DEPRECATION ADMONITION 
+ * */
+
+.callout[theme="🍏"] {
   --emoji: unset;
   --icon: "\f057"; /* copied front FontAwesome */
-  --icon-color: #c50a50;
+  --icon-color: #BA0C2F;
 }
 
-.callout.callout[theme=🍏] {
-  background: #fdf7f7;
-  border-color: var(--background);
+.callout.callout[theme="🍏"] {
+  background: #F8E5E9 !important;
   color: var(--text);
+  border: solid 1px;
+  border-radius: var(--border-radius-lg);
+  border-color: #BA0C2F !important;
   padding: 1.33rem;
 }
 
-.callout.callout[theme=🍏] h3 p {
-text-transform: uppercase;
-color: #c50a50;
-font-family: var(--font-family);
-font-size: 12px;
-font-weight: var(--font-weight-bold);
+
+.callout.callout[theme="🍏"]  > * {
+	font-size: 13px;
 }
 
+.callout.callout[theme="🍏"]  > h2 {
+	font-size: 13px;
+  color: #BA0C2F;
+  text-transform: uppercase !important;
+}
+ 
 
 /* 
 *
