@@ -217,17 +217,17 @@ font-weight: var(--font-weight-bold);
 .callout[theme="📷"] {
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
-  --icon-color: #c50a50;
+  --icon-color: #0A1264;
 }
 
 .callout.callout[theme="📷"] {
-  background: #e3edf2;
+  background: #e4e4ec;
   color: var(--text);
 	font-size: 14px;
   padding: .75rem; 
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
-  border-color: #5bc0de !important;
+  border-color: #0A1264 !important;
 }
 
 .callout.callout[theme="📷"] > * {
@@ -236,7 +236,7 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme="📷"] {
   .callout-heading {
-    color: #5bc0de !important;
+    color: #0A1264 !important;
     text-transform: uppercase !important;
     font-size: 14px !important;
     margin: 0 !important;
@@ -373,7 +373,7 @@ font-weight: var(--font-weight-bold);
 }
 
 .callout.callout[theme=🫐] {
-  background: #e3edf2 !important;
+  background: #e4e4ec !important;
   color: var(--text);
   padding: .75rem;
   padding-left: 0;
@@ -387,7 +387,7 @@ font-weight: var(--font-weight-bold);
 .callout.callout[theme=🫐] > * {
 	font-size: 14px;
 	margin-left: .75em;
-  background: #e3edf2 !important;
+  background: #e4e4ec !important;
 }
 
 .callout.callout[theme=🫐] h3 p {
