@@ -513,7 +513,7 @@ color: rebeccapurple;
 /* 
 *
 * ORANGE POSTMAN ADMONITION
-*
+* LICENSING
 *
 * */
 
@@ -521,16 +521,16 @@ color: rebeccapurple;
   --emoji: unset;
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
-  --icon-color: #ff6b37;
+  --icon-color: #E35205;
 }
 
 .callout.callout[theme=🍊] {
-  background: #fcf8f2 !important;
+  background: #FBE6DA !important;
   color: var(--text);
 	font-size: 14px;
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
-  border-color: #ff6b37 !important;
+  border-color: #E35205 !important;
 }
 
 .callout.callout[theme=🍊]  > * {
@@ -540,7 +540,7 @@ color: rebeccapurple;
 
 .callout.callout[theme="🍊"] {
   .callout-heading {
-    color: #ff6b37;
+    color: #E35205;
     text-transform: uppercase !important;
     font-size: 14px !important;
     margin: 0 !important; 
