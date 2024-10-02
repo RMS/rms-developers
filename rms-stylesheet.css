@@ -17,6 +17,12 @@ div.Header-bottom2eLKOFXMEmh5 {
   --Header-logo-height: 48px;
 }
 
+--markdown-font: var(--font-family);
+--markdown-font-size: 15px;
+--markdown-line-height: 1.5;
+--markdown-title-font: var(--font-family);
+--markdown-title-weight: var(--font-weight-bold);
+
 /* Remove Gap Between Landing Page Hero and Container */
 .rm-LandingPage {
   --LandingPage-gap: var(--gap, 0em);
@@ -31,8 +37,9 @@ div.Header-bottom2eLKOFXMEmh5 {
 /* Remove Gray Background from Local Navigation Button */
 .reference-redesign .Sidebar-link2Dsha-r-GKh2.active {
   background: #ffffff;
-  color: var(--Sidebar-link-color);
+  color: #005eff !important;
 }
+
 
 /*
 *
@@ -142,7 +149,7 @@ div.Header-bottom2eLKOFXMEmh5 {
 {
 	font-size: 14px;
   color: var(--title,--text);
-  font-size: 14px:;
+  font-size: 14px;
   font-family: var(--markdown-title-font);
   font-weight: var(--markdown-title-weight,600);
   line-height: 1.25;
@@ -209,7 +216,7 @@ font-weight: var(--font-weight-bold);
 }
 
 /* 
-*
+* Info Adomonition
 * BLUE NOTE ADMONITION
 *
 * */
@@ -217,7 +224,7 @@ font-weight: var(--font-weight-bold);
 .callout[theme="📷"] {
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
-  --icon-color: #003590;
+  --icon-color: #0A1264;
 }
 
 .callout.callout[theme="📷"] {
