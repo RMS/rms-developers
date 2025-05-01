@@ -12,7 +12,7 @@
 
 ## Get Output Metrics Info
 
-The Get Output Metrics Info operation returns all available granularities of loss tables and stats for a given analysisId. Analyses of ELT framework are only supported.
+The Get Output Metrics Info operation returns available granularities (only geoId specific) of loss tables and stats for a given analysisId. Analyses of ELT framework are only supported.
 
 ```json
 {
