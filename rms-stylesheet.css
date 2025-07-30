@@ -1209,3 +1209,15 @@ dt > code.rdmd-code {
     background-color: rgba(0,0,0,0) !important;
 }
 
+
+/* Hide text from viewers but visibile to search engine
+ */
+
+.hidden {
+	visibility: hidden !important
+}
+
+.tags {
+	visibility: hidden !important
+}
+
