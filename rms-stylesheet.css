@@ -1214,10 +1214,10 @@ dt > code.rdmd-code {
  */
 
 .hidden {
-	visibility: hidden !important
+	display: none !important
 }
 
 .tags {
-	visibility: hidden !important
+	display: none !important
 }
 
