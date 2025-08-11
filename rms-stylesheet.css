@@ -257,6 +257,10 @@ font-weight: var(--font-weight-bold);
 }
 
 
+.callout.callout h3 .callout-icon, .callout.callout .callout-heading .callout-icon {
+    margin-left: calc(-1.25rem - .5em);
+    visibility: hidden !important;
+}
 
 
 /* 
@@ -273,6 +277,7 @@ font-weight: var(--font-weight-bold);
 .callout-icon[theme="🪰"]{
 	visibility: hidden !important;
 }
+
 
 .callout.callout[theme="🪰"] {
   /* background:var(--gray100) !important; */
