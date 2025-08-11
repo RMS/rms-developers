@@ -257,6 +257,8 @@ font-weight: var(--font-weight-bold);
 }
 
 
+
+
 /* 
 * Entitlement ADMONITION
 *
@@ -264,10 +266,22 @@ font-weight: var(--font-weight-bold);
 
 .callout[theme=🪰] {
   --emoji: unset;
-  --icon: "\f059"; /* copied front FontAwesome */
-  --icon-color: #5c068c;
+  --icon: ú-fw; /* copied front FontAwesome */
+  --icon-color: #0A1264;
 }
 
+
+.callout.callout[theme="📷"] {
+  background:var(--gray100) !important; 
+  color: var(--text);
+	font-size: 14px;
+  padding: .75rem; 
+	border: solid 1px;
+	border-radius: var(--border-radius-lg);
+  border-color: var(--color-border-default) !important;
+}
+
+/*
 .callout.callout[theme=🪰] {
   background: #eee7f3;
   border-color: #eee7f3;
@@ -277,10 +291,10 @@ font-weight: var(--font-weight-bold);
 	border-radius: var(--border-radius-lg);
   border-color: #5c068c !important;
 }
+*/
 
 .callout.callout[theme=🪰] h3 p{
 text-transform: uppercase;
-color: #5c068c;
 font-family: var(--font-family);
 font-size: 12px;
 font-weight: var(--font-weight-bold);
