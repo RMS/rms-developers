@@ -270,11 +270,16 @@ font-weight: var(--font-weight-bold);
   --icon-color: #0A1264;
 }
 
+.callout-icon[theme="🪰"]{
+	visibility: hidden !important;
+}
+
 .callout.callout[theme="🪰"] {
   /* background:var(--gray100) !important; */
   color: var(--text);
 	font-size: 14px;
   /*padding: .75rem; */
+	background-color: white !important;
   margin: 0px !important;
   padding: 0px !important;
   border: none !important;
@@ -282,17 +287,12 @@ font-weight: var(--font-weight-bold);
   padding-top: 30px !important;
 	/* border-radius: var(--border-radius-lg); */
   /* border-color: var(--color-border-default) !important; */
+	margin-left: 0px !important;
 }
 
-
-/*
-.callout.callout[theme="🪰"] h3 p{
-text-transform: uppercase !important;
-font-family: var(--font-family);
-font-size: 12px;
-font-weight: var(--font-weight-bold);
+.callout.callout[theme="🪰"] >*{
+	margin-left: 0px !important;
 }
-*/
 
 .callout.callout[theme="🪰"] h3>*, .callout.callout .callout-heading>* {
     color: var(--color-text-mute) !important;
@@ -304,6 +304,7 @@ font-weight: var(--font-weight-bold);
     /* font-size: 12px !important; */
 }
 
+/*
 .field-description[theme="🪰"] blockquote > :last-child, .markdown-body blockquote > :last-child {
     margin-bottom: 0;
     margin-left: 0px !important;
@@ -314,7 +315,18 @@ font-weight: var(--font-weight-bold);
     background-color: var(--gray100) !important;
     padding: 10px;
 	}
+*/
 
+.callout.callout[theme="🪰"] blockquote > :last-child, .markdown-body blockquote > :last-child {
+    margin-bottom: 0;
+    margin-left: 0px !important;
+    border-width: 1px !important;
+    border-color: var(--color-border-default) !important;
+    border: 2px solid black;
+    border-radius: var(--border-radius-lg) !important;
+    background-color: var(--gray100) !important;
+    padding: 10px;
+	}
 
 
 /* 
