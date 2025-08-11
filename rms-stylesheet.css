@@ -258,6 +258,37 @@ font-weight: var(--font-weight-bold);
 
 
 /* 
+* Entitlement ADMONITION
+*
+* */
+
+.callout[theme=🪰] {
+  --emoji: unset;
+  --icon: "\f059"; /* copied front FontAwesome */
+  --icon-color: #5c068c;
+}
+
+.callout.callout[theme=🪰] {
+  background: #eee7f3;
+  border-color: #eee7f3;
+  color: var(--text);
+  padding: 1.33rem;
+	border: solid 1px #5c068c;
+	border-radius: var(--border-radius-lg);
+  border-color: #5c068c !important;
+}
+
+.callout.callout[theme=🪰] h3 p{
+text-transform: uppercase;
+color: #5c068c;
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-weight-bold);
+}
+
+
+
+/* 
 * Permissions ADMONITION
 *
 * */
