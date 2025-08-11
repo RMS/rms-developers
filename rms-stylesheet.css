@@ -264,14 +264,14 @@ font-weight: var(--font-weight-bold);
 *
 * */
 
-.callout[theme=🪰] {
+.callout[theme="🪰"] {
   --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
   --icon-color: #0A1264;
 }
 
 
-.callout.callout[theme="📷"] {
+.callout.callout[theme="🪰"] {
   background:var(--gray100) !important; 
   color: var(--text);
 	font-size: 14px;
@@ -293,8 +293,8 @@ font-weight: var(--font-weight-bold);
 }
 */
 
-.callout.callout[theme=🪰] h3 p{
-text-transform: uppercase;
+.callout.callout[theme="🪰"] h3 p{
+text-transform: uppercase !important;
 font-family: var(--font-family);
 font-size: 12px;
 font-weight: var(--font-weight-bold);
