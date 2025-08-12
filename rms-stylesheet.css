@@ -312,7 +312,7 @@ font-weight: var(--font-weight-bold);
 }
 
 
-.callout.callout[theme="🪰"] h2>*, .callout.callout .callout-heading > p  {
+.callout.callout[theme="🪰"] .callout.callout .callout-heading > p:nth-of-type(2)  {
     border-width: 1px !important;
     border-color: var(--color-border-default) !important;
     border: 2px solid black;
