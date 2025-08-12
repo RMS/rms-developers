@@ -310,31 +310,7 @@ font-weight: var(--font-weight-bold);
 }
 
 
-/*
-.callout.callout[theme="🪰"] p:nth-of-type(2)  {
-    border-width: 1px !important;
-    border-color: var(--color-border-default) !important;
-    border: 2px solid black;
-    border-radius: var(--border-radius-lg) !important;
-    background-color: var(--gray100) !important;
-    padding: 10px;
-}
-*/
-
-
-
-/*
-.field-description[theme="🪰"] blockquote > :last-child, .markdown-body blockquote > :last-child {
-    margin-bottom: 0;
-    margin-left: 0px !important;
-    border-width: 1px !important;
-    border-color: var(--color-border-default) !important;
-    border: 2px solid black;
-    border-radius: var(--border-radius-lg) !important;
-    background-color: var(--gray100) !important;
-    padding: 10px;
-	}
-*/
+/* May not be active */
 
 .callout.callout[theme="🪰"] blockquote > :last-child {
 
@@ -362,18 +338,6 @@ font-weight: var(--font-weight-bold);
 }
 
 
-/*
-, .markdown-body blockquote > :last-child {
-    margin-bottom: 0;
-    margin-left: 0px !important;
-    border-width: 1px !important;
-    border-color: var(--color-border-default) !important;
-    border: 2px solid black;
-    border-radius: var(--border-radius-lg) !important;
-    background-color: var(--gray100) !important;
-    padding: 10px;
-	}
-*/
 
 /* 
 * Permissions ADMONITION
