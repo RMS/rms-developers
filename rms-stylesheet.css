@@ -247,6 +247,7 @@ font-weight: var(--font-weight-bold);
     text-transform: uppercase !important;
     font-size: 14px !important;
     margin: 0 !important;
+		padding-bottom: 10px;
   }
 }
 
