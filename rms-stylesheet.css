@@ -295,8 +295,6 @@ font-weight: var(--font-weight-bold);
 	margin-left: 0px !important;
 }
 
-
-
 .callout.callout[theme="🪰"] >*{
 	margin-left: 0px !important;
 }
@@ -312,7 +310,8 @@ font-weight: var(--font-weight-bold);
 }
 
 
-.callout.callout[theme="🪰"] .callout.callout .callout-heading > p:nth-of-type(2)  {
+/*
+.callout.callout[theme="🪰"] p:nth-of-type(2)  {
     border-width: 1px !important;
     border-color: var(--color-border-default) !important;
     border: 2px solid black;
@@ -320,9 +319,7 @@ font-weight: var(--font-weight-bold);
     background-color: var(--gray100) !important;
     padding: 10px;
 }
-
-
-
+*/
 
 
 
@@ -339,7 +336,20 @@ font-weight: var(--font-weight-bold);
 	}
 */
 
-.callout.callout[theme="🪰"] blockquote > :last-child, .markdown-body blockquote > :last-child {
+.callout.callout[theme="🪰"] blockquote > :last-child {
+
+    margin-bottom: 0;
+    margin-left: 0px !important;
+    border-width: 1px !important;
+    border-color: var(--color-border-default) !important;
+    border: 2px solid black;
+    border-radius: var(--border-radius-lg) !important;
+    background-color: var(--gray100) !important;
+    padding: 10px;
+}
+
+/*
+, .markdown-body blockquote > :last-child {
     margin-bottom: 0;
     margin-left: 0px !important;
     border-width: 1px !important;
@@ -349,7 +359,7 @@ font-weight: var(--font-weight-bold);
     background-color: var(--gray100) !important;
     padding: 10px;
 	}
-
+*/
 
 /* 
 * Permissions ADMONITION
