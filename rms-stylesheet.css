@@ -230,7 +230,7 @@ font-weight: var(--font-weight-bold);
 .callout.callout[theme="📷"] {
   background: #deebff;
   color: var(--text);
-	font-size: 14px;
+	font-size: 15px;
   padding: .75rem; 
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
@@ -245,7 +245,7 @@ font-weight: var(--font-weight-bold);
   .callout-heading {
     color: #003590 !important;
     text-transform: uppercase !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
     margin: 0 !important;
 		padding-bottom: 10px;
   }
@@ -253,7 +253,7 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme="📷"] {
   p {
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
 }
 
