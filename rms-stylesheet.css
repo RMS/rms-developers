@@ -253,7 +253,7 @@ font-weight: var(--font-weight-bold);
 
 .callout.callout[theme="📷"] {
   p {
-    font-size: 13px;
+    font-size: 14px !important;
   }
 }
 
