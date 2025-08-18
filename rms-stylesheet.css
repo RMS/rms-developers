@@ -1304,3 +1304,8 @@ dt > code.rdmd-code {
 	display: none !important
 }
 
+/* Fix for bad spacing in content navigation. See api-2400 */
+.content-toc ul {
+    margin-top: .84em;
+}
+
