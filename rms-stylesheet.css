@@ -377,30 +377,45 @@ font-weight: var(--font-weight-bold);
 
 .callout[theme="🍏"] {
   --emoji: unset;
-  --icon: "\f057"; /* copied front FontAwesome */
+  --icon: ú-fw; /* copied front FontAwesome */
   --icon-color: #BA0C2F;
 }
 
 .callout.callout[theme="🍏"] {
   background: #F8E5E9 !important;
   color: var(--text);
+	font-size: 15px;
+  padding: .75rem; 
   border: solid 1px;
   border-radius: var(--border-radius-lg);
   border-color: #BA0C2F !important;
-  padding: 1.33rem;
 }
-
 
 .callout.callout[theme="🍏"]  > * {
-	font-size: 13px;
+	margin-left: 0rem;
 }
 
-.callout.callout[theme="🍏"]  > h2 {
-	font-size: 13px;
-  color: #BA0C2F;
-  text-transform: uppercase !important;
+.callout.callout[theme="🍏"]  {
+  .callout-heading {
+    color: #BA0C2F !important;
+    text-transform: uppercase !important;
+    font-size: 15px !important;
+    margin: 0 !important;
+		padding-bottom: 10px;
+  }
 }
- 
+
+
+.callout.callout[theme="🍏"]  {
+  p {
+    font-size: 15px !important;
+  }
+}
+
+
+
+
+
 
 /* 
 *
