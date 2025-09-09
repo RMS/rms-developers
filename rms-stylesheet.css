@@ -624,19 +624,22 @@ color: rebeccapurple;
 
 .callout[theme=🍊] {
   --emoji: unset;
-  --emoji: unset;
   --icon: ú-fw; /* copied front FontAwesome */
   --icon-color: #E35205;
 }
 
+
 .callout.callout[theme=🍊] {
   background: #FBE6DA !important;
   color: var(--text);
-	font-size: 14px;
+	font-size: 15px;
+  padding: .75rem; 
 	border: solid 1px;
 	border-radius: var(--border-radius-lg);
   border-color: #E35205 !important;
 }
+
+
 
 .callout.callout[theme=🍊]  > * {
 	margin-left: 0rem !important;
@@ -647,28 +650,21 @@ color: rebeccapurple;
   .callout-heading {
     color: #E35205;
     text-transform: uppercase !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
     margin: 0 !important; 
     padding-bottom: 10px;
   }
 }
 
+
+
 .callout.callout[theme="🍊"] {
   p {
-    font-size: 13px;
+    font-size: 15px !important;
   }
 }
 
 
-/*
-.callout.callout[theme=🍊] h3 p {
-text-transform: uppercase;
-color: rebeccapurple;
-font-family: var(--font-family);
-font-size: 12px;
-font-weight: var(--font-weight-bold);
-}
-*/
 
 .callout.callout[theme=🍊] table {
 	border-collapse:collapse;
