@@ -2,8 +2,13 @@
 
 /* api-3044 */
 .rm-APIAuth-login {
-  display: none !important;
+  display: visibility !important;
 }
+
+.rm-APIAuth-APIAuth {
+  display: visibility !important;
+}
+
 
 div.Header-bottom2eLKOFXMEmh5 {
   background-color: #ffffff !important;
