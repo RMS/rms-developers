@@ -2,7 +2,7 @@
 
 /* api-3044 */
 .rm-APIAuth-login {
-  display: visibility !important;
+  visibility: hidden !important;
 }
 
 .rm-APIAuth {
